@@ -1,0 +1,31 @@
+     * [1]permalink
+     * [2]top
+     * [3]contact me
+     * [4]not logged in
+
+Patterns in Perl
+
+   An article I wrote for the Perl Journal a long time ago
+
+   ...about how to use iterators and some other simple design patterns in
+   perl. The idea of iterator chains is still interesting to me, although
+   I prefer python to perl for most tasks these days. [5]Here it is
+   anyway...
+     __________________________________________________________________
+
+   Tags: [6]computers Last modified: 2006-04-21T14:51:31Z
+
+   Unless otherwise specified the contents of this page are copyright ©
+   2015 [7]Sean Hunter. This work is licensed under a Creative Commons
+   Attribution-ShareAlike 4.0 International [8]License.
+
+References
+
+   1. https://web.archive.org/web/20160512184400/http://www.uncarved.com/articles/perl_patterns
+   2. https://web.archive.org/web/20160512184400/http://www.uncarved.com/
+   3. file:///web/20160512184400/http://www.uncarved.com/articles/contact
+   4. file:///web/20160512184400/http://www.uncarved.com/login/
+   5. https://web.archive.org/web/20160512184400/http://www.foo.be/docs/tpj/issues/vol5_2/tpj0502-0007.html
+   6. https://web.archive.org/web/20160512184400/http://www.uncarved.com/tags/computers
+   7. https://web.archive.org/web/20160512184400/mailto:sean@uncarved.com
+   8. https://web.archive.org/web/20160512184400/http://creativecommons.org/licenses/by-sa/4.0/
