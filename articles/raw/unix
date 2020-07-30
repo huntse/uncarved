@@ -1,0 +1,168 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app56.us.archive.org';v.server_ms=200;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/articles/unix";
+  wbinfo.timestamp = "20160512184015";
+  wbinfo.request_ts = "20160512184015";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512184015";
+  wbinfo.wombat_sec = "1463078415";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="Loving the Unix user experience comes from realising how you make it work the way you want - <p>People who I work with are often bemused by the perculia..."/>
+		<link rel="stylesheet" type="text/css" href="/web/20160512184015cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/unix"/>
+        <title>The Uncarved Blog: Productivity in unix</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160512184015/http://www.uncarved.com/articles/unix">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160512184015/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160512184015/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160512184015/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                Productivity in unix
+			</h2>
+            
+
+            
+            <div class="precis">Loving the Unix user experience comes from realising how you make it work the way you want</div>
+            
+
+            <p>People who I work with are often bemused by the perculiar setup I have on my machine, which is the product of constant evolution over the last five years or so. My setup is designed to work well for me, not to look pretty or provide distraction. As such, it can be thought of as sort of the opposite of desktop environments like Gnome. The other thing about my setup is that it is designed first and foremost to be fast and as such programs which are slow to start, slow to run or consume a lot of memory are completely out. For this reason, over the years I have ditched the emacs family of editors, fancy window managers and silly meta-environments like Gnome. People who use vim tend to look productive and slightly wired like this, whereas emacs users have been known to look like this. I think that proves my point nicely</p>
+<p>I also use a text-mode web browser where I can because it is quick to start up and makes it quick to find information. Time-wasting web browsing of sites entirely devoid of real information I still do with a graphical browser, however. I have found that as computers that I use have become faster and more powerful, my desire for speed has increased so I am even more obsessed with small, fast apps than I used to be.
+Goals of the setup</p>
+<p>These are pretty simple:</p>
+<ul>
+<li>Small memory footprint</li>
+<li>Fast</li>
+<li>Flexible</li>
+<li>Productive</li>
+<li>Maximise available resources (desktop area etc) </li>
+</ul>
+<h2>Apps I use</h2>
+<ul>
+<li>The vim editor. As a programmer your editor is your most important tool and vim is by far and away the best there is. My vimrc file has developed over time, incorporating lots of stuff from others.</li>
+<li>The zsh shell. The zsh shell is a pretty productive environment for me, but the jury is still out on this for me. I don't mind bash either as long as I can use vi keybindings.</li>
+<li>Ratpoison - The X window manager which allows you to do away with your mouse and means you are forever liberated from dragging and resizing and using the annoying mouse. My ratpoisonrc might give some ideas.</li>
+<li>Gnu screen - I'm not going to put a link to the FSF website here. Find it on google. Screen is cool though. You can copy my screenrc if you like.</li>
+<li>Scripting languages - noone is productive on unix without being able to write little scripts. As well as the shell, I love scripting in Perl, sed and Python. We also have a great internal scripting language here at work which I love. </li>
+</ul>
+<h2>The shell and the unix philosophy</h2>
+<p>One of the key strengths of unix systems is the philosophy of small tools which can be combined in flexible ways. This is the antithesis of the mindset that brings about Integrated Development Environments. The great thing about the unix shell as an integrated environment is that it is infinite in potential given that you can always extend the facilities you have by making other tools using scripting or by getting them from the web. The shell itself is extensible in that you can add little scripts or write functions to add features or do things your way.</p>
+<p>For example, the cd builtin in ksh has this tremendous feature for dealing with long paths. Say I'm in /foo/bar/nerf/2003-04-26/conf/frazzle and I realise I need to be in /foo/baz/nerf/2003-04-26/conf/frazzle, all I do is type <code>cd bar baz</code> . That's pretty useful.</p>
+<p>I also often find myself typing vi /the/path/to/a/file, then wishing I could do cd !$ to get to the directory to check the file in or whatever. So I built a cd function that changes to the parent directory if the target is a file. When a colleague of mine explained the ksh cd behaviour, I added his ksh-like cd function to mine to get this:</p>
+<pre><code>cd()
+{
+    if [ -z "$1" ] ; then
+        builtin cd
+    else
+        if [ -n "$2" ]; then
+            TRY="${PWD/$1/$2}"
+        else
+            TRY="$1"
+        fi
+
+        if [ -f "${TRY}" ]; then
+            builtin cd "${TRY:h}"
+        else
+            builtin cd "${TRY}"
+        fi
+    fi
+}
+</code></pre>
+<p>Notice that this includes a few zsh-isms which you'll need to change if you want to use this in bash. ${TRY:h} is the same as $( dirname "${TRY}" ) but I get to skip the backticks and save a fork. I think you can do this in bash using a string substitution something like "${TRY##*/}". If you are using a csh-like shell I pity you and this cd mechanism will not be enough to save you from your folly anyway.
+Shell history completion and searching</p>
+<p>One of the most basic ways to improve your productivity on unix systems is to become acquainted with your shell's history completion and search facilities. All of these described here are common to zsh and bash, although zsh has someadditional features that bash does not. Firstly, if you ever find yourself tapping the up arrow to scroll through your command history, you are living in a state of sin- either type history 100 or something to actually get a history list or use Ctrl-R to do a recursive incremental search through your shell history. Secondly, learn and use some basic history completions:</p>
+<ul>
+<li><code>!$</code> completes to the last argument of your previous command. <code>vi file</code> followed by <code>cvs ci !$</code> edits a file and checks it in.</li>
+<li><code>!*</code> completes to all the arguments of your previous command. <code>vi file1 file2 file{3,4,5}</code> followed by <code>cvs ci !*</code> edits a list of files and checks then all in.</li>
+<li><code>!!</code> completes to the whole of your previous command, with args. <code>vi /etc/passwd</code> gives "permission denied? Use <code>sudo !!</code> to become rootly without retyping. </li>
+</ul>
+<p>There are lots more possible history completions but I use these three ten times for any one of them.</p>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160512184015/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2007-06-13T15:57:29Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512184015/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512184015/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 18:40:15 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:05:20 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  RedisCDXSource: 1.034
+  CDXLines.iter: 17.566 (3)
+  exclusion.robots.policy: 0.171
+  PetaboxLoader3.datanode: 125.192 (4)
+  esindex: 0.012
+  exclusion.robots: 0.182
+  load_resource: 47.473
+  PetaboxLoader3.resolve: 38.266
+  captures_list: 144.64
+  LoadShardBlock: 122.974 (3)
+-->
