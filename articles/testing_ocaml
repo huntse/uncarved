@@ -1,0 +1,274 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app56.us.archive.org';v.server_ms=136;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/articles/testing_ocaml";
+  wbinfo.timestamp = "20160512184426";
+  wbinfo.request_ts = "20160512184426";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512184426";
+  wbinfo.wombat_sec = "1463078666";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="It's nice to be able to write tests for code as you go along, so you need a test harness... - <p>I usually like to be able to write tests as I write cod..."/>
+		<link rel="stylesheet" type="text/css" href="/web/20160512184426cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/testing_ocaml"/>
+        <title>The Uncarved Blog: A Simple Ocaml test harness</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160512184426/http://www.uncarved.com/articles/testing_ocaml">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160512184426/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160512184426/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160512184426/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                A Simple Ocaml test harness
+			</h2>
+            
+
+            
+            <div class="precis">It&#39;s nice to be able to write tests for code as you go along, so you need a test harness...</div>
+            
+
+            <p>I usually like to be able to write tests as I write code, and to have them run every time the code builds to make sure I haven't broken anything.  To do this, you need a test harness so that adding tests is as painless as possible.  So I wrote this one:</p>
+<pre><code>(** test.ml - a simple test harness in ocaml
+
+  This is demonstration code only.  You are free to use it under the
+  terms of the Creative Commons Attribution 2.5 license.
+
+  @author Sean Hunter &lt;sean\@uncarved.com&gt;
+
+ *)
+
+(** Test harness class.  Tracks numbers of tests run and how many 
+ succeed. *)
+class harness =
+object(self)
+    (** The number of tests so far *)
+    val mutable n = 0
+
+    (** The number of tests so far which have succeeded *)
+    val mutable succeeded = 0
+
+    (** A name for the group of tests currenly running *)
+    val mutable group = ""
+
+    (** Runs a predicate function and fails if it throws or
+     returns false.  Otherwise it succeeds *)
+    method pass_if desc pred =
+      n &lt;- n + 1;
+      let dots = String.make (50-(min 50 (String.length desc))) '.' in
+      Printf.printf "%5.5d: %s ....%s" n desc dots;
+
+      try
+          if pred () then
+            begin
+                Printf.printf "ok\n" ;
+                succeeded &lt;- succeeded + 1;
+                true
+            end
+          else
+            begin
+              Printf.printf "not ok\n";
+              false
+            end
+      with
+      _ -&gt;Printf.printf "not ok (threw exception)\n"; false
+
+    (** Runs a predicate function and fails if it throws or
+     returns true.  Otherwise it succeeds *)
+    method fail_if desc pred = self#pass_if desc (fun () -&gt; not pred)
+
+    (** Takes a bool and marks the test as succeeded if it is true *)
+    method ok desc x = self#pass_if desc (fun () -&gt; x)
+
+    (** Takes a bool and marks the test as failed if it is true *)
+    method not_ok desc x = self#ok desc (not x)
+
+    (** Evaluate a predicate, ignoring its result. Succeed if it throws
+     an exception, fail if not *)
+    method pass_if_throws desc (pred : unit -&gt; bool) =
+        try
+            (ignore (pred ()));
+            self#not_ok desc true
+        with
+            exn -&gt; self#ok desc true
+
+    (** Evaluate a predicate, ignoring its result. Fail if it throws
+     an exception, succeed if not *)
+    method fail_if_throws desc (pred : unit -&gt; bool) =
+        try
+            (ignore (pred ()));
+            self#ok desc true
+        with
+            exn -&gt; self#not_ok desc true
+
+    (** Check that two floats are within a certain tolerance *)
+    method pass_if_close ?(eps=1e-9) desc x y = 
+        let diff = abs_float (x-.y) in
+        self#ok desc (diff &lt;= eps)
+
+    (** mark the beginning of a group of tests *)
+    method start_group name =
+        n &lt;- 0 ;
+        succeeded &lt;- 0;
+        group &lt;- name ;
+        Printf.printf "Begin test group %s\n" group
+
+    (** mark the end of a group of tests, printing out success count *)
+    method end_group  =
+        Printf.printf "End test group %s: %d of %d tests passed\n"
+            group succeeded n
+end;;
+
+(* vim: set syn=ocaml sw=4 ts=4 expandtab: *)
+</code></pre>
+<p>Now it's very easy for me to write tests.  For example, tests for all my <a href="https://web.archive.org/web/20160512184426/http://www.uncarved.com/blog/practical_ocaml.mrk">payoff functions</a> might look like this:</p>
+<pre><code>(** payoff_tests.ml - tests for payoff classes
+
+  Written by Sean Hunter &lt;sean@uncarved.com&gt;
+
+  This is demonstration code only.  You are free to use it under the
+  terms of the Creative Commons Attribution 2.5 license, but don't
+  expect it to accurately price real options.
+
+ *)
+
+let tests = new Test.harness;;
+
+tests#start_group "payoff.ml";;
+
+(* tests for vanilla put and call payoffs *)
+tests#ok "Vanilla ITM call" ((Payoff.call 100.0 110.0) = 10.0);;
+tests#ok "Vanilla ATM call" ((Payoff.call 100.0 100.0) = 0.0);;
+tests#ok "Vanilla OTM call" ((Payoff.call 100.0 90.0) = 0.0);;
+tests#ok "Vanilla ITM put" ((Payoff.put 100.0 10.0) = 90.0);;
+tests#ok "Vanilla ATM put" ((Payoff.put 100.0 100.0) = 0.0);;
+tests#ok "Vanilla OTM put" ((Payoff.put 100.0 190.0) = 0.0);;
+
+(* tests for digital payoffs *)
+tests#ok "Digital ITM call" ((Payoff.digital_call 100.0 110.0) = 1.0);;
+tests#ok "Digital ATM call" ((Payoff.digital_call 100.0 100.0) = 0.0);;
+tests#ok "Digital OTM call" ((Payoff.digital_call 100.0 90.0) = 0.0);;
+tests#ok "Digital ITM put" ((Payoff.digital_put 100.0 10.0) = 1.0);;
+tests#ok "Digital ATM put" ((Payoff.digital_put 100.0 100.0) = 0.0);;
+tests#ok "Digital OTM put" ((Payoff.digital_put 100.0 190.0) = 0.0);;
+let dd = Payoff.double_digital ~low:90.0 ~high:110.0;;
+tests#ok "Double Digital below the low barrier" ((dd 89.0) = 0.0);;
+tests#ok "Double Digital at the low barrier" ((dd 90.0) = 1.0);;
+tests#ok "Double Digital inside the low barrier" ((dd 90.1) = 1.0);;
+tests#ok "Double Digital inside the high barrier" ((dd 109.9) = 1.0);;
+tests#ok "Double Digital at the high barrier" ((dd 110.0) = 1.0);;
+tests#ok "Double Digital above the high barrier" ((dd 110.1) = 0.0);;
+
+tests#end_group;;
+
+(* vim: set syn=ocaml sw=4 ts=4 expandtab: *)
+</code></pre>
+<p>...and when I run the tests the output looks like this: </p>
+<pre><code>    Begin test group payoff.ml
+    00001: Vanilla ITM call ......................................ok
+    00002: Vanilla ATM call ......................................ok
+    00003: Vanilla OTM call ......................................ok
+    00004: Vanilla ITM put .......................................ok
+    00005: Vanilla ATM put .......................................ok
+    00006: Vanilla OTM put .......................................ok
+    00007: Digital ITM call ......................................ok
+    00008: Digital ATM call ......................................ok
+    00009: Digital OTM call ......................................ok
+    00010: Digital ITM put .......................................ok
+    00011: Digital ATM put .......................................ok
+    00012: Digital OTM put .......................................ok
+    00013: Double Digital below the low barrier ..................ok
+    00014: Double Digital at the low barrier .....................ok
+    00015: Double Digital inside the low barrier .................ok
+    00016: Double Digital inside the high barrier ................ok
+    00017: Double Digital at the high barrier ....................ok
+    00018: Double Digital above the high barrier .................ok
+    End test group payoff.ml: 18 of 18 tests passed
+</code></pre>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160512184426/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2007-06-21T06:34:44Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512184426/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512184426/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 18:44:26 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:58:52 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  RedisCDXSource: 18.288
+  CDXLines.iter: 19.435 (3)
+  exclusion.robots.policy: 0.13
+  PetaboxLoader3.datanode: 33.993 (4)
+  esindex: 0.015
+  exclusion.robots: 0.139
+  load_resource: 62.825
+  PetaboxLoader3.resolve: 53.703
+  captures_list: 68.168
+  LoadShardBlock: 27.016 (3)
+-->

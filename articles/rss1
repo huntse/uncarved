@@ -1,0 +1,224 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app100.us.archive.org';v.server_ms=163;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/articles/rss1";
+  wbinfo.timestamp = "20160512183918";
+  wbinfo.request_ts = "20160512183918";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512183918";
+  wbinfo.wombat_sec = "1463078358";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="RDF + Syndication = RSS 1 - <p>Now that I am getting the hang of rdf, the next logical step was to link metadata with content and provide an <a href=&quot;ht..."/>
+		<link rel="stylesheet" type="text/css" href="/web/20160512183918cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/rss1"/>
+        <title>The Uncarved Blog: RSS 1.1 Feed now available</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160512183918/http://www.uncarved.com/articles/rss1">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160512183918/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160512183918/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160512183918/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                RSS 1.1 Feed now available
+			</h2>
+            
+
+            
+            <div class="precis">RDF + Syndication = RSS 1</div>
+            
+
+            <p>Now that I am getting the hang of rdf, the next logical step was to link metadata with content and provide an <a href="https://web.archive.org/web/20160512183918/http://inamidst.com/rss1.1/" title="RSS 1.1: RDF Site Summary specification">rss 1.1</a> feed.  Rss 1.1 is a fantastic specification in many ways because it allows machine-readable content (it is  an application of rdf and xml), and has namespaces that allow content syndication, so you can embed metadata in with articles and include the foaf file and the pgp key of the authors if that's the sort of thing you like.  In my RSS 1.1 feed I include the full content of the site with metadata and license information for the full feed and metadata for individual items as appropriate.  To see the full end result, click on the rss1.1 link at the bottom of the index page.</p>
+<p>Note that rss 2 is not a more recent spec that rss 1.1 (or rss 1)- they are seperate specs for doing a similar thing (content syndication), but the specification <a href="https://web.archive.org/web/20160512183918/http://diveintomark.org/archives/2002/09/06/history_of_the_rss_fork">forked</a>. Rss 2 is considered simpler by it's adherents because it is an application of xml but not of rdf.  That, however, is also it's weakness because it's not as extensible and is not seemlessly part of the semantic web.  Certainly for any programmer, rss 1 is no more complex than rss 2 to support and implement and is a great deal richer and more extensible.</p>
+<p>For what it's worth, my cheetah template looks like this:</p>
+<pre><code>#filter Filter
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Channel xmlns="http://purl.org/net/rss1.1#" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:p="http://purl.org/net/rss1.1/payload#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:cc="http://web.resource.org/cc/"
+    rdf:about="$self_link"&gt;
+    &lt;rdf:Description rdf:about="$self_link"&gt;
+        &lt;dc:creator&gt;Sean Hunter&lt;/dc:creator&gt;
+        #if $current_tagname
+        &lt;dc:title&gt;The Uncarved Block/$current_tagname&lt;/dc:title&gt;
+        &lt;dc:subject&gt;$current_tagname&lt;/dc:subject&gt;
+        #else
+        &lt;dc:title&gt;The Uncarved Block&lt;/dc:title&gt;
+        #end if
+        &lt;dc:description&gt;A collection of articles and software&lt;/dc:description&gt;
+        &lt;dc:date&gt;$most_recent_w3c&lt;/dc:date&gt;
+        &lt;dc:type&gt;Text&lt;/dc:type&gt;
+        &lt;dc:format&gt;text/html&lt;/dc:format&gt;
+        &lt;dc:identifier&gt;$self_link&lt;/dc:identifier&gt;
+        &lt;dc:language&gt;en-GB&lt;/dc:language&gt;
+    &lt;/rdf:Description&gt;
+    &lt;cc:Work rdf:about="$self_link"&gt;
+        &lt;cc:license rdf:resource="http://creativecommons.org/licenses/by/2.5/" /&gt;
+    &lt;/cc:Work&gt;
+    &lt;cc:License rdf:about="http://creativecommons.org/licenses/by/2.5/"&gt;
+        &lt;cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/&gt;
+        &lt;cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/&gt;
+        &lt;cc:requires rdf:resource="http://web.resource.org/cc/Notice"/&gt;
+        &lt;cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/&gt;
+        &lt;cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/&gt;
+    &lt;/cc:License&gt;
+    #if $current_tagname
+    &lt;title&gt;The Uncarved Block/$current_tagname&lt;/title&gt; 
+    #else
+    &lt;title&gt;The Uncarved Block&lt;/title&gt; 
+    #end if
+    &lt;description xml:lang="en-GB"&gt;Software, unix tips and sundry other things&lt;/description&gt;
+    &lt;link&gt;$home_link&lt;/link&gt;
+    &lt;items rdf:parseType="daml:collection"&gt;
+        #for $article in $articles
+        &lt;item rdf:about="http://www.uncarved.com/$article.name"&gt;
+            &lt;title&gt;$article.title&lt;/title&gt;
+            &lt;link&gt;http://www.uncarved.com/$article.name&lt;/link&gt;
+            #if $article.precis
+            &lt;description xml:lang="en-GB"&gt;$article.precis&lt;/description&gt;
+            #end if
+            &lt;dc:date&gt;$article.updated&lt;/dc:date&gt;
+            &lt;p:payload rdf:parseType="Literal"&gt;
+                $article.body
+            &lt;/p:payload&gt;
+        &lt;/item&gt;
+        #end for
+    &lt;/items&gt;
+&lt;/Channel&gt;
+</code></pre>
+<p>The feed is available <a href="https://web.archive.org/web/20160512183918/http://www.uncarved.com/rss1.1.xml">here</a> and the output for a tag with just this article in it (I've truncated the content slightly) looks like:</p>
+<pre><code>&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;Channel xmlns="http://purl.org/net/rss1.1#" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:p="http://purl.org/net/rss1.1/payload#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:cc="http://web.resource.org/cc/"
+    rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limit=1"&gt;
+    &lt;rdf:Description rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limit=1"&gt;
+        &lt;dc:creator&gt;Sean Hunter&lt;/dc:creator&gt;
+        &lt;dc:title&gt;The Uncarved Block&lt;/dc:title&gt;
+        &lt;dc:description&gt;A collection of articles and software&lt;/dc:description&gt;
+        &lt;dc:date&gt;2006-05-11T13:32:57Z&lt;/dc:date&gt;
+        &lt;dc:type&gt;Text&lt;/dc:type&gt;
+        &lt;dc:format&gt;text/html&lt;/dc:format&gt;
+        &lt;dc:identifier&gt;http://www.uncarved.com/index.py/rss1.1.xml?limit=1&lt;/dc:identifier&gt;
+        &lt;dc:language&gt;en-GB&lt;/dc:language&gt;
+    &lt;/rdf:Description&gt;
+    &lt;cc:Work rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limit=1"&gt;
+        &lt;cc:license rdf:resource="http://creativecommons.org/licenses/by/2.5/" /&gt;
+    &lt;/cc:Work&gt;
+    &lt;cc:License rdf:about="http://creativecommons.org/licenses/by/2.5/"&gt;
+        &lt;cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/&gt;
+        &lt;cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/&gt;
+        &lt;cc:requires rdf:resource="http://web.resource.org/cc/Notice"/&gt;
+        &lt;cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/&gt;
+        &lt;cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/&gt;
+    &lt;/cc:License&gt;
+    &lt;title&gt;The Uncarved Block&lt;/title&gt; 
+    &lt;description xml:lang="en-GB"&gt;Software, unix tips and sundry other things&lt;/description&gt;
+    &lt;link&gt;http://www.uncarved.com/index.py/&lt;/link&gt;
+    &lt;items rdf:parseType="daml:collection"&gt;
+        &lt;item rdf:about="http://www.uncarved.com/blog/rss1.mrk"&gt;
+            &lt;title&gt;RSS 1.1 Feed now available&lt;/title&gt;
+            &lt;link&gt;http://www.uncarved.com/blog/rss1.mrk&lt;/link&gt;
+            &lt;description xml:lang="en-GB"&gt;RDF + Syndication = RSS 1&lt;/description&gt;
+            &lt;dc:date&gt;2006-05-11T13:08:47Z&lt;/dc:date&gt;
+            &lt;p:payload rdf:parseType="Literal"&gt;
+
+&lt;p&gt;Now that I am getting the hang of rdf, the next logical step was to link metadata with content ... You can find out more on the &lt;a href="http://en.wikipedia.org/wiki/RSS_%28file_format%29"&gt;wikipedia&lt;/a&gt;.  &lt;br /&gt; 
+&lt;/p&gt;
+            &lt;/p:payload&gt;
+        &lt;/item&gt;
+    &lt;/items&gt;
+&lt;/Channel&gt;
+</code></pre>
+<p>I hope you enjoy creating your own rss 1.1 feeds.   You can find out more about all the site syndication variants on the <a href="https://web.archive.org/web/20160512183918/http://en.wikipedia.org/wiki/RSS_%28file_format%29">wikipedia</a>.  </p>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160512183918/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2006-05-11T19:32:31Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512183918/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512183918/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 18:39:18 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:01:46 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots.policy: 0.175
+  RedisCDXSource: 7.249
+  captures_list: 101.522
+  PetaboxLoader3.datanode: 55.414 (4)
+  esindex: 0.017
+  load_resource: 53.932
+  exclusion.robots: 0.188
+  LoadShardBlock: 72.058 (3)
+  PetaboxLoader3.resolve: 49.431 (2)
+  CDXLines.iter: 18.32 (3)
+-->

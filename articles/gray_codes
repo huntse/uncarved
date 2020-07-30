@@ -1,0 +1,148 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app31.us.archive.org';v.server_ms=209;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/articles/gray_codes";
+  wbinfo.timestamp = "20160512184404";
+  wbinfo.request_ts = "20160512184404";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512184404";
+  wbinfo.wombat_sec = "1463078644";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="A first step in what will become a combinatorics library - <p>I have been playing around with Gray's reflected binary code (aka <a href=&quot;http://en.wikip..."/>
+		<link rel="stylesheet" type="text/css" href="/web/20160512184404cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/gray_codes"/>
+        <title>The Uncarved Blog: n-Bit Gray codes in Haskell</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160512184404/http://www.uncarved.com/articles/gray_codes">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160512184404/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160512184404/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160512184404/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                n-Bit Gray codes in Haskell
+			</h2>
+            
+
+            
+            <div class="precis">A first step in what will become a combinatorics library</div>
+            
+
+            <p>I have been playing around with Gray's reflected binary code (aka <a href="https://web.archive.org/web/20160512184404/http://en.wikipedia.org/wiki/Gray_code" title="More about Gray code">Gray codes</a>) and similar things a bit.
+Before I reveal why I'm doing this lets just dive in and write some code.  Gray's algorithm is described well <a href="https://web.archive.org/web/20160512184404/http://www.cs.auckland.ac.nz/CDMTCS//researchreports/304bob.pdf" title="Paper explaining the algorithm">here</a>.  The code which follows is in <a href="https://web.archive.org/web/20160512184404/http://www.haskell.org/" title="the world's most beautiful programming language">haskell</a>, because it's a really fantastic language and I'm playing around with it at the moment.  For scala fans, don't worry.  I haven't abandoned scala, this is a parallel effort.</p>
+<p>So for starters we need a datatype for representing these things.  This is how you define an algebraic datatype in haskell.  In what follows, lines beginning "--" are single-line comments</p>
+<pre><code>-- | 'Bit' is the datatype for representing a bit in a gray code.  
+data Bit = Zero | One deriving Show
+</code></pre>
+<p>Alright.  So we have a type "Bit" with two constructors Zero and One and a "deriving Show" which means haskell figures out how to turn it into a string.  This is useful when you're in ghci (the interactive haskell environment) debugging.</p>
+<pre><code>-- prepend a given item onto each of a list of lists (probably something to do this in the prelude)
+prepend :: a -&gt; [[a]] -&gt; [[a]]
+prepend t xs = map (t:) xs
+</code></pre>
+<p>A teeny helper function.  Given a list of lists and a thing it sticks the thing on the front of each list in the outer list.  This would append the thing on the end of each list:</p>
+<pre><code>append :: a -&gt; [[a]] -&gt; [[a]]
+append t xs = map (++[t]) xs
+</code></pre>
+<p>Note I'm writing the type signatures explicitly but there's absolutely no problem if you leave them off.  So let's generate our Gray codes:</p>
+<pre><code>-- | 'gray' generates the gray code sequence of length 'n'
+gray :: Int -&gt; [[Bit]]
+gray 1 = [ [Zero], [One] ]
+gray n = prepend Zero (gray (n-1)) ++ prepend One (descGray (n-1))
+
+-- | 'descgray' generates the reversed gray code sequence of length 'n'
+descGray :: Int -&gt; [[Bit]]
+descGray 1 = [ [One], [Zero] ]
+descGray n = prepend One (gray (n-1)) ++ prepend Zero (descGray (n-1))
+</code></pre>
+<p>So we get an ascending and a descending one for free.  Since the descending one is just the ascending one in reverse why (you might say) don't I just define descGray as
+    descGray = reverse.gray
+?
+Indeed, that may be a reasonable thing to do.  I'm doing it this way to try to preserve as much laziness as possible, and (although my haskell-fu is still very weak at the moment) I think that if you reverse a list you pretty much have to evaluate each thing in the list.  If you read the paper you'll see that this is Gray's (naive) algorithm and there has been an astonishing amount of research in this area leading to more efficient algorithms.  I'll give those a crack at some point.</p>
+<p>Why am I doing this?  You'll see.  This is at the heart of building a really cool combinatorics library.  I needed something that could enumerate all combinations and permutations of various generic distribution-type things.  There are similar but more recent orderings that are comparable to gray codes which I'm also looking into.  They'll all be presented here in due course.</p>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160512184404/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2009-08-22T06:29:35Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512184404/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512184404/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 18:44:04 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:55:27 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.resolve: 86.05 (2)
+  exclusion.robots.policy: 0.188
+  LoadShardBlock: 91.37 (3)
+  esindex: 0.016
+  PetaboxLoader3.datanode: 82.536 (4)
+  RedisCDXSource: 2.785
+  captures_list: 117.427
+  CDXLines.iter: 19.869 (3)
+  exclusion.robots: 0.201
+  load_resource: 85.549
+-->

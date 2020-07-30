@@ -1,0 +1,118 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app102.us.archive.org';v.server_ms=316;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/articles/perl_patterns";
+  wbinfo.timestamp = "20160512184400";
+  wbinfo.request_ts = "20160512184400";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512184400";
+  wbinfo.wombat_sec = "1463078640";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="An article I wrote for the Perl Journal a long time ago - <p>...about how to use iterators and some other simple design patterns in perl.  The idea of i..."/>
+		<link rel="stylesheet" type="text/css" href="/web/20160512184400cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/perl_patterns"/>
+        <title>The Uncarved Blog: Patterns in Perl</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160512184400/http://www.uncarved.com/articles/perl_patterns">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160512184400/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160512184400/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160512184400/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                Patterns in Perl
+			</h2>
+            
+
+            
+            <div class="precis">An article I wrote for the Perl Journal a long time ago</div>
+            
+
+            <p>...about how to use iterators and some other simple design patterns in perl.  The idea of iterator chains is still interesting to me, although I prefer python to perl for most tasks these days.  <a href="https://web.archive.org/web/20160512184400/http://www.foo.be/docs/tpj/issues/vol5_2/tpj0502-0007.html">Here it is</a> anyway...</p>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160512184400/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2006-04-21T14:51:31Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512184400/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512184400/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 18:44:00 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:04:14 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 150.574
+  esindex: 0.012
+  RedisCDXSource: 0.756
+  exclusion.robots.policy: 0.201
+  LoadShardBlock: 131.527 (3)
+  exclusion.robots: 0.214
+  PetaboxLoader3.datanode: 134.288 (4)
+  PetaboxLoader3.resolve: 141.68
+  CDXLines.iter: 15.25 (3)
+  load_resource: 159.897
+-->

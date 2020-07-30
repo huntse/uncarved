@@ -1,0 +1,157 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app104.us.archive.org';v.server_ms=215;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/articles/put_call_parity";
+  wbinfo.timestamp = "20160512183207";
+  wbinfo.request_ts = "20160512183207";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512183207";
+  wbinfo.wombat_sec = "1463077927";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="Now let's check the prices from the ocaml Monte-Carlo pricer against the most obvious arbitrage relationship"/>
+		<link rel="stylesheet" type="text/css" href="/web/20160512183207cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/put_call_parity"/>
+        <title>The Uncarved Blog: Testing for put/call parity</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160512183207/http://www.uncarved.com/articles/put_call_parity">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160512183207/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160512183207/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160512183207/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                Testing for put/call parity
+			</h2>
+            
+
+            
+            <div class="precis">Now let&#39;s check the prices from the ocaml Monte-Carlo pricer against the most obvious arbitrage relationship</div>
+            
+
+            <p><a href="https://web.archive.org/web/20160512183207/http://www.investopedia.com/articles/optioninvestor/05/011905.asp">Put call parity</a> is an important relationship in options pricing.  Let's test our prices to see if they obey this relationship.</p>
+<p>To do so I add a simple helper function to payoff.ml to get the npv of some future cash:</p>
+<pre><code>(* get the net present value of some amount *)
+let npv ~amt ~rate ~time = amt *. exp(-1.0 *. rate *. time);;
+</code></pre>
+<p>...and the tests themselves.  Note that the put/call parity relationship for digitals is slightly different:</p>
+<pre><code>let assert_nearly ?(tolerance = 0.001) label a b =
+    Printf.printf "Test %s - a: %f b: %f\n" label a b;
+    assert( abs_float(a-.b) &lt;tolerance );;
+
+let spot = 1.613 in
+let expiry = 0.25 in
+let r = 0.055 in
+let strike = 1.600 in
+let discount x = Payoff.npv ~rate:r ~time:expiry ~amt:x in
+let mc payoff =
+    Mc1c.sim
+        ~payoff:payoff
+        ~expiry:expiry
+        ~spot:spot
+        ~vol:0.35
+        ~r:r
+        ~num_paths:100000 in
+let price payoff = mc (payoff ~strike:strike) in
+assert_nearly
+    "Put call parity"
+    ((price Payoff.call) +. (discount strike))
+    ((price Payoff.put) +. spot);
+assert_nearly
+    ~tolerance:0.01
+    "Digital put/digital call parity"
+    ((price Payoff.digital_put) +. (price Payoff.digital_call))
+    (discount 1.0)
+;;
+</code></pre>
+<p>Here's the output:</p>
+<pre><code>Test Put call parity - a: 1.707748 b: 1.708199
+Test Digital put/digital call parity - a: 0.982665 b: 0.986344
+</code></pre>
+<p>Trebles all round!  The prices are ok.  It's also interesting that ocaml is actually even faster than I thought.  I was running bytecode and if you use ocamlopt to create native code my examples run about five times faster. </p>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160512183207/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2007-06-13T15:59:36Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512183207/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512183207/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 18:32:07 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:59:19 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 125.407 (3)
+  RedisCDXSource: 0.717
+  PetaboxLoader3.datanode: 128.328 (4)
+  CDXLines.iter: 21.413 (3)
+  captures_list: 150.87
+  esindex: 0.02
+  exclusion.robots: 0.18
+  PetaboxLoader3.resolve: 31.064
+  exclusion.robots.policy: 0.167
+  load_resource: 58.804
+-->

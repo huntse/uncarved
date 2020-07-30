@@ -1,0 +1,186 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app12.us.archive.org';v.server_ms=269;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/articles/foaf";
+  wbinfo.timestamp = "20160512181929";
+  wbinfo.request_ts = "20160512181929";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512181929";
+  wbinfo.wombat_sec = "1463077169";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="Having got started with n3 I made myself a foaf file using it - <p>So now I've <a href=&quot;http://www.uncarved.com/blog/gtd_in_n3.mrk&quot; title=&quot;Getting thing..."/>
+		<link rel="stylesheet" type="text/css" href="/web/20160512181929cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/foaf"/>
+        <title>The Uncarved Blog: Foaf in n3</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160512181929/http://www.uncarved.com/articles/foaf">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160512181929/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160512181929/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160512181929/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                Foaf in n3
+			</h2>
+            
+
+            
+            <div class="precis">Having got started with n3 I made myself a foaf file using it</div>
+            
+
+            <p>So now I've <a href="https://web.archive.org/web/20160512181929/http://www.uncarved.com/blog/gtd_in_n3.mrk" title="Getting things done using n3">started</a> with <a href="https://web.archive.org/web/20160512181929/http://www.w3.org/2000/10/swap/Primer.html" title="notation3 and semantic web primer">notation3</a> I am itching for places to use it.  For this reason I decided to make myself a <a href="https://web.archive.org/web/20160512181929/http://www.foaf-project.org/" title="All about FOAF">foaf</a> file.  Happily, this is really straightforward using n3.  My foaf.n3 looks like this:</p>
+<pre><code>@keywords a.
+@prefix : &lt;http://xmlns.com/foaf/0.1/&gt;.
+@prefix wot: &lt;http://xmlns.com/wot/0.1/&gt;.
+@prefix dc: &lt;http://purl.org/dc/elements/1.1/&gt;.
+@prefix x: &lt;#&gt;.
+
+x:this a PersonalProfileDocument;
+    wot:assurance "http://www.uncarved.com/static/foaf.rdf.asc";
+    maker x:me;
+    primaryTopic x:me;
+    dc:title "Sean Hunter's FOAF file";
+    dc:identifier "http://www.uncarved.com/static/foaf.rdf".
+
+
+x:me a Person; 
+    name "Sean Hunter"; 
+    gender "male";
+    title "Mr"; 
+    givenname "Sean";
+    family_name "Hunter";
+    homepage &lt;http://www.uncarved.com/&gt;;
+    mbox_sha1sum "f5a2eaad7e46af80de0bc48e6db72efebe382da0";
+    plan """
+---  ---
+---  ---
+---  ---             Darkening of the Light. In adversity       
+--------             It furthers one to be persevering.
+---  ---
+--------""".
+</code></pre>
+<p>...which when I do <code>python /usr/bin/cwm.py foaf.n3 --rdf &gt;| foaf.rdf</code> generates a <a href="https://web.archive.org/web/20160512181929/http://www.uncarved.com/static/foaf.rdf">foaf.rdf</a> file like this:</p>
+<pre><code>&lt;!-- Processed by Id: cwm.py,v 1.164 2004/10/28 17:41:59 timbl Exp --&gt;
+&lt;!--     using base file:/home/sean/doc/n3/foaf.n3--&gt;
+
+
+&lt;rdf:RDF xmlns="http://xmlns.com/foaf/0.1/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:wot="http://xmlns.com/wot/0.1/"&gt;
+
+    &lt;Person rdf:about="#me"&gt;
+    &lt;family_name&gt;Hunter&lt;/family_name&gt;
+    &lt;gender&gt;male&lt;/gender&gt;
+    &lt;givenname&gt;Sean&lt;/givenname&gt;
+    &lt;homepage rdf:resource="http://www.uncarved.com/"/&gt;
+    &lt;mbox_sha1sum&gt;f5a2eaad7e46af80de0bc48e6db72efebe382da0&lt;/mbox_sha1sum&gt;
+    &lt;name&gt;Sean Hunter&lt;/name&gt;
+    &lt;plan&gt;
+---  ---
+---  ---
+---  ---             Darkening of the Light. In adversity       
+--------             It furthers one to be persevering.
+---  ---
+--------&lt;/plan&gt;
+    &lt;title&gt;Mr&lt;/title&gt;
+    &lt;/Person&gt;
+
+    &lt;PersonalProfileDocument rdf:about="#this"&gt;
+    &lt;dc:identifier&gt;http://www.uncarved.com/static/foaf.rdf&lt;/dc:identifier&gt;
+    &lt;dc:title&gt;Sean Hunter's FOAF file&lt;/dc:title&gt;
+    &lt;maker rdf:resource="#me"/&gt;
+    &lt;primaryTopic rdf:resource="#me"/&gt;
+    &lt;wot:assurance&gt;http://www.uncarved.com/static/foaf.rdf.asc&lt;/wot:assurance&gt;
+    &lt;/PersonalProfileDocument&gt;
+&lt;/rdf:RDF&gt;
+</code></pre>
+<p>...which I link from my homepage.  Easy-peasy.  I can validate it using the w3c rdf <a href="https://web.archive.org/web/20160512181929/http://www.w3.org/RDF/Validator/">validator</a> and it works just fine.  Now I just need to add some friends.  If you know me and want to be added to my foaf file, mail me at <a href="https://web.archive.org/web/20160512181929/mailto:sean@uncarved.com">&#115;&#101;&#97;&#110;&#64;&#117;&#110;&#99;&#97;&#114;&#118;&#101;&#100;&#46;&#99;&#111;&#109;</a>.   </p>
+<p>Technorati tags: <a href="https://web.archive.org/web/20160512181929/http://www.technorati.com/tags/foaf">foaf</a> <a href="https://web.archive.org/web/20160512181929/http://www.technorati.com/tags/rdf">rdf</a> <a href="https://web.archive.org/web/20160512181929/http://www.technorati.com/tag/semantic%20web">semantic web</a></p>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160512181929/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2009-06-13T13:18:59Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512181929/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512181929/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 18:19:29 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:05:04 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.009
+  exclusion.robots: 0.142
+  PetaboxLoader3.datanode: 179.52 (4)
+  load_resource: 110.792
+  PetaboxLoader3.resolve: 32.352
+  captures_list: 150.865
+  exclusion.robots.policy: 0.132
+  CDXLines.iter: 17.872 (3)
+  LoadShardBlock: 129.737 (3)
+  RedisCDXSource: 0.673
+-->

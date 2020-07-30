@@ -1,0 +1,152 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app104.us.archive.org';v.server_ms=291;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com:80/articles/LogHelper";
+  wbinfo.timestamp = "20160620005740";
+  wbinfo.request_ts = "20160620005740";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160620005740";
+  wbinfo.wombat_sec = "1466384260";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com:80";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="Scala is nice.  Logging is nice.  Scala + logging.....? - <p>I've recently been playing about a bit with <a href=&quot;http://www.scala-lang.org/&quot; title=&quot;Hom..."/>
+		<link rel="stylesheet" type="text/css" href="/web/20160620005740cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/LogHelper"/>
+        <title>The Uncarved Blog: Log4j for Scala</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160620005740/http://www.uncarved.com/articles/LogHelper">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160620005740/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160620005740/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160620005740/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                Log4j for Scala
+			</h2>
+            
+
+            
+            <div class="precis">Scala is nice.  Logging is nice.  Scala + logging.....?</div>
+            
+
+            <p>I've recently been playing about a bit with <a href="https://web.archive.org/web/20160620005740/http://www.scala-lang.org/" title="Home of the Scala programming language">Scala</a>.  It's a great language in which you can write real programs very easily.  As an example, in Java you often want to be able to make use of <a href="https://web.archive.org/web/20160620005740/http://logging.apache.org/log4j/" title="The Apache log4j logging system">log4j</a> to log various tracing info.  Well, here's a little helper trait you can mix in to scala classes make logging completely trivial:</p>
+<pre><code>package com.uncarved.helpers
+
+import org.apache.log4j.Logger;
+
+/**
+ * LogHelper is a trait you can mix in to provide easy log4j logging 
+ * for your scala classes. 
+ **/
+trait LogHelper {
+    val loggerName = this.getClass.getName
+    lazy val logger = Logger.getLogger(loggerName)
+}
+</code></pre>
+<p>You use it like this:</p>
+<pre><code>class MyClass extends LogHelper {
+    logger.debug("We got ourselves a class")
+    def someMethod(temp: Int) = {
+        logger.debug("entering someMethod")
+
+        if(temp&gt;25) {
+           logger.info("It's mighty hot in here")
+
+           //...do something
+
+        }
+        //..... etc
+
+        logger.debug("leaving someMethod")
+    }
+}
+</code></pre>
+<p>Easy peasy logging.  This class is one of several that I have released on <a href="https://web.archive.org/web/20160620005740/http://www.uncarved.com/blog/helpers_github.mrk" title="How to download and build this software from github">github</a>.  Enjoy!</p>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160620005740/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2011-06-01T10:40:43Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160620005740/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160620005740/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 00:57:40 Jun 20, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:04:37 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  LoadShardBlock: 120.268 (3)
+  RedisCDXSource: 2.257
+  PetaboxLoader3.datanode: 134.932 (4)
+  CDXLines.iter: 18.278 (3)
+  captures_list: 143.682
+  esindex: 0.007
+  exclusion.robots: 0.106
+  PetaboxLoader3.resolve: 125.012 (4)
+  exclusion.robots.policy: 0.099
+  load_resource: 142.432
+-->
