@@ -1,0 +1,172 @@
+"""Simultate the coin and yarrow oracles of the I-Ching.
+
+Probabilities taken from http://www.hermetic.com/sabazius/yijing.htm"""
+
+__author__ = "Sean Hunter <sean @ uncarved.com>"
+__license__ = """Use this little program as you see fit.
+
+	It benefits them yet exacts no gratitude;
+	it accomplishes its task yet lays claim to no merit.
+	It is because it lays claim to no merit
+	That its merit never deserts it.
+"""
+
+import random
+
+def consult_coin():
+	"""obtain a single random line with the probabilities of each outcome as
+	the coin oracle"""
+	outcomes = [ 
+		9, 9,               #Moving Yang --- x ---
+		7, 7, 7, 7, 7, 7,   #Stable Yang ---------
+		8, 8, 8, 8, 8, 8,   #Stable Yin  ---   ---
+		6, 6                #Moving Yin  --- o ---
+	]
+	return random.choice(outcomes) 
+
+def consult_yarrow():
+	"""obtain a single random line with the probabilities of each outcome as
+	the yarrow stalk oracle"""
+	outcomes = [ 
+		9, 9, 9,             #Moving Yang --- x ---
+		7, 7, 7, 7, 7,       #Stable Yang ---------
+		8, 8, 8, 8, 8, 8, 8, #Stable Yin  ---   ---
+		6,                   #Moving Yin  --- o ---
+	]
+	return random.choice(outcomes) 
+
+def get_hexagram(oracle=None):
+	"""return a hexagram as a list of numbers from bottom to top"""
+	if oracle is None: oracle = consult_yarrow
+	return [ oracle() for line in iter(range(6)) ]
+
+def lookup(hexa):
+	"""lookup a hexagram and return a tuple containing its number in the King
+	Wen sequence and its name"""
+	_lookup = {
+ 		(7,7,7,7,7,7): (1, "Chien - The Creative"),
+ 		(8,8,8,8,8,8): (2, "Kun - The Receptive"),
+ 		(8,7,8,7,8,8): (3, "Chun -  Difficulty at the Beginning"),
+ 		(8,8,7,8,7,8): (4, "Meng -  Youthful Folly"),
+ 		(8,7,8,7,7,7): (5, "Hsu - Waiting (Nourishment)"),
+ 		(7,7,7,8,7,8): (6, "Sung -  Conflict"),
+ 		(8,8,8,8,7,8): (7, "Shih - The Army"),
+ 		(8,7,8,8,8,8): (8, "Pi - Holding Together [union]"),
+ 		(8,7,7,7,7,7): (9, "Hsiao Chu -  The Taming Power of the Small"),
+  		(7,7,7,7,7,8): (10, "Lu - Treading [conduct]"),
+  		(8,8,8,7,7,7): (11, "Tai - Peace"),
+  		(7,7,7,8,8,8): (12, "Pi - Standstill [Stagnation]"),
+  		(7,7,7,7,8,7): (13, "Tung Jen -  Fellowship with Men"),
+  		(7,8,7,7,7,7): (14, "Ta Yu - Possession in Great Measure"),
+  		(8,8,8,8,8,7): (15, "Chien -  Modesty"),
+  		(7,8,8,8,8,8): (16, "Yu -  Enthusiasm"),
+  		(7,7,8,7,8,8): (17, "Sui -  Following"),
+  		(8,8,7,8,7,7): (18, "Ku - Work on what has been spoiled [ Decay ]"),
+  		(8,8,8,7,7,8): (19, "Lin - Approach"),
+  		(8,7,7,8,8,8): (20, "Kuan -  Contemplation (View)"),
+  		(7,8,7,7,8,8): (21, "Shih Ho - Biting Through"),
+  		(8,8,7,7,8,7): (22, "Pi - Grace"),
+  		(8,8,7,8,8,8): (23, "Po - Splitting Apart"),
+  		(8,8,8,7,8,8): (24, "Fu - Return (The Turning Point)"),
+  		(7,7,7,7,8,8): (25, "Wu Wang -  Innocence (The Unexpected)"),
+  		(8,8,7,7,7,7): (26, "Ta Chu - The Taming Power of the Great"),
+  		(8,8,7,7,8,8): (27, "I - Corners of the Mouth (Providing Nourishment)"),
+  		(7,7,8,8,7,7): (28, "Ta Kuo -  Preponderance of the Great"),
+  		(8,7,8,8,7,8): (29, "Kan - The Abysmal (Water)"),
+  		(7,8,7,7,8,7): (30, "Li - The Clinging, Fire"),
+  		(7,7,8,8,8,7): (31, "Hsien - Influence (Wooing)"),
+  		(7,8,8,8,7,7): (32, "Heng -  Duration"),
+  		(7,7,7,8,8,7): (33, "Tun - Retreat"),
+  		(7,8,8,7,7,7): (34, "Ta Chuang - The Power of the Great"),
+  		(7,8,7,8,8,8): (35, "Chin -  Progress"),
+  		(8,8,8,7,8,7): (36, "Ming I - Darkening of the light"),
+  		(8,7,7,7,8,7): (37, "Chia Jen - The Family [The Clan]"),
+  		(7,8,7,7,7,8): (38, "Kuei -  Opposition"),
+  		(8,7,8,8,8,7): (39, "Chien -  Obstruction"),
+  		(7,8,8,8,7,8): (40, "Hsieh -  Deliverance"),
+  		(8,8,7,7,7,8): (41, "Sun - Decrease"),
+  		(8,7,7,7,8,8): (42, "I - Increase"),
+  		(7,7,8,7,7,7): (43, "Kuai - Break- through (Resoluteness)"),
+  		(7,7,7,8,7,7): (44, "Kou - Coming to Meet"),
+  		(7,7,8,8,8,8): (45, "Tsui - Gathering Together [Massing]"),
+  		(8,8,8,8,7,7): (46, "Sheng - Pushing Upward"),
+  		(7,7,8,8,7,8): (47, "Kun - Oppression (Exhaustion)"),
+  		(8,7,8,8,7,7): (48, "Ching - The Well"),
+  		(7,7,8,7,8,7): (49, "Ko - Revolution (Molting)"),
+  		(7,8,7,8,7,7): (50, "Ting - The Cauldron"),
+  		(7,8,8,7,8,8): (51, "Cheng - The Arousing (Shock, Thunder)"),
+  		(8,8,7,8,8,7): (52, "Ken - Keeping Still, Mountain"),
+  		(8,7,7,8,8,7): (53, "Chien -  Development (Gradual Progress)"),
+  		(7,8,8,7,7,8): (54, "Kuei Mei - The Marrying Maiden"),
+  		(7,8,8,7,8,7): (55, "Feng - Abundance [Fullness]"),
+  		(7,8,7,8,8,7): (56, "Lu - The Wanderer"),
+  		(8,7,7,8,7,7): (57, "Sun - The Gentle (The Penetrating, Wind)"),
+  		(7,7,8,7,7,8): (58, "Tui - The Joyous, Lake"),
+  		(8,7,7,8,7,8): (59, "Huan - Dispersion [Dissolution]"),
+  		(8,7,8,7,7,8): (60, "Chieh -  Limitation"),
+  		(8,7,7,7,7,8): (61, "Chung Fu - Inner Truth"),
+  		(7,8,8,8,8,7): (62, "Hsiao Kuo -  Preponderance of the Small"),
+  		(8,7,8,7,8,7): (63, "Chi Chi - After Completion"),
+  		(7,8,7,8,7,8): (64, "Wei Chi - Before Completion"),                     
+	}
+	return _lookup[tuple(hexa)]
+
+def get_hexagram_number(hexa):
+	"""lookup a hexagram and return its number in the King Wen sequence"""
+	return lookup(hexa)[0]
+
+def get_hexagram_name(hexa):
+	"""take a hexagram and return its name"""
+	return lookup(hexa)[1]
+
+def get_hexagram_pair(oracle=None,lines=None):
+	"""consult the selected oracle and return a pair of hexagrams as lines"""
+	if lines is None:
+		lines = get_hexagram(oracle)
+	
+	def ignore_moving(hexa):
+		""""return a hexagram with moving lines replaced by stable ones"""
+		stable_hexa = []
+		for line in hexa:
+			if line == 9: stable_hexa.append(7)
+			elif line == 6: stable_hexa.append(8)
+			else: stable_hexa.append(line)
+		return stable_hexa
+
+	def invert_moving(hexa):
+		""""return a hexagram with moving lines inverted"""
+		stable_hexa = []
+		for line in hexa:
+			if line == 9: stable_hexa.append(8)
+			elif line == 6: stable_hexa.append(7)
+			else: stable_hexa.append(line)
+		return stable_hexa
+
+	return [ ignore_moving(lines), invert_moving(lines) ]
+
+def get_hexagrams_by_number(oracle=None):
+	"""consult the selected oracle and return a pair of hexagrams by number"""
+	return [ get_hexagram_number(h) for h in get_hexagram_pair(oracle) ]
+
+def get_hexagrams_in_ascii(oracle=None):
+	"""consult the selected oracle and return a pair of hexagrams as ascii 
+	lines"""
+	lookup = {
+		7: '---------', #Stable Yang
+		8: '---   ---', #Stable Yin
+	}
+	hex1, hex2 = get_hexagram_pair(oracle) 
+	number1 = get_hexagram_number(hex1)
+	number2 = get_hexagram_number(hex2)
+	name1 = get_hexagram_name(hex1)
+	name2 = get_hexagram_name(hex2)
+	str = "%d: %s\n\n" % (number1, name1)
+	for line in hex1:
+		str += "%s\n" % lookup[line]
+	str += "\n%d: %s\n\n" % (number2, name2)
+	for line in hex2:
+		str += "%s\n" % lookup[line]
+	return str
+
+if __name__ == '__main__':
+	print(get_hexagrams_in_ascii(consult_yarrow))

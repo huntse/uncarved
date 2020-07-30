@@ -1,0 +1,352 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <!-- convert to html5 -->
+  <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app102.us.archive.org';v.server_ms=216;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/tags/reviews";
+  wbinfo.timestamp = "20160512183249";
+  wbinfo.request_ts = "20160512183249";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512183249";
+  wbinfo.wombat_sec = "1463077969";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="y_key" content="3f9ba18c4858c8f7"/>
+    <meta name="Author" content="Sean Hunter"/>
+    <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+    <meta name="verify-v1" content="ZNcykCgO5KelqyaVYW90vnup4IIwI3yoJEeHMDbC1Eg="/>
+    <meta name="google-site-verification" content="d7GYtvQH6R5bysOqI5ch-luB4vHn41yJrsdbCTsi7Xw"/>
+    <link rel="stylesheet" type="text/css" href="/web/20160512183249cs_/http://www.uncarved.com/static/style.css"/>
+    <link rel="self" type="text/html" href=""/>
+    
+        <link rel="alternate" type="application/atom+xml" href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/feeds/atom/reviews" title="uncarved.com/ Atom feed"/>
+        <!-- add specific descriptions for particular tagnams -->
+        <meta name="description" content="Sean Hunter's personal blog, containing software, haskell, scala, ocaml, unix tips and sundry other things.  An occasional series of reviews of books and other things which interest me."/>
+	    
+        <title>The Uncarved Block/reviews</title>
+    
+  </head>
+
+  <body>
+  	<div class="header">
+        <a href="https://web.archive.org/web/20160512183249/http://www.akirarabelais.com/i/i.html#49"><img id="hex1" title="49: Ko - Revolution (Molting)" alt="49: Ko - Revolution (Molting)" src="/web/20160512183249im_/http://www.uncarved.com/static/images/iching/Iching-hexagram-49.png" rel="nofollow"/></a>
+        <a href="https://web.archive.org/web/20160512183249/http://www.akirarabelais.com/i/i.html#8"><img id="hex2" title="8: Pi - Holding Together [union]" alt="8: Pi - Holding Together [union]" src="/web/20160512183249im_/http://www.uncarved.com/static/images/iching/Iching-hexagram-08.png" rel="nofollow"/></a>
+
+        
+			<h1>The Uncarved Block</h1>
+        
+	</div>
+	<div id="left_menu">
+		<ul>
+			<li><a href="/web/20160512183249/http://www.uncarved.com/">top</a></li>
+            <!--
+			<li><a href="/mobile.html">mobile edition</a></li>
+			<li><a href="/treeview/">tree view</a></li>
+            -->
+		</ul>
+		<ul>
+            
+                
+                <li><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/computers" title="This tag contains software in Haskell, Scala, ocaml etc, unix tips and other computer-related stuff.">/computers</a></li>
+                
+            
+                
+                <li><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/reviews" title="An occasional series of reviews of books and other things which interest me.">/<em>reviews</em></a></li>
+                
+            
+                
+                <li><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/thoughts" title="Here we have essays and articles and random thoughts amusing to me, primarily on non-computing topics.  Enjoy!">/thoughts</a></li>
+                
+            
+                
+                <li><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/everything%20else" title="This is a general grab bag of stuff which doesn't fit in other categories.">/everything else</a></li>
+                
+            
+		</ul>
+		<ul>
+			<li><a href="/web/20160512183249/http://www.uncarved.com/articles/free_software">free software</a></li>
+			<li><a href="/web/20160512183249/http://www.uncarved.com/articles/why_uncarved">why "uncarved"?</a></li>
+			<li><a href="/web/20160512183249/http://www.uncarved.com/articles/credits">credits</a></li>
+            
+				<li><a href="articles/contact">contact me</a></li>
+				<li><a href="articles/biog">about me</a></li>
+            
+		</ul>
+		<ul>
+            <li> feeds: <a type="application/atom+xml" href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/feeds/atom/reviews">atom</a> <a type="application/json" href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/feeds/json/reviews">json</a></li>
+            
+				<li><a href="/web/20160512183249/http://www.uncarved.com/login/" rel="nofollow">Not logged in</a></li>
+            
+
+		</ul>
+	</div>
+    
+	  <div class="body">
+		<p class="header">
+            [Last update: 2009-10-18T19:58:33Z] [5 articles in total] 
+		</p>
+		  <div class="articles">
+          
+          <div class="article" title="An Introduction to Genetic Algorithms">
+              
+              <h2><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/articles/genetic_algorithms">An Introduction to Genetic Algorithms</a></h2>
+              
+              <div class="precis">Review of Melanie Mitchell&#39;s excellent book</div>
+              <p>So today is <a href="https://web.archive.org/web/20160512183249/http://findingada.com/" title="Ada Lovelace Day website">Ada Lovelace Day</a>, and the challenge has been thrown down to write about women in technology.  Now there are many obvious candidates (Grace Hopper for one), but I decided to write instead a review of an excellent computer science book that just happens to have a female author.  I originally bought <a href="https://web.archive.org/web/20160512183249/http://www.amazon.co.uk/Introduction-Genetic-Algorithms-Complex-Adaptive/dp/0262631857/ref=sr_1_1?ie=UTF8&amp;s=books&amp;qid=1237968270&amp;sr=8-1" title="Amazon.co.uk link">this book</a> from a second-hand bookshop for five pounds.  I liked it so much that when I lost my original copy I bought it again at full price.  </p>
+<p>I have been interested for years in GAs and have read fairly widely.  Koza, Holland etc etc etc.  Many of those books adopt either a sort of messianic tone, implying that this one technique will solve all the problems of the world, or the typical academic approach of attempting to make your work sound as difficult and important as possible while simultaneously undermining all the work of your peers in the field.</p>
+<p>Mitchell's book could not be more different.  It explains the basic approaches clearly, and in enough detail to inspire further study.  She has an excellent grasp of the pros and cons of the approach and it's promise, and it's mercifully short.  An excellent read and real kudos to Mitchell for an approachable and readable introduction to the field.</p>
+				<p class="footer">
+                <a href="/web/20160512183249/http://www.uncarved.com/articles/genetic_algorithms">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/reviews">reviews</a>
+                    
+                </span>
+                
+                Last updated: 2009-03-25T08:17:29Z</p>
+			</div>
+        
+          <div class="article" title="Changing to a kinesis keyboard">
+              
+              <h2><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/articles/kinesis">Changing to a kinesis keyboard</a></h2>
+              
+              <div class="precis">I thought I would never find a keyboard that I liked better than Typematrix, but I may have to eat my words...</div>
+              <p>Until yesterday, I used to use a <a href="https://web.archive.org/web/20160512183249/http://www.typematrix.com/">typematrix</a> <a href="https://web.archive.org/web/20160512183249/http://www.mwbrooks.com/dvorak/">dvorak</a> keyboard.  Typematrix is a fabulous keyboard with lots of terrific design features but its primary strength is that it has a small desktop footprint, and that it uses straight forward and back movements of the fingers without any of the small left and right movements that are required due to the staggered layouts of conventional keyboards.  This is a massive improvement if you do a lot of typing or if you have problems with your hands and wrists.</p>
+<p>The one weakness of the typematrix in my opinion is that the modifier keys (ctrl and alt) are not placed in a very convenient spot.  This used not to bother me as I am a Vim user and so didn't require lots of control keystrokes.  However, recently I have been doing almost all of my programming in a proprietary in-house environment and this has been causing my pinkies to take more and more of the strain.  I finally decided to make the switch when I had a marathon coding day where I wrote something like 600 lines of very formulaic code in a day and my fingers were aching from the funny contortions I had been putting them through with all of the control keystrokes that had been required.</p>
+<p>I briefly tried out one of my colleagues <a href="https://web.archive.org/web/20160512183249/http://www.kinesis-ergo.com/advantage.htm">kinesis</a> "Advantage" keyboards and immediately decided that it was weird enough that I should buy one.  I opted for a model that has an inbuilt hardware dvorak mode.  I prefer this so that I am able to use dvorak mode right from the login, rather than switching in user preferences or dotfiles.</p>
+<p>So, the kinesis keyboard feels like a substantial unit.  When you are typing on it, it has a pleasing clackiness, and the general functionality is good.  It has a very cool hardware remapping thing that means you can move the keys you don't like around to your heart's content.  It's a really nice keyboard.</p>
+				<p class="footer">
+                <a href="/web/20160512183249/http://www.uncarved.com/articles/kinesis">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/reviews">reviews</a>
+                    
+                </span>
+                
+                Last updated: 2008-07-29T11:11:55Z</p>
+			</div>
+        
+          <div class="article" title="The Crying of Lot 49">
+              
+              <h2><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/articles/lot49">The Crying of Lot 49</a></h2>
+              
+              <div class="precis">A review of &#34;The Crying of Lot 49&#34; by Thomas Pynchon</div>
+              <p>About a year ago, when I had just just read and enjoyed <a href="https://web.archive.org/web/20160512183249/http://isbn.nu/0802135854" title="price check on stone junction">Stone Junction: An Alchemical Potboiler</a> by Jim Dodge, a friend who has very similar taste in novels to me  recommended that I read some Thomas Pynchon.  This surprised me for two reasons.  Firstly, I had (I am now ashamed to admit) always assumed without evidence that people who read Pynchon (and by extension, the man himself) were hopeless pseuds and that the experience of reading his work would thus be a disappointing one.  Secondly, the only thing I had really heard about Pynchon was the supposedly fiendish complexity of his style and hearing that his books might be similar to the easy, fun narrative riffs of Jim Dodge seemed perculiar.  In actual practise, I would say on refection that "The Crying of Lot 49" and "Vineland" are more like Jim Dodge, and "V" and "Gravity's Rainbow" are altogether darker and more troublesome.  "Slow Learner" and "Mason and Dixon" form the final category, namely "Pynchon I haven't read yet".</p>
+<p>So I embarked (with my trepidation tempered somewhat by the shortness of the novel) on "The Crying of Lot 49", and found (of course) that I was wrong and that Pynchon is exactly my sort of author.  Funny, thoughtful and compassionate, he is capable of a staggering range and has an incredible dexterity with language and plot.  His books are rich in allusion, but wear their erudition lightly, so where I was able to spot and decipher additional subtexts, they added something, but I never felt as if I was being presented merely with an exposition of the author's cleverness and research.  If that makes me a pseud, then I am proud to be so.</p>
+<p>I would strongly recommend that anyone who is the least bit curious about Pynchon start reading with "The Crying of Lot 49".  It's tremendous fun to read and you'll never feel quite the same about waste bins again.</p>
+<p><img alt="Muted Post Horn" src="/web/20160512183249im_/http://www.uncarved.com/static/images/MutedPosthorn.png" title="Muted post horn image courtesy of the wikipedia"/></p>
+				<p class="footer">
+                <a href="/web/20160512183249/http://www.uncarved.com/articles/lot49">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/reviews">reviews</a>
+                    
+                </span>
+                
+                Last updated: 2006-05-11T15:14:22Z</p>
+			</div>
+        
+          <div class="article" title="Undercover Economist">
+              
+              <h2><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/articles/reviews">Undercover Economist</a></h2>
+              
+              <div class="precis">A review of &#34;The  Undercover Economist&#34; by Tim Harford </div>
+              <p>Inspired by my friend <a href="https://web.archive.org/web/20160512183249/http://www.schlaikjer.net/">Erich Schlaikjer</a>, I intend to write some reviews of books and music and put them up here, so I'll start with the book I have just finished, which is "The Undercover Economist" by <a href="https://web.archive.org/web/20160512183249/http://www.timharford.com/">Tim Harford</a>.</p>
+<p>This book is an entertaining and thought-provoking exposition of some key principles of economics and how they interact with big questions (such as "Why are rich companies rich and poor companies poor?"), small questions (such as "Why does  my morning coffee cost as much as it does?") and all sizes in between.  In that respect, it grows out of the author's "Dear Economist" column in the weekend <a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/">ft</a>, in which he offers often amusing "agony-aunt" style advice using the principles of economics to shine a light into normal everyday activities and moral dilemmas. The same mix of clear, reasoned argument and amusing and thought-provoking style is in evidence in this book.</p>
+<p>All of the economics is explained and argued in a way that someone (such as myself) who has interest but little understanding in this field can easily follow, and there are references at the back to academic papers and journalism that back up the author's points and provide a starting-point for additional reading.</p>
+<p>As another entry in the growing field of "popular economics" books, and with it's ostensibly similar promise of using economics to shine a new light onto everyday things this book is bound to provoke comparisons with "<a href="https://web.archive.org/web/20160512183249/http://www.freakonomics.com/">Freakonomics</a>", but both books are worth reading in their own right and there is very little that is covered in both.  Actually I enjoyed "The Undercover Economist" more, not least because it lacked the selfcongratulatory sections of Freakonomics that annoyed me so.   (That book has sections that are just one of the authors telling you how clever and amazing the other author is- I don't want someone to tell me they are clever, I want them to show me!).  It is also more deeply thought-provoking for being less willfully controversial.</p>
+				<p class="footer">
+                <a href="/web/20160512183249/http://www.uncarved.com/articles/reviews">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/reviews">reviews</a>
+                    
+                </span>
+                
+                Last updated: 2006-05-11T07:48:25Z</p>
+			</div>
+        
+          <div class="article" title="Towards a more idiomatic FP pricer">
+              
+              <h2><a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/articles/more_idiomatic_ocaml">Towards a more idiomatic FP pricer</a></h2>
+              
+              <div class="precis">Taking advice from a real expert, the pricer becomes more idiomatic</div>
+              <p>In my quest for a good ocaml book, I found and bought <a href="https://web.archive.org/web/20160512183249/http://www.ffconsultancy.com/products/ocaml_for_scientists/index.html">this one</a>: "OCaml for Scientists" by Jon Harrop.  I really can't recommend it too highly- it's an excellent book.  Furthermore, Jon Harrop looked at this website and gave me some advice about making the code more idiomatic by using record types.  He even wrote the first one for me to show how!</p>
+<p>The basic idea is that you don't need classes to encapsulate data (as I have been using them), you can just use bindings which become enclosed within functions in a record type.  This is very nice indeed.</p>
+<pre><code>(** parameter for models *)
+type param = {
+    integral :       float -&gt; float -&gt; float;
+    integral_sq :    float -&gt; float -&gt; float;
+    mean :           float -&gt; float -&gt; float;
+    rms :            float -&gt; float -&gt; float;
+}
+(** Constructor function that makes a parameter record given an
+ integral and an integral_sq func *)
+let make_param integral integral_sq =
+    {
+        integral=integral;
+        integral_sq=integral_sq;
+        mean=(fun t1 t2-&gt;(integral t1 t2) /. (t2 -. t1));
+        rms=(fun t1 t2-&gt;(integral_sq t1 t2) /. (t2 -. t1));
+    };;
+
+(** build a constant parameter *)
+let param_const x =
+    let integral t1 t2 = (t2-.t1) *. x in
+    let x_sq = x *. x in
+    let integral_sq t1 t2 = (t2-.t1) *. x_sq in
+make_param integral integral_sq;;
+
+
+(** Parameter that models a linear function f(x) -&gt; ax + b *)
+let param_linear a b =
+    let integral t1 t2 =
+      let integrate_to x = 0.5 *. x *. a *. x +. x *. b in
+        integrate_to t2 -. integrate_to t1
+    in
+    let integral_sq t1 t2 =
+        a ** 2. *. (t2 ** 3. -. t1 ** 3.) +.
+        a *. b *. (t2 ** 2. -. t1 ** 2.) +.
+        b ** 2. *. (t2 -. t1)
+    in
+    make_param integral integral_sq;;
+</code></pre>
+<p>So our classes have become a simple record of four functions and some functions which return this type.  Notice how make_param takes two functions and makes two more from them.  The code is otherwise similar to the class-based examples, but is a little more straightforward.  For piecewise parameters, we do the same sort of thing:</p>
+<pre><code>(** For piecewise constants and piecewise linear functions a "piece" is a
+  parameter that applies between low and high limits. *)
+type piece = { low: float; high: float; p: param; };;
+
+(** Make piecewise parameters.  Takes a list of pieces which each
+  specify the limits and the linear or const parameter in each region.
+
+  At present, does no checking that the pieces are continuous and not
+  overlapping *)
+let param_piecewise pieces =
+  (* there's probably a better way of doing this, but anyway...
+     Apply a function to each piece, with the parameters being the part of
+     the interval from t1 to t2 that is inside the interval of the piece *)
+  let visit_pieces pieces fn t1 t2 =
+      let visit_piece piece low high =
+        if (low &gt; t2 || high &lt; t1) then
+          0.
+        else
+            let range_start = max t1 low in
+            let range_end = min t2 high in
+            (fn piece) range_start range_end in
+      let rec visit_list so_far lis =
+        match lis with
+            [] -&gt; so_far (** we're done *)
+          | {low=low; high=high; p=p} :: rest -&gt; visit_list (so_far +. (visit_piece p low high)) rest
+      in
+        visit_list 0. pieces
+  in
+  let integral t1 t2 = visit_pieces pieces (fun x-&gt;x.integral) t1 t2 in
+  let integral_sq t1 t2 = visit_pieces pieces (fun x-&gt;x.integral_sq) t1 t2
+  in
+  make_param integral integral_sq;;
+
+(** helper func to make parts of a piecewise const function *)
+let make_const_piece low high x =
+  assert (low&lt;high);
+  {low=low; high=high; p=(param_const x)};;
+
+(** helper func to make parts of a piecewise linear function *)
+let make_linear_piece low high a b =
+  assert (low&lt;high);
+  {low=low; high=high; p=(param_linear a b)};;
+</code></pre>
+<p>This really is a great deal nicer than what we had before.  Flushed by our success, we make a simple function to turn a list of x,y tuples into a piecewise constant function:</p>
+<pre><code>let make_const_param_curve lis =
+  let rec build_curve (so_far : piece list) x_old lis =
+    match lis with
+      [] -&gt; List.rev so_far
+    | (x, y)::res when x&gt;x_old -&gt;
+        let this_piece = make_const_piece x_old x y in
+        build_curve (this_piece::so_far) x res
+    | (x, y)::res -&gt; invalid_arg "make_const_param_curve: expects sorted x in list"
+  in
+    build_curve [] 0. lis;;
+</code></pre>
+<p>Now we can build a piecewise const function by doing:</p>
+<pre><code>make_const_param_curve [ 0.1, 0.5; 0.5, 0.25; 1., 0.2 ];;
+</code></pre>
+<p>It would be a simple matter to make a function that built a piecewise linear function up in the same manner.</p>
+				<p class="footer">
+                <a href="/web/20160512183249/http://www.uncarved.com/articles/more_idiomatic_ocaml">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183249/http://www.uncarved.com/tags/reviews">reviews</a>
+                    
+                </span>
+                
+                Last updated: 2009-10-18T19:58:33Z</p>
+			</div>
+        
+		</div>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512183249/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512183249/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        </p>
+	</div>
+</body>
+</html><!--
+     FILE ARCHIVED ON 18:32:49 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:48:36 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 90.28
+  esindex: 0.01
+  RedisCDXSource: 14.451
+  exclusion.robots.policy: 0.119
+  LoadShardBlock: 52.168 (3)
+  exclusion.robots: 0.128
+  PetaboxLoader3.datanode: 64.509 (4)
+  PetaboxLoader3.resolve: 49.752 (2)
+  CDXLines.iter: 20.536 (3)
+  load_resource: 115.255
+-->
