@@ -1,0 +1,262 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <!-- convert to html5 -->
+  <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=367;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/tags/thoughts";
+  wbinfo.timestamp = "20160512183246";
+  wbinfo.request_ts = "20160512183246";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512183246";
+  wbinfo.wombat_sec = "1463077966";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name="y_key" content="3f9ba18c4858c8f7"/>
+    <meta name="Author" content="Sean Hunter"/>
+    <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+    <meta name="verify-v1" content="ZNcykCgO5KelqyaVYW90vnup4IIwI3yoJEeHMDbC1Eg="/>
+    <meta name="google-site-verification" content="d7GYtvQH6R5bysOqI5ch-luB4vHn41yJrsdbCTsi7Xw"/>
+    <link rel="stylesheet" type="text/css" href="/web/20160512183246cs_/http://www.uncarved.com/static/style.css"/>
+    <link rel="self" type="text/html" href=""/>
+    
+        <link rel="alternate" type="application/atom+xml" href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/feeds/atom/thoughts" title="uncarved.com/ Atom feed"/>
+        <!-- add specific descriptions for particular tagnams -->
+        <meta name="description" content="Sean Hunter's personal blog, containing software, haskell, scala, ocaml, unix tips and sundry other things.  Here we have essays and articles and random thoughts amusing to me, primarily on non-computing topics.  Enjoy!"/>
+	    
+        <title>The Uncarved Block/thoughts</title>
+    
+  </head>
+
+  <body>
+  	<div class="header">
+        <a href="https://web.archive.org/web/20160512183246/http://www.akirarabelais.com/i/i.html#26"><img id="hex1" title="26: Ta Chu - The Taming Power of the Great" alt="26: Ta Chu - The Taming Power of the Great" src="/web/20160512183246im_/http://www.uncarved.com/static/images/iching/Iching-hexagram-26.png" rel="nofollow"/></a>
+        <a href="https://web.archive.org/web/20160512183246/http://www.akirarabelais.com/i/i.html#64"><img id="hex2" title="64: Wei Chi - Before Completion" alt="64: Wei Chi - Before Completion" src="/web/20160512183246im_/http://www.uncarved.com/static/images/iching/Iching-hexagram-64.png" rel="nofollow"/></a>
+
+        
+			<h1>The Uncarved Block</h1>
+        
+	</div>
+	<div id="left_menu">
+		<ul>
+			<li><a href="/web/20160512183246/http://www.uncarved.com/">top</a></li>
+            <!--
+			<li><a href="/mobile.html">mobile edition</a></li>
+			<li><a href="/treeview/">tree view</a></li>
+            -->
+		</ul>
+		<ul>
+            
+                
+                <li><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/computers" title="This tag contains software in Haskell, Scala, ocaml etc, unix tips and other computer-related stuff.">/computers</a></li>
+                
+            
+                
+                <li><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/reviews" title="An occasional series of reviews of books and other things which interest me.">/reviews</a></li>
+                
+            
+                
+                <li><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/thoughts" title="Here we have essays and articles and random thoughts amusing to me, primarily on non-computing topics.  Enjoy!">/<em>thoughts</em></a></li>
+                
+            
+                
+                <li><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/everything%20else" title="This is a general grab bag of stuff which doesn't fit in other categories.">/everything else</a></li>
+                
+            
+		</ul>
+		<ul>
+			<li><a href="/web/20160512183246/http://www.uncarved.com/articles/free_software">free software</a></li>
+			<li><a href="/web/20160512183246/http://www.uncarved.com/articles/why_uncarved">why "uncarved"?</a></li>
+			<li><a href="/web/20160512183246/http://www.uncarved.com/articles/credits">credits</a></li>
+            
+				<li><a href="articles/contact">contact me</a></li>
+				<li><a href="articles/biog">about me</a></li>
+            
+		</ul>
+		<ul>
+            <li> feeds: <a type="application/atom+xml" href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/feeds/atom/thoughts">atom</a> <a type="application/json" href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/feeds/json/thoughts">json</a></li>
+            
+				<li><a href="/web/20160512183246/http://www.uncarved.com/login/" rel="nofollow">Not logged in</a></li>
+            
+
+		</ul>
+	</div>
+    
+	  <div class="body">
+		<p class="header">
+            [Last update: 2009-05-22T08:18:37Z] [5 articles in total] 
+		</p>
+		  <div class="articles">
+          
+          <div class="article" title="Eat Toast!">
+              
+              <h2><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/articles/toast">Eat Toast!</a></h2>
+              
+              <div class="precis">Strength.  Vitality.  Nutrition.</div>
+              <p>Breakfast this morning was a farce.</p>
+<p>I went to the canteen at the place where I work.  I had a headache and was feeling a bit shit.  Prescription: toast.  </p>
+<p>They have shiny new toasters.  I put a bagel in the toaster and go pick up a drink.  The toasters have not been assembled correctly so the toasted bagel goes out the far side of the toaster and falls down behind the counter.  VERY LOUD canteen woman comes over to see what's wrong.  I tell her the new toaster is buggered and my bagel has fallen down behind the counter.  Pissed off I start wandering to the other bit of the canteen to get a coffee.</p>
+<p>VERY LOUD woman starts shouting at me from behind the counter across the canteen.  EXCUSE ME SIR! EXCUSE ME SIR! I turn around and see she is waving the bagel which she has picked up off the floor.  Not sure what she wants me to do about it so I ignore her.</p>
+<p>She is not deterred.  EXCUSE ME SIR! EXCUSE ME SIR!  She's shouting.  "She'll stop soon", I think, and continue wandering over to get coffee.  Now another canteen guy has joined in, and is following me across the canteen.  "Excuse me sir, she's trying to get your attention".  "I know.  I don't want to talk to her".    EXCUSE ME SIR! EXCUSE ME SIR!</p>
+<p>By now I am at the counter in the coffee place.  "What's the problem?" says the guy who has followed me all the way over from the other bit of the canteen.  "I don't know" say I, "but your toaster's broken.  I'm just trying to get coffee.".</p>
+<p>"Are you going to pay for that drink?"  he says</p>
+<p>"Yes".</p>
+<p>Him, (to person behind the coffee bar) "Make sure he pays for that drink".</p>
+				<p class="footer">
+                <a href="/web/20160512183246/http://www.uncarved.com/articles/toast">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/thoughts">thoughts</a>
+                    
+                </span>
+                
+                Last updated: 2009-05-22T08:18:37Z</p>
+			</div>
+        
+          <div class="article" title="Public funding of political parties">
+              
+              <h2><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/articles/political_funding">Public funding of political parties</a></h2>
+              
+              <div class="precis">The UK political parties are voting for their own interests by asking for taxpayer funding.  Taxpayers should say &#34;no&#34;.</div>
+              <p>In the light of recent scandals various proposals have been made that would result in political parties in the UK receiving taxpayers' money to fund their activities.  This is something that UK taxpayers should fight in the strongest possible terms for two reasons:  Firstly, the main political parties stand to benefit hugely from this change- they would no longer need to worry about funding but would simply receive boatloads of cash as of right.  This would tend to entrench the political status quo. Secondly, it could only be achieved by raising the tax burden in the UK even higher than it is now or by cutting government expenditure on other things.  As all taxes promote economic inefficiency raising the tax burden is a terrible idea.  Equally, while cutting government expenditure in general is a good thing, simply replacing one existing form of government waste with another is bad in general and in this case particularly odious.</p>
+<p>How about instead we keep our current system where <em>people who want political parties to be well-funded get to put their money where their mouth is and fund them</em>?  This is good for several reasons:  Firstly it is maximally efficient- I spend the amount I want to spend to achieve the political funding outcome I want and nothing is wasted.  Secondly, I can't lie- if political funding is so important to me that I want others to pay but I am unwilling to pay myself I get nothing.  Thirdly, people who are not interested in sponsoring a political party are not forced against their will to do so.  Finally, the overall burden of taxation is not increased, so everyone has more money of their own which they can use to do whatever they want (including donating it to a political party if they want to).</p>
+<p>Making political parties taxpayer-funded won't make politicians immune from accusations of bribery- people who want to seek influence just need to be more subtle, funding party-affiliated organisations or events (this happens extensively now) and bribing politicians personally rather than improperly funding their parties.</p>
+				<p class="footer">
+                <a href="/web/20160512183246/http://www.uncarved.com/articles/political_funding">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/thoughts">thoughts</a>
+                    
+                </span>
+                
+                Last updated: 2006-08-02T10:49:31Z</p>
+			</div>
+        
+          <div class="article" title="Should Payment be by Effort or Results?">
+              
+              <h2><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/articles/pay_by_results">Should Payment be by Effort or Results?</a></h2>
+              
+              <div class="precis">Some companies and systems seek to pay people by effort, rather than by the results they achieve.</div>
+              <p>The first computer job I got when I moved to London was as a "Database operator" at a small, family owned company which supplied scientific equipment.  They didn't make the equipment themselves, they were wholesalers.  My predecessor in the job was leaving to travel the world and spent his last couple of weeks showing me the job, which entailed producing reports that the marketing manager could use to target specific products at the appropriate customers.  The data came from an old Siemens/Nixdorf mainframe computer which ran the customer sales and invoicing system for the business, so the job involved importing the data onto a PC and producing reports using a spreadsheet package.</p>
+<p>Every month my predecessor got the two floppy disks worth of data from the mainframe and spent about a week and a half importing the information into a Paradox database on the PC.  The import procedure involved running a series of buggy QBasic programs (written for us by a contracting company), phoning the company when it didn't work, waiting a few days for a fix to arrive and inevitably giving up in disgust and importing the data by hand using cut and paste.  Once the numbers were imported, he would be able to produce reports, which again was a laborious manual process.  Every month he was able to do the import and produce about four or five reports in the remaining two or three weeks.</p>
+<p>When I took over, I set about first fixing the bugs in the import program, and then rewriting it, using the built-in language which came with the database so I could put the floppies in and import the data straight into the database in a couple of hours with a single button press (It would have been faster but PCs were just very slow in those days).  I gradually redesigned and normalised the database and made standard queries which answered all of my boss's usual reporting needs.  Suddenly I could not only produce reports right from the beginning of the month, but I could produce more reports than my predecessor, with less work.  All I did to produce a report was run a query, paste the results into a spreadsheet and apply the formatting.  It would take about half an hour at the most to do a report.  I could do more in a single day than my predecessor could in the entire month, so I used to get all my work done and then play a mindless first-person shoot-em-up game to fill my time.</p>
+<p>Now the incentive for me to fix the software and write new software to improve my productivity in this job was that I was lazy and wanted to avoid the tedious manual labour that my predecessor did.  My employers benefited hugely from this:  not only did I do much more work than they expected, but I eliminated the need for support calls to the consultants to fix the import program.  My boss, however, was always a bit grumpy when he saw me playing the game, thinking than I should be doing something better with the company's time.</p>
+<p>Conversely, I once worked with a developer who checked in a truly extraordinary amount of code.  He worked long hours, got paid very little and was continually frustrated.   Why?  Because his employer was principally concerned with the outcome of the code and wasn't seeing a whole lot of results they liked.</p>
+<p>Lots of employers, consciously or otherwise, adopt a policy of payment by effort.  It's not uncommon in the software jobs for people to measure "productivity" simply by looking at the number of lines of code checked in to the source code revision control system.  As can be seen from this example, however, this can be enormously counter-productive as it provides an incentive for activity, rather than achievement.  This is a big problem with so-called "alternative economic systems" such as <a href="https://web.archive.org/web/20160512183246/http://en.wikipedia.org/wiki/Parecon" title="Parecon article from wikipedia">parecon</a>.  They simply reward the wrong things.</p>
+				<p class="footer">
+                <a href="/web/20160512183246/http://www.uncarved.com/articles/pay_by_results">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/thoughts">thoughts</a>
+                    
+                </span>
+                
+                Last updated: 2006-05-06T07:18:01Z</p>
+			</div>
+        
+          <div class="article" title="Making other people rich ">
+              
+              <h2><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/articles/making_other_people_rich">Making other people rich </a></h2>
+              
+              <div class="precis">A basic understanding of economics can help you to be a happier and more successful person</div>
+              <p>I was travelling on the tube one day when as is sometimes the case, a guy came into the carriage with a cup of change and started telling everyone the story of his (hard) life and how he came to be homeless.  He then passed the cup around for people to make donations. "Why", someone asked, "don't you sell the <a href="https://web.archive.org/web/20160512183246/http://www.bigissue.com/bigissue.html">big issue</a> instead of begging?"  The response of the homeless guy was very interesting and vituperative.  He ranted about how the founder of the big issue was now a millionaire and that he (homeless guy) "wasn't going to work to make anybody else rich".  Now I have no idea whether the person who founded the big issue is a millionaire or not.  I hope he is but it really doesn't matter for our purposes here.  At the time my intution was that this attitude was at the heart of the problems that had led this unfortunate man to be in his current predicament, but I didn't at the time know enough about economics to realise why this was the case.</p>
+<p>In a <a href="https://web.archive.org/web/20160512183246/http://en.wikipedia.org/wiki/Free_market">free market</a> all trades result in excess value for both participants or else they don't occur.  Even in real everyday life it's easy to see by example why this is the case.  Say for instance I want to sell one of the old computers I have cluttering up the place and never use.  If you don't offer me enough I won't let you have the computer, and if I ask for too much then you won't be interested.  "Enough" is "at least as much as I think the computer is worth to me" and "too much" is "more than you're willing to pay to own what is (let's face it) more than likely to be a redundant piece of junk".  So the price we agree on has to be more than I think the computer is worth to me and less than you are willing to pay for it otherwise we won't make the deal because it's not worthwhile.  We could define a fair trade as one in which the excess value on both sides of the deal was equal.</p>
+<p>The Big Issue magazine is a magazine that campaigns on behalf of homeless people and it's business model is designed to help homeless people to improve their lot through their own efforts, not through charity.  The way this works is that instead of selling through shops and newsstands, the magaine is sold to homeless people who then sell it on the streets and make a profit on each copy they sell.  The idea is that they can then use the money they make to gradually raise themselves out of poverty.  So the homeless person becomes a vendor: paying the company wholesale price and selling it at retail and making a small profit on each magazine sold.  This profit is the excess value for the vendor.  In return, the company is happy to sell at retail so that it doesn't need to worry about distribution.</p>
+<p>Now consider the person who founded the magazine and imagine for the sake of simplicity that he does everything concerned with running the magazine himself.  He gets people to write pieces for the magazine, organises the printing and everything else that is necessary until he has a stack of magazines ready for distribution.  He then sells bundles of magazines to vendors for them to sell on at a profit.  It stands to reason that because he is doing a lot of transactions (with each one of a number of vendors) and each of these transactions is creating an excess of value for both sides, that along the way he will create a lot of value for himself as well as helping a lot of homeless people who become vendors of his magazine.  By helping others in this way he can easily become very rich if he manages his business well <em>even if every deal he does is completely fair</em>.</p>
+<p>It's fashionable in some circles to think that anyone who becomes rich does so by exploiting others.  Sometimes this is the case.  However, from an economic point of view, there is no reason that someone creating a lot of value for others may not also become rich along the way.  In fact, many times, making other people richer is the best way to improve one's own lot in life.  Certainly anyone who scrupulously avoids creating value for others is likely to end up with very little for themselves.  Since he made me come to realise this, I now wish I had given that homeless guy on the tube more of my change.</p>
+				<p class="footer">
+                <a href="/web/20160512183246/http://www.uncarved.com/articles/making_other_people_rich">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/thoughts">thoughts</a>
+                    
+                </span>
+                
+                Last updated: 2006-04-23T08:38:07Z</p>
+			</div>
+        
+          <div class="article" title="A blatant plug">
+              
+              <h2><a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/articles/plug">A blatant plug</a></h2>
+              
+              <div class="precis">A concert worth attending (not that I have any personal interest.  Oh no...)</div>
+              <p>On Thursday 7 June <a href="https://web.archive.org/web/20160512183246/http://www.theflautadors.org/" title="The Flautadors Recorder Quartet">The Flautadors</a> will be playing a concert at <a href="https://web.archive.org/web/20160512183246/http://www.wigmore-hall.org.uk/" title="Wigmore Hall, London">Wigmore Hall</a>, one of the best venues for chamber music in London.  The concert is to launch their new CD of Baroque music by Purcell and Locke, and it should be a great.  You can <a href="https://web.archive.org/web/20160512183246/http://www.wigmore-hall.org.uk/concerts/concert_details.cfm?e=36243" title="Booking for The Flautadors Wigmore concert">book</a> for the concert <a href="https://web.archive.org/web/20160512183246/http://www.wigmore-hall.org.uk/concerts/concert_details.cfm?e=36243" title="Booking for The Flautadors Wigmore concert">now</a>.</p>
+<p>I have to declare an interest, because Catherine Fleming, one of members of The Flautadors, is my wife.  I also host their mail and dns and translated their website from a table-based layout to xhtml and css.</p>
+				<p class="footer">
+                <a href="/web/20160512183246/http://www.uncarved.com/articles/plug">permalink</a> 
+                
+                <span id="tags">Tags: 
+                    
+                    <a href="https://web.archive.org/web/20160512183246/http://www.uncarved.com/tags/thoughts">thoughts</a>
+                    
+                </span>
+                
+                Last updated: 2007-06-13T16:02:47Z</p>
+			</div>
+        
+		</div>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160512183246/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160512183246/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        </p>
+	</div>
+</body>
+</html><!--
+     FILE ARCHIVED ON 18:32:46 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:48:43 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.011
+  LoadShardBlock: 173.972 (3)
+  exclusion.robots.policy: 0.113
+  captures_list: 228.696
+  exclusion.robots: 0.122
+  PetaboxLoader3.resolve: 137.238 (2)
+  load_resource: 131.525
+  PetaboxLoader3.datanode: 116.489 (4)
+  RedisCDXSource: 36.416
+  CDXLines.iter: 15.667 (3)
+-->

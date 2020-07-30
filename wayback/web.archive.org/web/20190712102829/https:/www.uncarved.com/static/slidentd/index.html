@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=505;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/static/slidentd/";
+  wbinfo.timestamp = "20160512184011";
+  wbinfo.request_ts = "20160512184011";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160512184011";
+  wbinfo.wombat_sec = "1463078411";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+    <meta name="Author" content="Sean Hunter - Uncarved Consulting Ltd">
+    <meta name="Keywords" content="slidentd, secure, lightweight, ident, daemon, Linux">
+    <meta name="Description" content="slidentd - a secure, lightweight ident daemon for Linux">
+    <meta name="MSSmartTagsPreventParsing" content="TRUE">
+    <link rel="stylesheet" type="text/css" href="/web/20160512184011cs_/http://www.uncarved.com/static/style.css">
+    <title>Slidentd: A secure, lightweight ident daemon for Linux</title>
+  </head>
+
+  <body bgcolor="FFFFFF">
+    <h1>Slidentd: A secure, lightweight ident daemon for Linux</h1>
+
+	<p>A while ago, I became unsatisfied with pidentd, the <a href="https://web.archive.org/web/20160512184011/http://www.faqs.org/rfcs/rfc1413.html">RFC 1413 daemon</a> that
+ships with many Linux distributions.  My objections stemmed mainly from what I
+see as the incredible level of overengineering and unnecessary "feature"-led
+complexity that has been built into what should (IMO) be a very simple piece of
+software.  I was also unhappy with the level of information that is given out
+by the standard configuration of pidentd.  As such, I decided to write my
+own.</p>
+
+     <h2>What is ident?</h2>
+
+	 <p>Ident (<a href="https://web.archive.org/web/20160512184011/http://www.faqs.org/rfcs/rfc1413.html">RFC 1413</a>) is a protocol which can be used to discover or reveal
+which user owns a specific tcp port connection.  For example: if I (user
+"sean") connect from port 1099 on a.mx.uncarved.com to port 25 at
+a.mx.example.org to send mail, that host may make an ident request back to
+a.mx.uncarved.com to ask which user owns the connection from
+a.mx.uncarved.com:1099 to a.mx.example.org:25.  Because the sysadmin of
+a.mx.uncarved.com is a cooperative guy, he runs an ident daemon that volunteers
+that user "sean" is the owner of the connnection.  This information is then
+logged.</p>
+
+     <p>If the sysadmin at a.mx.example.org discovered that the connection had
+been used in an attempt to exploit a security hole in their mail daemon, they
+could ask the sysadmin at a.mx.uncarved.com to take action against that
+user.</p>
+
+     <h2>What is ident for?</h2>
+
+     <p>The ident protocol is not intended as a means of authentication, but
+rather as a tool by means of which systems administrators of good will are able
+to cooperate to resolve network abuse issues.  The protocol itself is not able
+to provide strong evidence of the perpetrator of abuse, however, it can back up
+other evidence, or be used as a clue to track down problems caused by local
+users attacking remote sites.  Difficulties arise because the level of
+disclosure of sensitive local information that forms part of this transaction
+is usually higher than the security-conscious sysadmin would like to disclose.
+By pointing judicious ident requests at many sites, black hat is able to
+discover local user names, operating system and distribution version clues and
+other information, as well as (often) finding which services are running with
+root privileges, and are thus the best targets for exploitation.  As such, many
+sysadmins blackhole ident requests and/or simply disable ident altogether.</p>
+
+    <p>There is a way, however, to have the ident protocol work well enough to
+perform its intended function but still not disclose any useful information to
+an attacker.  It works as follows:  In the example above, instead of the ident
+daemon volunteering that user "sean" owns the connection, it simply sends back
+a random token.  This token is logged on the ident server along with the actual
+user id who owns the connection.  When chasing up the abuse issue, the sysadmin
+at a.mx.example.org looks in his mail server logs and finds the token that was
+returned as a result of the ident request.  She then contacts the sysadmin at
+a.mx.uncarved.com about the issue, quoting the token.  The uncarved sysadmin
+can then grep the logs for the token, revealing the user id that owned the
+connection, and take appropriate action.</p>
+
+    <p>A remote attacker , however, gains absolutely no useful information from
+knowing that the a.mx.uncarved.com mailserver is run by user
+"c31b817a59d340be4885dce01007723581484496", because obviously, the token does
+not represent a valid user id, and thus cannot be used as the basis for any
+kind of attack.</p>
+
+	<h2>Building and installing slidentd</h2>
+
+	<p>Debian packages of slidentd are available from <a href="https://web.archive.org/web/20160512184011/http://packages.debian.org/slidentd">http://packages.debian.org/slidentd</a>
+	courtesy of Christian Kurz.  <a href="slidentd-1.0.0-1.i386.rpm">rpm</a>
+	and <a href="slidentd-1.0.0-1.src.rpm">srpm</a> packages are also
+	available.  Note that to build the rpm you need dietlibc and libowfat
+	installed, but the rpm contains binaries that are statically linked, so you
+	don't need these packages if you simply want to install the rpm.  You will
+	need to set up tcpserver, inetd or xinetd by copying one of the sample
+	scripts in the doc directory though.</p>
+
+	<p>The first step is to download the current version of slidentd.  The
+latest is version <a href="https://web.archive.org/web/20160512184011/http://www.uncarved.com/static/slidentd/slidentd-1.0.1.tar.gz">1.0.0</a>.
+Next you need to download <a href="https://web.archive.org/web/20160512184011/http://www.kernel.org/pub/linux/libs/dietlibc/dietlibc-0.22.tar.bz2">diet libc</a> and <a href="https://web.archive.org/web/20160512184011/http://www.fefe.de/libowfat/libowfat-0.15.tar.bz2">libowfat</a> from <a href="https://web.archive.org/web/20160512184011/http://www.fefe.de/">www.fefe.de</a>.  Actually you don't 100% need diet
+libc, but its good for you. :)</p>
+
+	<p>After building first diet libc and then libowfat, you're ready to
+configure and build slidentd.  First edit 'slid_config.h' and change any
+settings in there that you don't like.  Next, edit the Makefile, making sure
+your paths for diet libc and libowfat are correct.  If you want to use diet
+libc, make sure that your version of libowfat is built with diet libc as well.
+Conversely, if your version of libowfat is built with diet libc, you need to
+build slidentd with diet libc too.  In the slidentd makefile, I specify
+seperate directories for libowfat depending on whether we're attempting a diet
+libc or a normal libc build.  I have a diet libc version of libowfat in
+/opt/libowfat/lib and a glibc version in /opt/libowfat-glibc/lib.  This is very
+easy to do with a minor change to the libowfat Makefile.</p>
+
+	<p>To build normally, do "make".  To build a diet libc version, do
+	"make build_mode=diet".  There are also shellscripts provided to simplify a normal or a dietlibc build.  Simply ensure that the paths in the shellscripts are correct.  This will produce a small (less than 20k)
+statically-linked binary.  You then need to do "make install" (probably as
+root).</p>
+
+	<p>To convert to slidentd, you need to first stop your existing ident
+daemon, then enable the new one.  If you're using tcpserver, a sample "run"
+script is supplied.  Just edit it and install it as normal.  If you're using
+inetd or xinetd, you'll need to edit your respective configuration files.
+Slidentd doesn't support "wait" mode or anything fancy, so a simple xinetd
+configuration might look like this:
+
+<code><pre>
+service auth
+{
+	socket_type         = stream
+	wait                = no
+	nice                = 10
+	user                = nobody
+	server              = /usr/local/sbin/slidentd
+	instances           = 4
+}
+</pre></code>
+
+...and the corresponding inetd config might be:
+
+<code><pre>
+auth	stream	tcp	nowait.60	nobody /usr/local/sbin/slidentd slidentd
+</pre></code></p>
+
+<p>I don't however, use either of these, so please treat them as indicative
+suggestions only.  Some versions of inetd allow you to specify a particular
+interface to bind the service too, and a group as well as a user.  Use one of
+these if you can.</p>
+
+<p>If you're paranoid (like me), you probably want to add a user to run
+slidentd as.  If you run it as root, it will chroot() to /usr/share/empty,
+which is an empty directory included by some distros specifically for this sort
+of thing, and attempt to run as an unprivileged user.  If your distribution
+doesn't include this directory, you can just create it.  If its not there,
+slidentd will create a directory under /var/run, chroot into it and delete it,
+so it can't be found by other processes.  <em>I don't recommend running
+	slidentd as root, however.</em>  If you run slidentd as a non-privileged
+user, and you use xinetd or inetd, and you don't use syslog, you will need to
+create the logfile for slidentd to use.  Do <code>touch /var/log/slidentd &amp;&amp;
+	chown nobody.nobody /var/log/slidentd</code> as root</p>
+
+<p>I recommend looking into the iprange-, resource- and rate-limiting features
+of xinetd and tcpserver if you use them, and be as restrictive as you can.
+Slidentd answers requests in less than 2 hundredths of a second here (a dual
+pentium 3), but that doesn't mean that I don't rate-limit connections just in
+case.</p>
+
+<p>If you use slidentd, please consider joining the slidentd mailing list by
+sending a message to <a href="https://web.archive.org/web/20160512184011/mailto:slidentd-subscribe@uncarved.com">slidentd-subscribe@uncarved.com</a></p>
+
+<p>Slidentd is in use on various sites around the world, including Linux hosts
+running RedHat, SuSE, and (my favourite) Debian, and has been tested on intel
+and alpha machines.  If you try slidentd, please join the mailing list and let
+me know how you get on.</p>
+
+       <p class="tagline"><em>This page was written by <a href="https://web.archive.org/web/20160512184011/mailto:sean@uncarved.com">Sean Hunter</a><br>
+Last modified: Thu Sep  4 07:27:10 UTC 2003
+  </em></p></body>
+
+</html>
+<!--
+     FILE ARCHIVED ON 18:40:11 May 12, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:05:30 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.012
+  load_resource: 193.378
+  LoadShardBlock: 224.438 (3)
+  exclusion.robots.policy: 0.158
+  captures_list: 307.405
+  PetaboxLoader3.resolve: 128.995 (3)
+  RedisCDXSource: 61.594
+  PetaboxLoader3.datanode: 212.235 (4)
+  exclusion.robots: 0.167
+  CDXLines.iter: 18.433 (3)
+-->
