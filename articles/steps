@@ -1,0 +1,41 @@
+Todo
+- Fix code formatting
+- Fix multi-line subtitles
+
+Done
+- add yaml frontmatter
+- remove copyright boilerplate in the middle (this will go into the template)
+- remove wayback from links
+- Dump out
+- Remove top 5 lines
+- Remove indent
+- Find title
+- find subtitle
+- find tags
+- Change links in bottom references to markdown and remove wayback
+- change links in text to markdown
+
+
+Change from html to raw text
+for f in raw/* | lynx -force-html -dump raw etc
+
+remove indenting, delete a standard header, add markdown for the title and subtitle and begin reformatting the bottom links by removing the wayback machine parts of the links
+
+find dumped -type f | while read f ; do sed -n '6,$p' $f | sed 's/^ *//; 1s/^/# /; 3s/^/## /; s!https://web.archive.org/web/[^/]*/!!; s!file:.*web/[^/]*/!!' >| cleanup_1/$( basename $f ) ; done
+
+Extract tags and modification times into yaml frontmatter
+
+find cleanup_1 -type f| while read f; do sed -n 's/Tags: \[.*\]\(.*\) Last modified:\(.*\)/\2\t\1/p' $f | read m t ;printf "---\nTags: %s\nLast Modified:%s\n---\n" $t $m > tags/$(basename $f)\ndone
+
+Fix links in the body text and the reference section
+
+find cleanup_1 -type f | while read f; do sed '1,/^References/s/\(\[[0-9]*\]\)\([^ ]*\)/[\2]\1/; /^References/,$s/\([0-9]*\). \(.*\)/[\1]: \2/;;' $f > cleanup_2/$(basename $f)
+
+find cleanup_2 -type f | while read f ; do
+cat tags/$(basename $f) $f > cleanup_3/$(basename $f)
+done
+
+mkdir cleanup_4
+find cleanup_3 -type f | while read f ; do sed '/^__*$/,/References/d' $f > cleanup_4a/$(basename $f) ; done
+
+

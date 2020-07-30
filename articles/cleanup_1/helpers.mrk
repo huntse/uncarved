@@ -1,0 +1,53 @@
+# helper classes for scala
+
+## My first opensource scala package
+
+So I've released my helpers code via [5]github. Scaladoc is available
+[6]here, although I warn you that my patience with hacking the
+stylesheet only goes so far and I don't yet know how to make scaladoc
+that is not foul to look at. To build it, and run the tests, do...
+mvn test
+
+...after unpacking the tarball somewhere
+
+The motivation behind this package is that I wanted to do some http
+stuff and wanted to make my client code be as simple as possible while
+still being polite to servers. So that meant supporting conditional get
+using Etags, Last-Modified and also supporting gzip encoding. I do all
+this by using the apache commons [7]httpclient-4.x and [8]httpcore-4.x
+libraries and wrapping them all up in a class that's convenient and
+simple to use. Here's a taster:
+import com.uncarved.helpers.http._
+
+val helper = new BasicClient()
+//Get a webpage as a string (if you look at the apache http log4j messages you
+can see it
+//does conditional get and has transparent gzip support)
+val str = helper.get("http://www.theflautadors.org/")
+
+//Get some XML (with request parameters supplied)
+val params = List(("tag"->""), ("limit"->"5"))
+val xml = helper.getXML(Request(RequestType.GET, "http://www.uncarved.com/index
+.py/rss1.1.xml", params))
+val items = xml \\ "item"
+__________________________________________________________________
+
+Tags: [9]computers Last modified: 2011-06-01T10:46:47Z
+
+Unless otherwise specified the contents of this page are copyright ©
+2015 [10]Sean Hunter. This work is licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International [11]License.
+
+References
+
+1. http://www.uncarved.com/articles/helpers
+2. http://www.uncarved.com/
+3. http://www.uncarved.com/articles/contact
+4. http://www.uncarved.com/login/
+5. http://uncarved.com/blog/helpers_github.mrk
+6. http://www.uncarved.com/static/scala/helpers/doc/index.html
+7. http://hc.apache.org/httpcomponents-client/index.html
+8. http://hc.apache.org/httpcomponents-core/index.html
+9. http://www.uncarved.com/tags/computers
+10. mailto:sean@uncarved.com
+11. http://creativecommons.org/licenses/by-sa/4.0/
