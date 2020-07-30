@@ -1,0 +1,126 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <!-- turn this into html5 -->
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=251;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=R56vIgLu" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+if (window._WBWombatInit) {
+  wbinfo = {}
+  wbinfo.url = "http://www.uncarved.com/articles/textmode";
+  wbinfo.timestamp = "20160526225625";
+  wbinfo.request_ts = "20160526225625";
+  wbinfo.prefix = "https://web.archive.org/web/";
+  wbinfo.mod = "if_";
+  wbinfo.is_framed = false;
+  wbinfo.is_live = false;
+  wbinfo.coll = "web";
+  wbinfo.proxy_magic = "";
+  wbinfo.static_prefix = "/_static/";
+  wbinfo.enable_auto_fetch = true;
+  wbinfo.auto_fetch_worker_prefix = "https://web.archive.org/web/";
+  wbinfo.wombat_ts = "20160526225625";
+  wbinfo.wombat_sec = "1464303385";
+  wbinfo.wombat_scheme = "https";
+  wbinfo.wombat_host = "www.uncarved.com";
+  wbinfo.ignore_prefixes = ["/__wb/",
+                            "/_static/",
+                            "/web/",
+                            "http://analytics.archive.org/",
+                            "https://analytics.archive.org/",
+                            "//analytics.archive.org/",
+                            "http://archive.org/",
+                            "https://archive.org/",
+                            "//archive.org/",
+                            "http://faq.web.archive.org/",
+                            "http://web.archive.org/",
+                            "https://web.archive.org/"
+                            ];
+  wbinfo.wombat_opts = {};
+  window._WBWombatInit(wbinfo);
+}
+__wm.init("https://web.archive.org/web");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=_99BHQfY" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <meta name="Author" content="Sean Hunter"/>
+        <meta name="MSSmartTagsPreventParsing" content="TRUE"/>
+        <meta name="description" content="Linux has everything you need to use your laptop even if you choose not to use the pointy-clicky interfaces"/>
+		<link rel="stylesheet" type="text/css" href="/web/20160526225625cs_/http://www.uncarved.com/static/style.css"/>
+        <link rel="self" type="text/html" href="http://www.uncarved.com/articles/textmode"/>
+        <title>The Uncarved Blog: Using a Linux laptop in text mode</title>
+	</head>
+
+	<body>
+		<div id="left_menu">
+			<ul>
+                <li><a href="https://web.archive.org/web/20160526225625/http://www.uncarved.com/articles/textmode">permalink</a></li>
+                <li><a href="https://web.archive.org/web/20160526225625/http://www.uncarved.com/">top</a></li>
+                
+				<li><a href="/web/20160526225625/http://www.uncarved.com/articles/contact">contact me</a></li>
+				<li><a href="/web/20160526225625/http://www.uncarved.com/login/" rel="nofollow">not logged in</a></li>
+                
+			</ul>
+		</div>
+		<div class="body">
+            
+			<h2>
+                
+                Using a Linux laptop in text mode
+			</h2>
+            
+
+            
+            <div class="precis">Linux has everything you need to use your laptop even if you choose not to use the pointy-clicky interfaces</div>
+            
+
+            <p>So having recently got a <a href="https://web.archive.org/web/20160526225625/http://www.uncarved.com/blog/netbook.mrk" title="In which I talk about my netbook">netbook</a>, I have been learning how to do everything on it.  It's obviously all easy if you use something like <a href="https://web.archive.org/web/20160526225625/http://www.xfce.org/" title="XFCE - A lightweight Linux desktop">xfce</a> or <a href="https://web.archive.org/web/20160526225625/http://www.gnome.org/" title="gnome - the standard desktop for Fedora Linux">gnome</a>, or some netbook-specific spin like the <a href="https://web.archive.org/web/20160526225625/http://www.ubuntu.com/GetUbuntu/download-netbook" title="A powerful, yet friendly netbook-specific Linux variant">Ubuntu netbook remix</a>, but I like to use <a href="https://web.archive.org/web/20160526225625/http://xmonad.org/" title="xmonad - A lightweight x window manager">xmonad</a>, so it helps to learn how to do all the laptoppy things in text mode.</p>
+<p>Here's a list of things it's useful to know:</p>
+<ul>
+<li>nm-applet - finds a network and connects to it automagically</li>
+<li>pm-suspend - sends your laptop into a light sleep</li>
+<li>pm-hibernate - sends your laptop into a heavy sleep where it uses no battery</li>
+</ul>
+		<hr/>
+        <p class="footer">
+        
+        <span id="tags">Tags:
+            
+            <a href="https://web.archive.org/web/20160526225625/http://www.uncarved.com/tags/computers">computers</a>
+            
+        </span>
+        
+        Last modified: 2009-10-17T13:05:22Z</p>
+        <p class="tagline">Unless otherwise specified the contents of this page are copyright &copy; 2015 <a href="https://web.archive.org/web/20160526225625/mailto:sean@uncarved.com">Sean Hunter</a>.  This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International <a rel="license" href="https://web.archive.org/web/20160526225625/http://creativecommons.org/licenses/by-sa/4.0/">License</a>.
+        <!-- figure out metadata -->
+	</p>
+		</div>
+    </body>
+</html><!--
+     FILE ARCHIVED ON 22:56:25 May 26, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:55:01 Jul 30, 2020.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  esindex: 0.01
+  exclusion.robots.policy: 0.131
+  LoadShardBlock: 171.522 (3)
+  PetaboxLoader3.resolve: 34.603
+  captures_list: 200.369
+  PetaboxLoader3.datanode: 163.513 (4)
+  exclusion.robots: 0.142
+  CDXLines.iter: 19.318 (3)
+  load_resource: 45.633
+  RedisCDXSource: 6.409
+-->
