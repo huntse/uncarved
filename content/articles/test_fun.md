@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2008-06-16T07:29:20Z
+tags = "computers"
+last_modified = "2008-06-16T07:29:20Z"
 +++
 # A Functional Test Harness
 

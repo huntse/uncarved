@@ -1,6 +1,6 @@
 +++
-Tags: reviews
-Last Modified:2008-07-29T11:11:55Z
+tags = "reviews"
+last_modified = "2008-07-29T11:11:55Z"
 +++
 # Changing to a kinesis keyboard
 

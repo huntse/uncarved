@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2009-02-06T14:39:14Z
+tags = "computers"
+last_modified = "2009-02-06T14:39:14Z"
 +++
 # That was painful
 

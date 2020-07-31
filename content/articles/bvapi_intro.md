@@ -1,6 +1,5 @@
 +++
-Tags: 
-Last Modified:
+tags = ""
 +++
 # Bullionvault interface
 

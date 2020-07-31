@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2007-06-21T06:30:35Z
+tags = "computers"
+last_modified = "2007-06-21T06:30:35Z"
 +++
 # Ocaml objects part 2
 

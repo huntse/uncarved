@@ -1,6 +1,6 @@
 +++
-Tags: reviews
-Last Modified:2006-05-11T07:48:25Z
+tags = "reviews"
+last_modified = "2006-05-11T07:48:25Z"
 +++
 # Undercover Economist
 

@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2009-08-07T09:44:52Z
+tags = "computers"
+last_modified = "2009-08-07T09:44:52Z"
 +++
 # Adding comments
 

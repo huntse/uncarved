@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2011-06-02T18:18:09Z
+tags = "computers"
+last_modified = "2011-06-02T18:18:09Z"
 +++
 # Getting started with github
 

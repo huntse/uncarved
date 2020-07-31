@@ -1,6 +1,6 @@
 +++
-Tags: everything else
-Last Modified:2011-06-02T16:08:34Z
+tags = "everything else"
+last_modified = "2011-06-02T16:08:34Z"
 +++
 # My Biog
 

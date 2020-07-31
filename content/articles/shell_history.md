@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2006-05-17T07:35:18Z
+tags = "computers"
+last_modified = "2006-05-17T07:35:18Z"
 +++
 # Shell Command History and Searching
 

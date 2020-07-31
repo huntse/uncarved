@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2007-06-06T08:58:44Z
+tags = "computers"
+last_modified = "2007-06-06T08:58:44Z"
 +++
 # Derivatives pricing in ocaml Part 2
 

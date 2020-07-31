@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2011-06-01T10:40:43Z
+tags = "computers"
+last_modified = "2011-06-01T10:40:43Z"
 +++
 # Log4j for Scala
 

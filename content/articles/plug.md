@@ -1,6 +1,6 @@
 +++
-Tags: thoughts
-Last Modified:2007-06-13T16:02:47Z
+tags = "thoughts"
+last_modified = "2007-06-13T16:02:47Z"
 +++
 # A blatant plug
 

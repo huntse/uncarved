@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2006-05-18T16:26:32Z
+tags = "computers"
+last_modified = "2006-05-18T16:26:32Z"
 +++
 # My life (and mail) in subversion
 

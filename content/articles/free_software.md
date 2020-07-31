@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2009-06-12T16:25:08Z
+tags = "computers"
+last_modified = "2009-06-12T16:25:08Z"
 +++
 # Free Software
 

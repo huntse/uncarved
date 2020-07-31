@@ -1,6 +1,6 @@
 +++
-Tags: thoughts
-Last Modified:2006-04-23T08:38:07Z
+tags = "thoughts"
+last_modified = "2006-04-23T08:38:07Z"
 +++
 # Making other people rich
 

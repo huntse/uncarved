@@ -1,6 +1,6 @@
 +++
-Tags: thoughts
-Last Modified:2009-05-22T08:18:37Z
+tags = "thoughts"
+last_modified = "2009-05-22T08:18:37Z"
 +++
 # Eat Toast!
 
