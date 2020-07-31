@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2009-02-06T14:39:14Z
----
++++
 # That was painful
 
 ## Migrating everything to a new server

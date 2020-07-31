@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2006-04-30T14:03:35Z
----
++++
 # Shell Functions that are also executables
 
 ## Sometimes its handy to have shell functions that can be sourced, but

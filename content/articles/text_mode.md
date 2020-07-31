@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2006-04-21T15:04:39Z
----
++++
 # Being Productive in Text Mode
 
 ## If you use a Unix system well, the command line can be the ultimate

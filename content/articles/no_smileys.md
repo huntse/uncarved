@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2009-07-20T19:58:05Z
----
++++
 # Thank goodness for greasemonkey
 
 ## Google recently added an extremely annoying feature to google reader.

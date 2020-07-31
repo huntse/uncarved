@@ -1,7 +1,7 @@
----
++++
 Tags: thoughts
 Last Modified:2006-08-02T10:49:31Z
----
++++
 # Public funding of political parties
 
 ## The UK political parties are voting for their own interests by asking

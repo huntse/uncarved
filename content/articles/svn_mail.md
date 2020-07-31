@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2006-05-18T16:26:32Z
----
++++
 # My life (and mail) in subversion
 
 ## Moving my mail into subversion gives me easy backups and all of my

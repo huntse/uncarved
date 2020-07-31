@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2007-06-21T06:30:35Z
----
++++
 # Ocaml objects part 2
 
 ## Parameter objects make more sense when we pass piecewise functions to

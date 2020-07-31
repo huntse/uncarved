@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2010-05-05T04:46:34Z
----
++++
 # Mozilla Ubiquity
 
 ## Fun with this amazing mozilla addon

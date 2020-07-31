@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2009-08-22T06:29:35Z
----
++++
 # n-Bit Gray codes in Haskell
 
 ## A first step in what will become a combinatorics library

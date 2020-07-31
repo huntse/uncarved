@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2006-04-21T15:44:45Z
----
++++
 # Building a better cd
 
 ## Unix shell is very flexible and easy to customise. Here is how I made

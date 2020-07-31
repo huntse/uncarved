@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2011-06-01T10:40:43Z
----
++++
 # Log4j for Scala
 
 ## Scala is nice. Logging is nice. Scala + logging.....?

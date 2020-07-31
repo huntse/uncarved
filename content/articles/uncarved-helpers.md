@@ -1,7 +1,7 @@
----
++++
 Tags: 
 Last Modified:
----
++++
 # Set of scala helper classes
 
 ## Learning scala, I've started to write some generally useful stuff and

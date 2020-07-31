@@ -1,7 +1,7 @@
----
++++
 Tags: thoughts
 Last Modified:2006-04-23T08:38:07Z
----
++++
 # Making other people rich
 
 ## A basic understanding of economics can help you to be a happier and

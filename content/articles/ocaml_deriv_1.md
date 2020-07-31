@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2007-06-06T08:54:54Z
----
++++
 # Derivatives pricing in ocaml Part 1
 
 ## Following on from the "Learning Functional Programming" article, we

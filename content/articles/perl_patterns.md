@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2006-04-21T14:51:31Z
----
++++
 # Patterns in Perl
 
 ## An article I wrote for the Perl Journal a long time ago

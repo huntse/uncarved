@@ -1,7 +1,7 @@
----
++++
 Tags: 
 Last Modified:
----
++++
 # Bullionvault interface
 
 ## Wrapping the public interface of a gold market in scala goodness
