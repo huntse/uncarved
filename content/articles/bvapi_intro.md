@@ -1,5 +1,6 @@
 +++
 tags = ""
+aliases = [ "/articles/bvapi_intro" ]
 +++
 # Bullionvault interface
 

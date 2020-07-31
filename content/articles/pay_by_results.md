@@ -1,10 +1,11 @@
 +++
 tags = "thoughts"
+aliases = [ "/articles/pay_by_results" ]
 last_modified = "2006-05-06T07:18:01Z"
 +++
 # Some companies and systems seek to pay people by effort, rather than by
 the results they achieve.
-## 
+##
 The first computer job I got when I moved to London was as a "Database
 operator" at a small, family owned company which supplied scientific
 equipment. They didn't make the equipment themselves, they were

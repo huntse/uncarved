@@ -1,5 +1,6 @@
 +++
 tags = "computers"
+aliases = [ "/articles/test_fun" ]
 last_modified = "2008-06-16T07:29:20Z"
 +++
 # A Functional Test Harness

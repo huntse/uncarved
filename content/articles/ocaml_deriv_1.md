@@ -1,5 +1,6 @@
 +++
 tags = "computers"
+aliases = [ "/articles/ocaml_deriv_1" ]
 last_modified = "2007-06-06T08:54:54Z"
 +++
 # Derivatives pricing in ocaml Part 1

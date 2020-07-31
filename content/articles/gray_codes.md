@@ -1,5 +1,6 @@
 +++
 tags = "computers"
+aliases = [ "/articles/gray_codes" ]
 last_modified = "2009-08-22T06:29:35Z"
 +++
 # n-Bit Gray codes in Haskell
