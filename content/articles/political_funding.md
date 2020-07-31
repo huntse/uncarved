@@ -1,5 +1,6 @@
 +++
 tags = "thoughts"
+aliases = [ "/articles/political_funding" ]
 last_modified = "2006-08-02T10:49:31Z"
 +++
 # Public funding of political parties

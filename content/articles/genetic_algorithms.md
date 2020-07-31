@@ -1,5 +1,6 @@
 +++
 tags = "reviews"
+aliases = [ "/articles/genetic_algorithms" ]
 last_modified = "2009-03-25T08:17:29Z"
 +++
 # An Introduction to Genetic Algorithms

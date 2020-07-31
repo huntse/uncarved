@@ -1,5 +1,6 @@
 +++
 tags = "computers"
+aliases = [ "/articles/better_cd" ]
 last_modified = "2006-04-21T15:44:45Z"
 +++
 # Building a better cd

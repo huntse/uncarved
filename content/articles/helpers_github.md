@@ -1,5 +1,6 @@
 +++
 tags = "computers"
+aliases = [ "/articles/helpers_github" ]
 last_modified = "2011-06-02T18:18:09Z"
 +++
 # Getting started with github

@@ -1,6 +1,7 @@
 +++
 tags = "computers"
 last_modified = "2008-12-09T13:42:33Z"
+aliases = [ "/articles/ching_ml" ]
 +++
 # I Ching in ML
 

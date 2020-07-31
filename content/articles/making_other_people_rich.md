@@ -1,5 +1,6 @@
 +++
 tags = "thoughts"
+aliases = [ "/articles/making_other_people_rich" ]
 last_modified = "2006-04-23T08:38:07Z"
 +++
 # Making other people rich

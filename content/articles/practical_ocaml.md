@@ -1,5 +1,6 @@
 +++
 tags = "computers"
+aliases = [ "/articles/practical_ocaml" ]
 last_modified = "2007-06-13T06:41:39Z"
 +++
 # Using Ocaml in Practice

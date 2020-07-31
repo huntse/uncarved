@@ -1,5 +1,6 @@
 +++
 tags = "computers"
+aliases = [ "/articles/svn_mail" ]
 last_modified = "2006-05-18T16:26:32Z"
 +++
 # My life (and mail) in subversion

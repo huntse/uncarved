@@ -1,5 +1,6 @@
 +++
 tags = "computers"
+aliases = [ "/articles/ocaml_classes" ]
 last_modified = "2007-06-19T19:36:27Z"
 +++
 # Ocaml objects part 1
