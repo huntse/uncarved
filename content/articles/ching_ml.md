@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2008-12-09T13:42:33Z
----
++++
 # I Ching in ML
 
 ## In which I write yet another implementation of the book of changes
@@ -28,10 +28,10 @@ in
 (* ...use this to consult the coin oracle... *)
 let consult_coin () =
 let outcomes = [|
-9; 9;               (* Moving Yang --- x --- *)
-7; 7; 7; 7; 7; 7;   (* Stable Yang --------- *)
-8; 8; 8; 8; 8; 8;   (* Stable Yin  ---   --- *)
-6; 6                (* Moving Yin  --- o --- *)
+9; 9;               (* Moving Yang +++ x --- *)
+7; 7; 7; 7; 7; 7;   (* Stable Yang +++------ *)
+8; 8; 8; 8; 8; 8;   (* Stable Yin  +++   --- *)
+6; 6                (* Moving Yin  +++ o --- *)
 |]
 in
 choose outcomes
@@ -39,10 +39,10 @@ in
 (* ...and the yarrow oracle also. *)
 let consult_yarrow () =
 let outcomes = [|
-9; 9; 9;             (* Moving Yang --- x --- *)
-7; 7; 7; 7; 7;       (* Stable Yang --------- *)
-8; 8; 8; 8; 8; 8; 8; (* Stable Yin  ---   --- *)
-6;                   (* Moving Yin  --- o --- *)
+9; 9; 9;             (* Moving Yang +++ x --- *)
+7; 7; 7; 7; 7;       (* Stable Yang +++------ *)
+8; 8; 8; 8; 8; 8; 8; (* Stable Yin  +++   --- *)
+6;                   (* Moving Yin  +++ o --- *)
 |]
 in
 choose outcomes

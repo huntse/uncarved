@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2008-06-16T07:29:20Z
----
++++
 # A Functional Test Harness
 
 ## Using monads to thread state, we make a purely functional version of

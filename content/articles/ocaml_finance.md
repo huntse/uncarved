@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2007-06-05T21:08:53Z
----
++++
 # Learning Functional Programming
 
 ## I decided to teach myself ocaml by writing a derivatives pricer

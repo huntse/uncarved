@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2011-06-01T10:46:47Z
----
++++
 # helper classes for scala
 
 ## My first opensource scala package

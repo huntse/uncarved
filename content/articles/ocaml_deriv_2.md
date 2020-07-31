@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2007-06-06T08:58:44Z
----
++++
 # Derivatives pricing in ocaml Part 2
 
 ## Extending the basic mc pricer to handle different payoffs, we see how

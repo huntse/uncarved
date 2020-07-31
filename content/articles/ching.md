@@ -1,7 +1,7 @@
----
++++
 Tags: else
 Last Modified:everything
----
++++
 # I Ching
 
 ## About the hexagrams on this site

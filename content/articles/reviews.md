@@ -1,7 +1,7 @@
----
++++
 Tags: reviews
 Last Modified:2006-05-11T07:48:25Z
----
++++
 # Undercover Economist
 
 ## A review of "The Undercover Economist" by Tim Harford

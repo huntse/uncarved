@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2006-04-21T15:44:28Z
----
++++
 # Making the switch
 
 ## Changing over to dvorak typing is tough, but worth it

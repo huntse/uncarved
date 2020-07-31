@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2011-06-02T18:18:09Z
----
++++
 # Getting started with github
 
 ## Before we can do our marketmaking system, you need to be able to get
@@ -24,9 +24,9 @@ mvn test
 ...and with any luck, git will get the software, maven2 will download
 the internet and some time later build and run the tests, and you'll
 see something like this:
--------------------------------------------------------
++++----------------------------------------------------
 T E S T S
--------------------------------------------------------
++++----------------------------------------------------
 There are no tests to run.
 
 Results :
@@ -34,7 +34,7 @@ Results :
 Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
 
 [INFO]
-[INFO] --- maven-scalatest-plugin:1.1-SNAPSHOT:test (default) @ helpers ---
+[INFO] +++ maven-scalatest-plugin:1.1-SNAPSHOT:test (default) @ helpers ---
 [INFO] org.scalatest.tools.Runner.run(-p, "/home/sean/tmp/helpers/target/classes
 /home/sean/tmp/helpers/target/test-classes", -o, -fNCXEHLOWFD, /home/sean/tmp/h
 elpers/target/scalatest-reports/file/constrained.txt, -f, /home/sean/tmp/helpers
@@ -59,13 +59,13 @@ Suites: completed 2, aborted 0
 Tests: succeeded 7, failed 0, ignored 0, pending 0
 All tests passed.
 THAT'S ALL FOLKS!
-[INFO] ------------------------------------------------------------------------
+[INFO] +++---------------------------------------------------------------------
 [INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
+[INFO] +++---------------------------------------------------------------------
 [INFO] Total time: 23.140s
 [INFO] Finished at: Wed Jun 01 10:27:36 GMT 2011
 [INFO] Final Memory: 6M/11M
-[INFO] ------------------------------------------------------------------------
+[INFO] +++---------------------------------------------------------------------
 mvn test  22.79s user 0.74s system 94% cpu 24.793 total
 
 I don't use eclipse or anything like that, but it should be possible

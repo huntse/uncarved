@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2007-06-19T19:36:27Z
----
++++
 # Ocaml objects part 1
 
 ## Writing some objects in ocaml, we begin to make the pricer more

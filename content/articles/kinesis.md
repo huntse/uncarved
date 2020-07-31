@@ -1,7 +1,7 @@
----
++++
 Tags: reviews
 Last Modified:2008-07-29T11:11:55Z
----
++++
 # Changing to a kinesis keyboard
 
 ## I thought I would never find a keyboard that I liked better than

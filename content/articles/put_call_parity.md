@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2007-06-13T15:59:36Z
----
++++
 # Testing for put/call parity
 
 ## Now let's check the prices from the ocaml Monte-Carlo pricer against

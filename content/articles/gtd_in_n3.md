@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2006-05-10T04:44:53Z
----
++++
 # Getting Things Done in Text with notation3
 
 ## I want a simple means of tracking and grouping tasks that works in text

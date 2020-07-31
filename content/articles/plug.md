@@ -1,7 +1,7 @@
----
++++
 Tags: thoughts
 Last Modified:2007-06-13T16:02:47Z
----
++++
 # A blatant plug
 
 ## A concert worth attending (not that I have any personal interest. Oh

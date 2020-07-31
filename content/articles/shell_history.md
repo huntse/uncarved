@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2006-05-17T07:35:18Z
----
++++
 # Shell Command History and Searching
 
 ## Time spent learning how the unix shell works is never wasted

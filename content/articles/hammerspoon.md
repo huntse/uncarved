@@ -1,7 +1,7 @@
----
++++
 Tags: computers
 Last Modified:2017-06-23T07:29:12Z
----
++++
 # The quest to get a mac to do exactly what I want
 
 ## It all started because I use a weird keyboard. When I don't have this
