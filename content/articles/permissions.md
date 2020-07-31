@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2009-06-12T03:24:41Z
+tags = "computers"
+last_modified = "2009-06-12T03:24:41Z"
 +++
 # How do unix file permissions work?
 

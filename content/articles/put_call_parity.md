@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2007-06-13T15:59:36Z
+tags = "computers"
+last_modified = "2007-06-13T15:59:36Z"
 +++
 # Testing for put/call parity
 

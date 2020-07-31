@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2011-05-11T09:59:07Z
+tags = "computers"
+last_modified = "2011-05-11T09:59:07Z"
 +++
 # Writing an Automated Marketmaking System
 

@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2009-08-22T06:29:35Z
+tags = "computers"
+last_modified = "2009-08-22T06:29:35Z"
 +++
 # n-Bit Gray codes in Haskell
 

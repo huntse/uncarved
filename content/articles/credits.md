@@ -1,6 +1,6 @@
 +++
-Tags: everything else
-Last Modified:2009-06-12T04:00:46Z
+tags = "everything else"
+last_modified = "2009-06-12T04:00:46Z"
 +++
 # Credits
 

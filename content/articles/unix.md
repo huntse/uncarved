@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2007-06-13T15:57:29Z
+tags = "computers"
+last_modified = "2007-06-13T15:57:29Z"
 +++
 # Productivity in unix
 

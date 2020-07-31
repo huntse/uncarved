@@ -1,6 +1,6 @@
 +++
-Tags: else
-Last Modified:everything
+tags = "else"
+last_modified = "everything"
 +++
 # I Ching
 

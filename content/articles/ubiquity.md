@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2010-05-05T04:46:34Z
+tags = "computers"
+last_modified = "2010-05-05T04:46:34Z"
 +++
 # Mozilla Ubiquity
 

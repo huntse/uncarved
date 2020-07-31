@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2007-06-05T21:08:53Z
+tags = "computers"
+last_modified = "2007-06-05T21:08:53Z"
 +++
 # Learning Functional Programming
 

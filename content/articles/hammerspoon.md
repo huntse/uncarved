@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2017-06-23T07:29:12Z
+tags = "computers"
+last_modified = "2017-06-23T07:29:12Z"
 +++
 # The quest to get a mac to do exactly what I want
 

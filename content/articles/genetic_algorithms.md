@@ -1,6 +1,6 @@
 +++
-Tags: reviews
-Last Modified:2009-03-25T08:17:29Z
+tags = "reviews"
+last_modified = "2009-03-25T08:17:29Z"
 +++
 # An Introduction to Genetic Algorithms
 

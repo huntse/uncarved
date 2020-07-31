@@ -1,6 +1,6 @@
 +++
-Tags: thoughts
-Last Modified:2006-05-06T07:18:01Z
+tags = "thoughts"
+last_modified = "2006-05-06T07:18:01Z"
 +++
 # Some companies and systems seek to pay people by effort, rather than by
 the results they achieve.

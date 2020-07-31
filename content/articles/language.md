@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2009-08-20T21:35:41Z
+tags = "computers"
+last_modified = "2009-08-20T21:35:41Z"
 +++
 # Which language would you use?
 

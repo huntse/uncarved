@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2008-12-09T13:42:33Z
+tags = "computers"
+last_modified = "2008-12-09T13:42:33Z"
 +++
 # I Ching in ML
 

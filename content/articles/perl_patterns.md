@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2006-04-21T14:51:31Z
+tags = "computers"
+last_modified = "2006-04-21T14:51:31Z"
 +++
 # Patterns in Perl
 

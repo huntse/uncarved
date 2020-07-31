@@ -1,6 +1,6 @@
 +++
-Tags: thoughts
-Last Modified:2006-08-02T10:49:31Z
+tags = "thoughts"
+last_modified = "2006-08-02T10:49:31Z"
 +++
 # Public funding of political parties
 

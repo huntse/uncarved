@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2006-05-10T04:44:53Z
+tags = "computers"
+last_modified = "2006-05-10T04:44:53Z"
 +++
 # Getting Things Done in Text with notation3
 

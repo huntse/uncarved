@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2006-05-11T19:32:31Z
+tags = "computers"
+last_modified = "2006-05-11T19:32:31Z"
 +++
 # RSS 1.1 Feed now available
 

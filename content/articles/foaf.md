@@ -1,6 +1,6 @@
 +++
-Tags: computers
-Last Modified:2009-06-13T13:18:59Z
+tags = "computers"
+last_modified = "2009-06-13T13:18:59Z"
 +++
 # Foaf in n3
 
