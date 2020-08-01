@@ -1,11 +1,12 @@
+$font-stack: Helvetica, avantgarde, Verdana, Arial, sans-serif;
 body {
     color: black;
     background: none white;
-    font-family: Helvetica, avantgarde, Verdana, Arial, sans-serif
+    font-family: $font-stack;
 }
 
 p {
-    font-family: Helvetica, avantgarde, Verdana, Arial, sans-serif;
+    font: 12pt $font-stack;
     font-size: 12pt;
     margin-left: 20px;
     text-align: justify
@@ -197,4 +198,19 @@ p.tagline {
 
 a img {
     border: 0
-} //Dimensions for images img[src="/static/images/bvusdtouch.jpg"]{height:228px;width:381px}img[src="/static/images/MutedPosthorn.png"]{height:109px;width:198px}img[src^="/static/images/iching/Iching"]{height:70px;width:70px}
+}
+//Dimensions for images
+img[src="/static/images/bvusdtouch.jpg"] {
+    height:228px;
+    width:381px
+}
+
+img[src="/static/images/MutedPosthorn.png"] {
+    height:109px;
+    width:198px
+}
+
+img[src^="/static/images/iching/Iching"] {
+    height:70px;
+    width:70px
+}
