@@ -5,8 +5,7 @@ last_modified = "2007-06-06T08:54:54Z"
 +++
 # Derivatives pricing in ocaml Part 1
 
-## Following on from the "Learning Functional Programming" article, we
-write our first call pricer
+## Following on from the "Learning Functional Programming" article, we write our first call pricer
 
 So from the first [article][5] we move on to write the first Monte Carlo
 pricer. This is a very close translation of Joshi's implementation in

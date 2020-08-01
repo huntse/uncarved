@@ -4,8 +4,7 @@ last_modified = "2008-07-29T11:11:55Z"
 +++
 # Changing to a kinesis keyboard
 
-## I thought I would never find a keyboard that I liked better than
-Typematrix, but I may have to eat my words...
+## I thought I would never find a keyboard that I liked better than Typematrix, but I may have to eat my words...
 
 Until yesterday, I used to use a [typematrix][5] [6]dvorak keyboard.
 Typematrix is a fabulous keyboard with lots of terrific design features

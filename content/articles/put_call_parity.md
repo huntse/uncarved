@@ -5,8 +5,7 @@ last_modified = "2007-06-13T15:59:36Z"
 +++
 # Testing for put/call parity
 
-## Now let's check the prices from the ocaml Monte-Carlo pricer against
-the most obvious arbitrage relationship
+## Now let's check the prices from the ocaml Monte-Carlo pricer against the most obvious arbitrage relationship
 
 [Put][5] call parity is an important relationship in options pricing.
 Let's test our prices to see if they obey this relationship.

@@ -5,8 +5,7 @@ last_modified = "2006-04-30T14:03:35Z"
 +++
 # Shell Functions that are also executables
 
-## Sometimes its handy to have shell functions that can be sourced, but
-can also be executables in their own right. Here's how.
+## Sometimes its handy to have shell functions that can be sourced, but can also be executables in their own right. Here's how.
 
 Sometimes it's useful to have shell functions that can be used both
 from within my current shell and sourced inside scripts which I write.

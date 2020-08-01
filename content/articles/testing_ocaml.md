@@ -5,8 +5,7 @@ last_modified = "2007-06-21T06:34:44Z"
 +++
 # A Simple Ocaml test harness
 
-## It's nice to be able to write tests for code as you go along, so you
-need a test harness...
+## It's nice to be able to write tests for code as you go along, so you need a test harness...
 
 I usually like to be able to write tests as I write code, and to have
 them run every time the code builds to make sure I haven't broken

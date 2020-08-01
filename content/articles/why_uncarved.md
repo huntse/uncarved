@@ -5,8 +5,7 @@ last_modified = "2006-04-21T15:02:59Z"
 +++
 # Why Uncarved?
 
-## The name of this website has a specific meaning that derives from
-Taoism
+## The name of this website has a specific meaning that derives from Taoism
 
 The Uncarved Block is a common English translation of a [Taoist][5]
 concept called "[pu".][6] A block of wood that is not yet carved has no

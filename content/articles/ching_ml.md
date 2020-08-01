@@ -5,8 +5,7 @@ aliases = [ "/articles/ching_ml" ]
 +++
 # I Ching in ML
 
-## In which I write yet another implementation of the book of changes
-(this time in ocaml)
+## In which I write yet another implementation of the book of changes (this time in ocaml)
 
 I decided to rewrite my python I Ching in ocaml. This is interesting to
 do in some respects as it's not really a traditional functional
