@@ -50,7 +50,6 @@ rdf:about="$self_link">
 <dc:language>en-GB</dc:language>
 </rdf:Description>
 <cc:Work rdf:about="$self_link">
-<cc:license rdf:resource="http://creativecommons.org/licenses/by/2.5/" /
 >
 </cc:Work>
 <cc:License rdf:about="http://creativecommons.org/licenses/by/2.5/">
@@ -151,5 +150,4 @@ about all the site syndication variants on the [wikipedia.][8]
 [7]: http://www.uncarved.com/rss1.1.xml
 [8]: http://en.wikipedia.org/wiki/RSS_(file_format)
 [9]: http://www.uncarved.com/tags/computers
-[10]: mailto:sean@uncarved.com
 [11]: http://creativecommons.org/licenses/by-sa/4.0/

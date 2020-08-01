@@ -46,5 +46,3 @@ content. It's a really nice keyboard.
 [7]: http://www.kinesis-ergo.com/advantage.htm
 [8]: http://www.uncarved.com/tags/computers
 [9]: http://www.uncarved.com/tags/reviews
-[10]: mailto:sean@uncarved.com
-[11]: http://creativecommons.org/licenses/by-sa/4.0/

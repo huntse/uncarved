@@ -34,5 +34,3 @@ offending smileys.
 [6]: http://www.greasespot.net/
 [7]: http://jasonfager.com/?p=569
 [8]: http://www.uncarved.com/tags/computers
-[9]: mailto:sean@uncarved.com
-[10]: http://creativecommons.org/licenses/by-sa/4.0/

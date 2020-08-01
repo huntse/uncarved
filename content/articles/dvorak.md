@@ -61,5 +61,3 @@ really stick for me.
 [5]: http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard
 [6]: http://www.typematrix.com/
 [7]: http://www.uncarved.com/tags/computers
-[8]: mailto:sean@uncarved.com
-[9]: http://creativecommons.org/licenses/by-sa/4.0/

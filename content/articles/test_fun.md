@@ -122,5 +122,3 @@ let ( >>= ) = State.bind
 [5]: http://enfranchisedmind.com/blog/2007/08/06/a-monad-tutorial-for-ocaml/
 [6]: http://www.uncarved.com/blog/testing_ocaml.mrk
 [7]: http://www.uncarved.com/tags/computers
-[8]: mailto:sean@uncarved.com
-[9]: http://creativecommons.org/licenses/by-sa/4.0/

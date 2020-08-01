@@ -84,5 +84,3 @@ file or directory
 [4]: http://www.uncarved.com/login/
 [5]: http://www.uncarved.com/blog/umasks.mrk
 [6]: http://www.uncarved.com/tags/computers
-[7]: mailto:sean@uncarved.com
-[8]: http://creativecommons.org/licenses/by-sa/4.0/

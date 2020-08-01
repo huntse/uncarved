@@ -132,5 +132,3 @@ be continuous. Given this vol function, we can price as before.
 [5]: http://www.uncarved.com/blog/ocaml_classes.mrk
 [6]: http://mathforum.org/library/drmath/sets/select/dm_piecewise.html
 [7]: http://www.uncarved.com/tags/computers
-[8]: mailto:sean@uncarved.com
-[9]: http://creativecommons.org/licenses/by-sa/4.0/

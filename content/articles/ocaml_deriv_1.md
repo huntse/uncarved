@@ -102,7 +102,5 @@ subject of the [next][6] article.
 [5]: http://www.uncarved.com/blog/ocaml_finance.mrk
 [6]: http://www.uncarved.com/blog/ocaml_deriv_2.mrk
 [7]: http://www.uncarved.com/tags/computers
-[8]: mailto:sean@uncarved.com
-[9]: http://creativecommons.org/licenses/by-sa/4.0/
 1 /. 2;;
 1.0 / 2.0;;"

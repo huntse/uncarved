@@ -129,5 +129,3 @@ ten times for any one of them.
 [3]: http://www.uncarved.com/articles/contact
 [4]: http://www.uncarved.com/login/
 [5]: http://www.uncarved.com/tags/computers
-[6]: mailto:sean@uncarved.com
-[7]: http://creativecommons.org/licenses/by-sa/4.0/

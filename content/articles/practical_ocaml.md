@@ -156,5 +156,3 @@ file, called in another, as we have here.
 [6]: http://utopia.knoware.nl/~hlub/uck/rlwrap/
 [7]: http://www.uncarved.com/blog/ocaml_deriv_1.mrk
 [8]: http://www.uncarved.com/tags/computers
-[9]: mailto:sean@uncarved.com
-[10]: http://creativecommons.org/licenses/by-sa/4.0/

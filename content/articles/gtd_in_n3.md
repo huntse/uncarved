@@ -55,5 +55,3 @@ do this.
 [10]: http://rdflib.net/
 [11]: http://www.w3.org/2000/10/swap/doc/cwm.html
 [12]: http://www.uncarved.com/tags/computers
-[13]: mailto:sean@uncarved.com
-[14]: http://creativecommons.org/licenses/by-sa/4.0/

@@ -159,8 +159,6 @@ sure how you do that in ocaml yet.
 [6]: http://www.uncarved.com/blog/ocaml_deriv_1.mrk
 [7]: http://www.uncarved.com/blog/ocaml_finance.mrk
 [8]: http://www.uncarved.com/tags/computers
-[9]: mailto:sean@uncarved.com
-[10]: http://creativecommons.org/licenses/by-sa/4.0/
 let myadd x y=x+y;;
 let add2=myadd 2;;
 add2 5;;

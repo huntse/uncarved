@@ -45,5 +45,3 @@ personally rather than improperly funding their parties.
 [3]: http://www.uncarved.com/articles/contact
 [4]: http://www.uncarved.com/login/
 [5]: http://www.uncarved.com/tags/thoughts
-[6]: mailto:sean@uncarved.com
-[7]: http://creativecommons.org/licenses/by-sa/4.0/

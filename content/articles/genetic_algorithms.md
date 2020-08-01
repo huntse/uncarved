@@ -35,5 +35,3 @@ Mitchell for an approachable and readable introduction to the field.
 [6]: http://www.amazon.co.uk/Introduction-Genetic-Algorithms-Complex-Adaptive/dp/0262631857/ref=sr_1_1?ie=UTF8&s=books&qid=1237968270&sr=8-1
 [7]: http://www.uncarved.com/tags/computers
 [8]: http://www.uncarved.com/tags/reviews
-[9]: mailto:sean@uncarved.com
-[10]: http://creativecommons.org/licenses/by-sa/4.0/

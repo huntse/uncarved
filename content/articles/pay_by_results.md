@@ -73,5 +73,3 @@ big problem with so-called "alternative economic systems" such as
 [2]: https://www.uncarved.com/
 [3]: http://en.wikipedia.org/wiki/Parecon
 [4]: https://www.uncarved.com/tags/thoughts
-[5]: mailto:sean@uncarved.com
-[6]: http://creativecommons.org/licenses/by-sa/4.0/

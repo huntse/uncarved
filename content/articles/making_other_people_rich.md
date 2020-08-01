@@ -73,11 +73,6 @@ themselves. Since he made me come to realise this, I now wish I had
 given that homeless guy on the tube more of my change.
 
 [1]: http://www.uncarved.com/articles/making_other_people_rich
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.bigissue.com/bigissue.html
 [6]: http://en.wikipedia.org/wiki/Free_market
 [7]: http://www.uncarved.com/tags/thoughts
-[8]: mailto:sean@uncarved.com
-[9]: http://creativecommons.org/licenses/by-sa/4.0/

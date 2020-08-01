@@ -27,5 +27,3 @@ no battery
 [8]: http://www.ubuntu.com/GetUbuntu/download-netbook
 [9]: http://xmonad.org/
 [10]: http://www.uncarved.com/tags/computers
-[11]: mailto:sean@uncarved.com
-[12]: http://creativecommons.org/licenses/by-sa/4.0/

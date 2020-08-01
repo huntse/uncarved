@@ -148,5 +148,3 @@ classes and suddenly it starts to become useful.
 [5]: http://www.uncarved.com/blog/ocaml_finance.mrk
 [6]: http://www.uncarved.com/blog/ocaml_classes_2.mrk
 [7]: http://www.uncarved.com/tags/computers
-[8]: mailto:sean@uncarved.com
-[9]: http://creativecommons.org/licenses/by-sa/4.0/

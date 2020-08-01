@@ -11,18 +11,11 @@ a great deal of traffic and at the moment just to get started I have
 moderation on. If things seem to be resonably calm and the wingnuts
 stay away, I'll turn moderation off.
 
-I'm using the comment system from [intense][5] debate, which has been
+I'm using the comment system from [intense debate][5], which has been
 fantastically easy to set up and use so far. Let me know what you
 think.
 
 *Note:* I decided to remove comments due to spam and the desire to avoid
 javascript where possible
 
-[1]: http://www.uncarved.com/articles/Comments
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://intensedebate.com/
-[6]: http://www.uncarved.com/tags/computers
-[7]: mailto:sean@uncarved.com
-[8]: http://creativecommons.org/licenses/by-sa/4.0/

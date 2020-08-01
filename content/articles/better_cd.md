@@ -31,24 +31,25 @@ could do cd !$ to get to the directory to check the file in or
 whatever. So I built a cd function that changes to the parent directory
 if the target is a file. When a colleague of mine explained the ksh cd
 behaviour, I added his ksh-like cd function to mine to get this:
-cd()
-{
-if [ -z "$1" ] ; then
-builtin cd
-else
-if [ -n "$2" ]; then
-TRY="${PWD/$1/$2}"
-else
-TRY="$1"
-fi
 
-if [ -f "${TRY}" ]; then
-builtin cd "${TRY:h}"
-else
-builtin cd "${TRY}"
-fi
-fi
-}
+    cd()
+    {
+        if [ -z "$1" ] ; then
+            builtin cd
+        else
+            if [ -n "$2" ]; then
+                TRY="${PWD/$1/$2}"
+            else
+                TRY="$1"
+            fi
+
+            if [ -f "${TRY}" ]; then
+                builtin cd "${TRY:h}"
+            else
+                builtin cd "${TRY}"
+            fi
+        fi
+    }
 
 Notice that this includes a few zsh-isms which you'll need to change if
 you want to use this in bash. ${TRY:h} is the same as $( dirname
@@ -58,10 +59,3 @@ can do this in bash using a string substitution something like
 shell I pity you and this cd mechanism will not be enough to save you
 from your folly anyway.
 
-[1]: http://www.uncarved.com/articles/better_cd
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/tags/computers
-[6]: mailto:sean@uncarved.com
-[7]: http://creativecommons.org/licenses/by-sa/4.0/

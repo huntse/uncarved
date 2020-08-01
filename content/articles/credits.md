@@ -26,10 +26,6 @@ keyboard.
 I will rewrite  with my new setup.  I still use vim though.  Well ok neovim.
 So that has changed too.
 
-[1]: http://www.uncarved.com/articles/credits
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.mythic-beasts.com/
 [6]: http://cr.yp.to/djbdns.html
 [7]: http://www.qmail.org/
