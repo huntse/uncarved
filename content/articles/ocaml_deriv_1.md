@@ -1,7 +1,5 @@
 +++
-title = "Derivatives pricing in ocaml Part 1
-1 /. 2;;
-1.0 / 2.0;;"
+title = "Derivatives pricing in ocaml Part 1"
 aliases = [ "/articles/ocaml_deriv_1" ]
 last_modified = "2007-06-06T08:54:54Z"
 +++
