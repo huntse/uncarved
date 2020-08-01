@@ -1,1 +1,1 @@
-../articles/Comments.md
+../articles/comments.md

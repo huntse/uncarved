@@ -1,1 +1,1 @@
-../articles/LogHelper.md
+../articles/loghelper.md
