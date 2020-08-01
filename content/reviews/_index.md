@@ -1,5 +1,5 @@
 +++
 title = "Reviews"
-subtitle = "Reviews of books and other things"
+description = "Reviews of books and other things"
 +++
 
