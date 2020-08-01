@@ -1,5 +1,7 @@
 +++
-tags = "computers"
+title = "Derivatives pricing in ocaml Part 1
+1 /. 2;;
+1.0 / 2.0;;"
 aliases = [ "/articles/ocaml_deriv_1" ]
 last_modified = "2007-06-06T08:54:54Z"
 +++
@@ -105,3 +107,5 @@ subject of the [next][6] article.
 [7]: http://www.uncarved.com/tags/computers
 [8]: mailto:sean@uncarved.com
 [9]: http://creativecommons.org/licenses/by-sa/4.0/
+1 /. 2;;
+1.0 / 2.0;;"

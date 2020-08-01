@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Set of scala helper classes"
 +++
 # Set of scala helper classes
 

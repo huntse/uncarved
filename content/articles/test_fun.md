@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "A Functional Test Harness"
 aliases = [ "/articles/test_fun" ]
 last_modified = "2008-06-16T07:29:20Z"
 +++

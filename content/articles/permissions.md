@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "How do unix file permissions work?"
 last_modified = "2009-06-12T03:24:41Z"
 +++
 # How do unix file permissions work?

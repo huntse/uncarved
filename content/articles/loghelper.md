@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Log4j for Scala"
 last_modified = "2011-06-01T10:40:43Z"
 aliases = [ "LogHelper" ]
 +++

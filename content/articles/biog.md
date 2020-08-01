@@ -1,5 +1,5 @@
 +++
-tags = "everything else"
+title = "My Biog"
 last_modified = "2011-06-02T16:08:34Z"
 aliases = [ "/articles/biog" ]
 +++

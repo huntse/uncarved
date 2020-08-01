@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Shell Command History and Searching"
 aliases = [ "/articles/shell_history" ]
 last_modified = "2006-05-17T07:35:18Z"
 +++

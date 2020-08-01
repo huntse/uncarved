@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Being Productive in Text Mode"
 aliases = [ "/articles/text_mode" ]
 last_modified = "2006-04-21T15:04:39Z"
 +++

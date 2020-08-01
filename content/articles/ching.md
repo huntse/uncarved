@@ -1,5 +1,5 @@
 +++
-tags = "everything else"
+title = "I Ching"
 last_modified = ""
 aliases = [ "/articles/ching" ]
 +++

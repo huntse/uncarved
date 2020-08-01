@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Foaf in n3"
 last_modified = "2009-06-13T13:18:59Z"
 +++
 # Foaf in n3

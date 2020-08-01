@@ -1,5 +1,5 @@
 +++
-tags = "everything else"
+title = "Contact Me"
 last_modified = "2009-06-12T03:59:19Z"
 aliases = [ "/articles/contact" ]
 +++

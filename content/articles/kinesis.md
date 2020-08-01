@@ -1,5 +1,5 @@
 +++
-tags = "reviews"
+title = "Changing to a kinesis keyboard"
 last_modified = "2008-07-29T11:11:55Z"
 +++
 # Changing to a kinesis keyboard
