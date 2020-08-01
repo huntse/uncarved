@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Learning Functional Programming"
 aliases = [ "/articles/ocaml_finance" ]
 last_modified = "2007-06-05T21:08:53Z"
 +++

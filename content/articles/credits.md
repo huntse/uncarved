@@ -1,5 +1,5 @@
 +++
-tags = "everything else"
+title = "Credits"
 last_modified = "2009-06-12T04:00:46Z"
 aliases = [ "/articles/credits" ]
 +++

@@ -1,5 +1,5 @@
 +++
-tags = ""
+title = "Bullionvault interface"
 aliases = [ "/articles/bvapi_intro" ]
 +++
 # Bullionvault interface

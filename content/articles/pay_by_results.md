@@ -1,5 +1,5 @@
 +++
-tags = "thoughts"
+title = "Should payment by by effort or by results?"
 aliases = [ "/articles/pay_by_results" ]
 last_modified = "2006-05-06T07:18:01Z"
 +++

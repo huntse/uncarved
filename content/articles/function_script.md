@@ -1,5 +1,6 @@
 +++
-tags = "computers"
+title = "Shell Functions that are also executables
+vim: set syn=zsh:"
 aliases = [ "/articles/function_script" ]
 last_modified = "2006-04-30T14:03:35Z"
 +++
@@ -67,3 +68,4 @@ iggle
 [5]: http://www.uncarved.com/tags/computers
 [6]: mailto:sean@uncarved.com
 [7]: http://creativecommons.org/licenses/by-sa/4.0/
+vim: set syn=zsh:"

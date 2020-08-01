@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Writing an Automated Marketmaking System"
 aliases = [ "/articles/mm_1" ]
 last_modified = "2011-05-11T09:59:07Z"
 +++

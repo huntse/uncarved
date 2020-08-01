@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Using a Linux laptop in text mode"
 last_modified = "2009-10-17T13:05:22Z"
 +++
 # Using a Linux laptop in text mode

@@ -1,5 +1,9 @@
 +++
-tags = "computers"
+title = "Derivatives pricing in ocaml Part 2
+let myadd x y=x+y;;
+let add2=myadd 2;;
+add2 5;;
+add2 16;;"
 aliases = [ "/articles/ocaml_deriv_2" ]
 last_modified = "2007-06-06T08:58:44Z"
 +++
@@ -162,3 +166,7 @@ sure how you do that in ocaml yet.
 [8]: http://www.uncarved.com/tags/computers
 [9]: mailto:sean@uncarved.com
 [10]: http://creativecommons.org/licenses/by-sa/4.0/
+let myadd x y=x+y;;
+let add2=myadd 2;;
+add2 5;;
+add2 16;;"

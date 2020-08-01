@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "That was painful"
 last_modified = "2009-02-06T14:39:14Z"
 +++
 # That was painful

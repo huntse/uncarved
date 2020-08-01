@@ -1,5 +1,5 @@
 +++
-tags = "thoughts"
+title = "A blatant plug"
 last_modified = "2007-06-13T16:02:47Z"
 +++
 # A blatant plug

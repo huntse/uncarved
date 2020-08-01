@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "A Simple Ocaml test harness"
 aliases = [ "/articles/testing_ocaml" ]
 last_modified = "2007-06-21T06:34:44Z"
 +++

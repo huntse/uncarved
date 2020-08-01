@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Getting Things Done in Text with notation3"
 aliases = [ "/articles/gtd_in_n3" ]
 last_modified = "2006-05-10T04:44:53Z"
 +++

@@ -1,5 +1,5 @@
 +++
-tags = "reviews"
+title = "Undercover Economist"
 last_modified = "2006-05-11T07:48:25Z"
 +++
 # Undercover Economist

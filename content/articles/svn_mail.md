@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "My life (and mail) in subversion"
 aliases = [ "/articles/svn_mail" ]
 last_modified = "2006-05-18T16:26:32Z"
 +++

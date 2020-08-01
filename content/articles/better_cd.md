@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Building a better cd"
 aliases = [ "/articles/better_cd" ]
 last_modified = "2006-04-21T15:44:45Z"
 +++

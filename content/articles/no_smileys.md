@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Thank goodness for greasemonkey"
 aliases = [ "/articles/no_smileys" ]
 last_modified = "2009-07-20T19:58:05Z"
 +++

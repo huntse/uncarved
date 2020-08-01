@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Testing for put/call parity"
 aliases = [ "/articles/put_call_parity" ]
 last_modified = "2007-06-13T15:59:36Z"
 +++

@@ -1,5 +1,5 @@
 +++
-tags = "everything else"
+title = "Why Uncarved?"
 aliases = [ "/articles/why_uncarved" ]
 last_modified = "2006-04-21T15:02:59Z"
 +++

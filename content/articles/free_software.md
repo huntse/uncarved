@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Free Software"
 aliases = [ "/articles/free_software" ]
 last_modified = "2009-06-12T16:25:08Z"
 +++

@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "I've got a new netbook"
 last_modified = "2009-10-17T10:32:22Z"
 +++
 # I've got a new netbook

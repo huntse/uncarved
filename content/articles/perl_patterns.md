@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "Patterns in Perl"
 aliases = [ "/articles/perl_patterns" ]
 last_modified = "2006-04-21T14:51:31Z"
 +++

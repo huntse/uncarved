@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "n-Bit Gray codes in Haskell"
 aliases = [ "/articles/gray_codes" ]
 last_modified = "2009-08-22T06:29:35Z"
 +++

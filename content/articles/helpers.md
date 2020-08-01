@@ -1,5 +1,5 @@
 +++
-tags = "computers"
+title = "helper classes for scala"
 last_modified = "2011-06-01T10:46:47Z"
 +++
 # helper classes for scala
