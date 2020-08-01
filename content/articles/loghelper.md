@@ -1,6 +1,7 @@
 +++
 tags = "computers"
 last_modified = "2011-06-01T10:40:43Z"
+aliases = [ "LogHelper" ]
 +++
 # Log4j for Scala
 

@@ -5,8 +5,7 @@ last_modified = "2011-06-02T18:18:09Z"
 +++
 # Getting started with github
 
-## Before we can do our marketmaking system, you need to be able to get
-the software.
+## Before we can do our marketmaking system, you need to be able to get the software.
 
 To share the marketmaking software that I talked about in the [first][5]
 marketmaking article, we need to have a repository set up, so I decided

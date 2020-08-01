@@ -5,8 +5,7 @@ aliases = [ "/articles/contact" ]
 +++
 # Contact Me
 
-## Some people just really really want to know how they can get through to
-me. Sad but true.
+## Some people just really really want to know how they can get through to me. Sad but true.
 
 If you want to email me to tell me that my website sucks or any other
 thing, email me at [sean@uncarved.com.][5] If you want to, you can

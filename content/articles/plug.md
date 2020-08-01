@@ -4,8 +4,7 @@ last_modified = "2007-06-13T16:02:47Z"
 +++
 # A blatant plug
 
-## A concert worth attending (not that I have any personal interest. Oh
-no...)
+## A concert worth attending (not that I have any personal interest. Oh no...)
 
 On Thursday 7 June [The][5] Flautadors will be playing a concert at
 [Wigmore][6] Hall, one of the best venues for chamber music in London.

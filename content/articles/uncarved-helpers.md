@@ -3,8 +3,7 @@ tags = "computers"
 +++
 # Set of scala helper classes
 
-## Learning scala, I've started to write some generally useful stuff and
-make it available
+## Learning scala, I've started to write some generally useful stuff and make it available
 
 [1]: http://www.uncarved.com/articles/uncarved-helpers
 [2]: http://www.uncarved.com/

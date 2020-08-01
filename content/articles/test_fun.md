@@ -5,8 +5,7 @@ last_modified = "2008-06-16T07:29:20Z"
 +++
 # A Functional Test Harness
 
-## Using monads to thread state, we make a purely functional version of
-the test harness
+## Using monads to thread state, we make a purely functional version of the test harness
 
 To paraphrase Crocodile Dundee, this isn't a monad tutorial [this][5] is
 a monad tutorial. However, I decided to do something that would help me

@@ -4,8 +4,7 @@ last_modified = "2007-06-13T15:57:29Z"
 +++
 # Productivity in unix
 
-## Loving the Unix user experience comes from realising how you make it
-work the way you want
+## Loving the Unix user experience comes from realising how you make it work the way you want
 
 People who I work with are often bemused by the perculiar setup I have
 on my machine, which is the product of constant evolution over the last

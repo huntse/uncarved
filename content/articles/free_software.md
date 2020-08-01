@@ -6,6 +6,9 @@ last_modified = "2009-06-12T16:25:08Z"
 # Free Software
 
 ## A Small Collection of Free Software I have written
+
+*Note*: I think all of this software is now lost
+
 * [slidentd][5] - the sly ident daemon
 * [honest_identd][6] - The slidentd package also includes this if you
 want a simple identd that gives up usernames
