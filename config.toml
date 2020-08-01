@@ -11,5 +11,10 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+# theme = "anpu-zola-theme"
+# theme = "zola-sam"
+# theme = "hyde"
+
 [extra]
+date_format = "%Y-%m-%d"
 # Put all your custom variables here
