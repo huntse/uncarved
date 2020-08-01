@@ -1,11 +1,10 @@
 +++
 title = "Log4j for Scala"
+description = "Scala is nice. Logging is nice. Scala + logging.....?"
 last_modified = "2011-06-01T10:40:43Z"
 aliases = [ "LogHelper" ]
 +++
-# Log4j for Scala
 
-## Scala is nice. Logging is nice. Scala + logging.....?
 
 I've recently been playing about a bit with [Scala.][5] It's a great
 language in which you can write real programs very easily. As an

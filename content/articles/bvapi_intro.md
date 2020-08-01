@@ -1,10 +1,9 @@
 +++
 title = "Bullionvault interface"
+description = "Wrapping the public interface of a gold market in scala goodness"
 aliases = [ "/articles/bvapi_intro" ]
 +++
-# Bullionvault interface
 
-## Wrapping the public interface of a gold market in scala goodness
 
 [1]: http://www.uncarved.com/articles/bvapi_intro
 [2]: http://www.uncarved.com/

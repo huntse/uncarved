@@ -1,11 +1,10 @@
 +++
 title = "My Biog"
+description = "Some stuff about me"
 last_modified = "2011-06-02T16:08:34Z"
 aliases = [ "/articles/biog" ]
 +++
-# My Biog
 
-## Some stuff about me
 
 I trained to postgraduate level as a Jazz bass player, but worked as a
 programmer to pay for my music postgrad and somehow ended up in a

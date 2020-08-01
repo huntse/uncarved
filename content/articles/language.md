@@ -1,10 +1,9 @@
 +++
 title = "Which language would you use?"
+description = "It depends"
 last_modified = "2009-08-20T21:35:41Z"
 +++
-# Which language would you use?
 
-## It depends
 
 I got a mail a few days ago about how I wrote a couple of articles with
 code for an options pricer in ocaml but all my latest articles were

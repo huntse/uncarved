@@ -1,11 +1,10 @@
 +++
 title = "Learning Functional Programming"
+description = "I decided to teach myself ocaml by writing a derivatives pricer"
 aliases = [ "/articles/ocaml_finance" ]
 last_modified = "2007-06-05T21:08:53Z"
 +++
-# Learning Functional Programming
 
-## I decided to teach myself ocaml by writing a derivatives pricer
 
 I have been interested in functional programming for some time, but
 finally decided to bite the bullet and learn properly, and that (for me

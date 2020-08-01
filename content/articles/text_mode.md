@@ -1,11 +1,10 @@
 +++
 title = "Being Productive in Text Mode"
+description = "If you use a Unix system well, the command line can be the ultimate IDE."
 aliases = [ "/articles/text_mode" ]
 last_modified = "2006-04-21T15:04:39Z"
 +++
-# Being Productive in Text Mode
 
-## If you use a Unix system well, the command line can be the ultimate IDE.
 
 People who I work with are often bemused by the perculiar setup I have
 on my machine, which is the product of constant evolution over the last

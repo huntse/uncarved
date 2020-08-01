@@ -1,11 +1,10 @@
 +++
 title = "Ocaml objects part 2"
+description = "Parameter objects make more sense when we pass piecewise functions to the pricer"
 aliases = [ "/articles/ocaml_classes_2" ]
 last_modified = "2007-06-21T06:30:35Z"
 +++
-# Ocaml objects part 2
 
-## Parameter objects make more sense when we pass piecewise functions to the pricer
 
 Unfortunately the class for constant parameters that we developed
 [before][5] is just not that useful. We would be better off just using a

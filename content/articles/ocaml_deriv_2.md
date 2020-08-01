@@ -1,11 +1,10 @@
 +++
 title = "Derivatives pricing in ocaml Part 2"
+description = "Extending the basic mc pricer to handle different payoffs, we see how partial function application works"
 aliases = [ "/articles/ocaml_deriv_2" ]
 last_modified = "2007-06-06T08:58:44Z"
 +++
-# Derivatives pricing in ocaml Part 2
 
-## Extending the basic mc pricer to handle different payoffs, we see how partial function application works
 
 This is the third article in a series on using functional programming
 for financial applications which started [here.][5]

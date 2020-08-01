@@ -1,11 +1,10 @@
 +++
 title = "Credits"
+description = "People and stuff that have made this website fun to produce"
 last_modified = "2009-06-12T04:00:46Z"
 aliases = [ "/articles/credits" ]
 +++
-# Credits
 
-## People and stuff that have made this website fun to produce
 
 This server is a co-located Linux box, and is brought to me (and you)
 courtesy of the excellent folks at [mythic-beasts.com][5]. Their service

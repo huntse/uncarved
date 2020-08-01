@@ -1,11 +1,10 @@
 +++
 title = "Free Software"
+description = "A Small Collection of Free Software I have written"
 aliases = [ "/articles/free_software" ]
 last_modified = "2009-06-12T16:25:08Z"
 +++
-# Free Software
 
-## A Small Collection of Free Software I have written
 
 *Note*: I think all of this software is now lost
 

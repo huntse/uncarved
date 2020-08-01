@@ -1,11 +1,10 @@
 +++
 title = "Writing an Automated Marketmaking System"
+description = "The first in a series of articles in which we will construct a simple high frequency trading system."
 aliases = [ "/articles/mm_1" ]
 last_modified = "2011-05-11T09:59:07Z"
 +++
-# Writing an Automated Marketmaking System
 
-## The first in a series of articles in which we will construct a simple high frequency trading system.
 
 There has been a lot of press recently about the evils of high
 frequency trading (HFT), with many commentators saying that HFT may

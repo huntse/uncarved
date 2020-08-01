@@ -1,10 +1,9 @@
 +++
 title = "Using a Linux laptop in text mode"
+description = "Linux has everything you need to use your laptop even if you choose not to use the pointy-clicky interfaces"
 last_modified = "2009-10-17T13:05:22Z"
 +++
-# Using a Linux laptop in text mode
 
-## Linux has everything you need to use your laptop even if you choose not to use the pointy-clicky interfaces
 
 So having recently got a [netbook,][5] I have been learning how to do
 everything on it. It's obviously all easy if you use something like

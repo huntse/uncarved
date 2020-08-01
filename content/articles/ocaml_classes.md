@@ -1,11 +1,10 @@
 +++
 title = "Ocaml objects part 1"
+description = "Writing some objects in ocaml, we begin to make the pricer more flexible"
 aliases = [ "/articles/ocaml_classes" ]
 last_modified = "2007-06-19T19:36:27Z"
 +++
-# Ocaml objects part 1
 
-## Writing some objects in ocaml, we begin to make the pricer more flexible
 
 The next in the somewhat haphazard series that began [here][5] in which I
 learn a bit about ocaml objects, and in so doing, also learn why Joshi

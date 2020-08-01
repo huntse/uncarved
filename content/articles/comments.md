@@ -1,11 +1,10 @@
 +++
 title = "Adding comments"
+description = "So I've thought about doing this for some time but never had the spare time. Finally I add comments."
 last_modified = "2009-08-07T09:44:52Z"
 aliases = ["Comments"]
 +++
-# Adding comments
 
-## So I've thought about doing this for some time but never had the spare time. Finally I add comments.
 
 I have added comments for the first time. I don't expect there will be
 a great deal of traffic and at the moment just to get started I have

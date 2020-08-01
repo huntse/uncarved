@@ -1,10 +1,9 @@
 +++
 title = "Foaf in n3"
+description = "Having got started with n3 I made myself a foaf file using it"
 last_modified = "2009-06-13T13:18:59Z"
 +++
-# Foaf in n3
 
-## Having got started with n3 I made myself a foaf file using it
 
 So now I've [started][5] with [6]notation3 I am itching for places to use
 it. For this reason I decided to make myself a [foaf][7] file. Happily,

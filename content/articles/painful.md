@@ -1,10 +1,9 @@
 +++
 title = "That was painful"
+description = "Migrating everything to a new server"
 last_modified = "2009-02-06T14:39:14Z"
 +++
-# That was painful
 
-## Migrating everything to a new server
 
 So a couple of weeks ago I finally became annoyed enough at having to
 use a virtual linux server that I shelled out the extra and was

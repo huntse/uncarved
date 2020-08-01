@@ -1,11 +1,10 @@
 +++
 title = "Shell Command History and Searching"
+description = "Time spent learning how the unix shell works is never wasted"
 aliases = [ "/articles/shell_history" ]
 last_modified = "2006-05-17T07:35:18Z"
 +++
-# Shell Command History and Searching
 
-## Time spent learning how the unix shell works is never wasted
 
 One of the easiest ways to improve your productivity on unix systems is
 to become acquainted with your shell's history completion and search

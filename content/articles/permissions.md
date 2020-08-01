@@ -1,10 +1,9 @@
 +++
 title = "How do unix file permissions work?"
+description = "Unix provides fine-grained access control for files. It's important to understand it."
 last_modified = "2009-06-12T03:24:41Z"
 +++
-# How do unix file permissions work?
 
-## Unix provides fine-grained access control for files. It's important to understand it.
 
 What unix file permissions are
 

@@ -1,11 +1,10 @@
 +++
 title = "Getting started with github"
+description = "Before we can do our marketmaking system, you need to be able to get the software."
 aliases = [ "/articles/helpers_github" ]
 last_modified = "2011-06-02T18:18:09Z"
 +++
-# Getting started with github
 
-## Before we can do our marketmaking system, you need to be able to get the software.
 
 To share the marketmaking software that I talked about in the [first][5]
 marketmaking article, we need to have a repository set up, so I decided
