@@ -1,0 +1,1 @@
+../articles/netbook.md

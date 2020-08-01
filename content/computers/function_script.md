@@ -1,0 +1,1 @@
+../articles/function_script.md
