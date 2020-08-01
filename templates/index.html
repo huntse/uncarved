@@ -12,8 +12,21 @@
         <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) }}"/>
     </head>
     <body>
-        <div class="main">
+        <div class="header">
+            <h1>The Uncarved Block</h1>
+        </div>
+        <div id="left_menu">
+            <ul>
+                <li><a href="{{ get_url(path="") }}">top</a></li>
+                {% for sec in section.subsections %}
+                {% set current = get_section(path=sec) %}
+                <li><a href="{{ get_url(path=current.path) }}">{{ current.path }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="body">
             {{ section.content | safe }}
+
         </div>
     </body>
 </html>
