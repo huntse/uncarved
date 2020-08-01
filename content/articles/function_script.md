@@ -1,6 +1,5 @@
 +++
-title = "Shell Functions that are also executables
-vim: set syn=zsh:"
+title = "Shell Functions that are also executables"
 aliases = [ "/articles/function_script" ]
 last_modified = "2006-04-30T14:03:35Z"
 +++
