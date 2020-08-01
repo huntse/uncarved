@@ -59,5 +59,3 @@ scripting in Perl, sed (sometimes) and Python.
 [7]: http://www.uncarved.com/static/images/saintignucius.jpg
 [8]: http://www.nongnu.org/ratpoison/
 [9]: http://www.uncarved.com/tags/computers
-[10]: mailto:sean@uncarved.com
-[11]: http://creativecommons.org/licenses/by-sa/4.0/

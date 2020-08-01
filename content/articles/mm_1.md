@@ -173,5 +173,3 @@ so far is unclear and I'll try to deal with it in the next article.
 [10]: http://www.bullionvault.com/help/index.do
 [11]: http://www.bullionvault.com/#HUNTSE
 [12]: http://www.uncarved.com/tags/computers
-[13]: mailto:sean@uncarved.com
-[14]: http://creativecommons.org/licenses/by-sa/4.0/

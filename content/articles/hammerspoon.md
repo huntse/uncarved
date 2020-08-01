@@ -67,5 +67,3 @@ Mac to behave exactly the way you want.
 [3]: http://www.hammerspoon.org/
 [4]: https://www.uncarved.com/static/init.lua.txt
 [5]: https://www.uncarved.com/tags/computers
-[6]: mailto:sean@uncarved.com
-[7]: http://creativecommons.org/licenses/by-sa/4.0/

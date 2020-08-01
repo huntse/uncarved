@@ -38,5 +38,3 @@ watchamacallit.
 [11]: http://www.uncarved.com/blog/ching.mrk
 [12]: http://www.uncarved.com/blog/helpers.mrk
 [13]: http://www.uncarved.com/tags/computers
-[14]: mailto:sean@uncarved.com
-[15]: http://creativecommons.org/licenses/by-sa/4.0/

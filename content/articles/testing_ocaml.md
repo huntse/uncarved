@@ -173,5 +173,3 @@ End test group payoff.ml: 18 of 18 tests passed
 [4]: http://www.uncarved.com/login/
 [5]: http://www.uncarved.com/blog/practical_ocaml.mrk
 [6]: http://www.uncarved.com/tags/computers
-[7]: mailto:sean@uncarved.com
-[8]: http://creativecommons.org/licenses/by-sa/4.0/

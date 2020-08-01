@@ -91,10 +91,8 @@ Technorati tags: [foaf][11] [12]rdf [13]semantic web
 [7]: http://www.foaf-project.org/
 [8]: http://www.uncarved.com/static/foaf.rdf
 [9]: http://www.w3.org/RDF/Validator/
-[10]: mailto:sean@uncarved.com
 [11]: http://www.technorati.com/tags/foaf
 [12]: http://www.technorati.com/tags/rdf
 [13]: http://www.technorati.com/tag/semantic web
 [14]: http://www.uncarved.com/tags/computers
 [15]: mailto:sean@uncarved.com
-[16]: http://creativecommons.org/licenses/by-sa/4.0/

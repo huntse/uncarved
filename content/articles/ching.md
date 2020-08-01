@@ -21,16 +21,17 @@ oracle. The second hexagram is the first but with "moving lines"
 inverted in the traditional fashion. This website uses [web.py,][8] and I
 incorporate the I-Ching reading into the [Cheetah][9] template for the
 homepage. The relevant snippet of template code looks like this:
-#import ching
-#set $hexes = $ching.get_hexagram_pair
-#set $hex1 = int($ching.get_hexagram_number($hexes[))][0]
-#set $hex2 = int($ching.get_hexagram_number($hexes[))][1]
-#set $name1 = $ching.get_hexagram_name($hexes[)][0]
-#set $name2 = $ching.get_hexagram_name($hexes[)][1]
-#echo '<img id="hex1" alt="%d: %s" src="/static/images/iching/Iching
--hexagram-%02d.png" />' % (hex1,name1 ,hex1) #
-#echo '<img id="hex2" alt="%d: %s" src="/static/images/iching/Iching
--hexagram-%02d.png" />' % (hex2,name2 ,hex2) #
+
+    #import ching
+    #set $hexes = $ching.get_hexagram_pair
+    #set $hex1 = int($ching.get_hexagram_number($hexes[))][0]
+    #set $hex2 = int($ching.get_hexagram_number($hexes[))][1]
+    #set $name1 = $ching.get_hexagram_name($hexes[)][0]
+    #set $name2 = $ching.get_hexagram_name($hexes[)][1]
+    #echo '<img id="hex1" alt="%d: %s" src="/static/images/iching/Iching
+    -hexagram-%02d.png" />' % (hex1,name1 ,hex1) #
+    #echo '<img id="hex2" alt="%d: %s" src="/static/images/iching/Iching
+    -hexagram-%02d.png" />' % (hex2,name2 ,hex2) #
 
 ...and the lovely hexagram graphics are in the public domain. I
 downloaded them from the wikipedia.
@@ -44,7 +45,3 @@ downloaded them from the wikipedia.
 [7]: http://en.wikipedia.org/wiki/I_Ching_divination#Yarrow_stalks
 [8]: http://webpy.org/
 [9]: http://cheetahtemplate.org/
-[10]: http://www.uncarved.com/tags/computers
-[11]: http://www.uncarved.com/tags/everything else
-[12]: mailto:sean@uncarved.com
-[13]: http://creativecommons.org/licenses/by-sa/4.0/

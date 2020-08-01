@@ -17,5 +17,3 @@ anyway...
 [4]: http://www.uncarved.com/login/
 [5]: http://www.foo.be/docs/tpj/issues/vol5_2/tpj0502-0007.html
 [6]: http://www.uncarved.com/tags/computers
-[7]: mailto:sean@uncarved.com
-[8]: http://creativecommons.org/licenses/by-sa/4.0/

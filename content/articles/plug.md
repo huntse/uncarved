@@ -25,5 +25,3 @@ css.
 [7]: http://www.wigmore-hall.org.uk/concerts/concert_details.cfm?e=36243
 [8]: http://www.wigmore-hall.org.uk/concerts/concert_details.cfm?e=36243
 [9]: http://www.uncarved.com/tags/thoughts
-[10]: mailto:sean@uncarved.com
-[11]: http://creativecommons.org/licenses/by-sa/4.0/

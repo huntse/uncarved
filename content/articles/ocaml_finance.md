@@ -83,5 +83,3 @@ function can operate on any type so it works with floats or ints.
 [16]: http://www.linux.org/
 [17]: http://www.uncarved.com/blog/ocaml_deriv_1.mrk
 [18]: http://www.uncarved.com/tags/computers
-[19]: mailto:sean@uncarved.com
-[20]: http://creativecommons.org/licenses/by-sa/4.0/

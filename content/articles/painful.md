@@ -28,5 +28,3 @@ plunge). Anyway, it seems to have worked.
 [4]: http://www.uncarved.com/login/
 [5]: http://www.webpy.org/
 [6]: http://www.uncarved.com/tags/computers
-[7]: mailto:sean@uncarved.com
-[8]: http://creativecommons.org/licenses/by-sa/4.0/

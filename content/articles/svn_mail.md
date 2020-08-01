@@ -6,7 +6,7 @@ last_modified = "2006-05-18T16:26:32Z"
 +++
 
 
-Inspired by ['Keeping][5] your life in subversion' For some time now I
+Inspired by ['Keeping your life in subversion'][5] For some time now I
 have been slowly migrating all of my personal home directories into the
 [subversion][6] version control system and merging back so that I end up
 with a spartan configuration and everything gets backed up. Fool that I
@@ -27,46 +27,44 @@ virtual folders and cooperates well with [mutt,][9] my favourite email
 client. One possible solution to virtual folders is [here.][10] I decided
 to do things a little differently, and here's the shell script that
 does it all for me:
-#!/bin/sh
 
-set -e
+    #!/bin/sh
 
-TODAY=$( date -Iseconds )
-cd "${HOME}/mail"
-echo "Updating mail index..."
-mairix -p       #add '-v' for more verbosity
-echo "Emptying search folder"
-rm -rf "${HOME}/mail/mfolder/"{cur,new,tmp}/*
-echo "svn syncup"
-svn status | awk '/^\?/{print $2}' | xargs -r svn add
-svn status | awk '/^!/{print $2}' | xargs -r svn rm
-svn ci -m "Mail sync for ${TODAY}"
+    set -e
+
+    TODAY=$( date -Iseconds )
+    cd "${HOME}/mail"
+    echo "Updating mail index..."
+    mairix -p       #add '-v' for more verbosity
+    echo "Emptying search folder"
+    rm -rf "${HOME}/mail/mfolder/"{cur,new,tmp}/*
+    echo "svn syncup"
+    svn status | awk '/^\?/{print $2}' | xargs -r svn add
+    svn status | awk '/^!/{print $2}' | xargs -r svn rm
+    svn ci -m "Mail sync for ${TODAY}"
 
 Here's my .mairixrc:
-base=/home/sean/mail
-maildir=incoming...:sentmail...
-mfolder=mfolder
-database=/home/sean/mail/mairix_database
+
+    base=/home/sean/mail
+    maildir=incoming...:sentmail...
+    mfolder=mfolder
+    database=/home/sean/mail/mairix_database
 
 All that's needed to get it working in Mutt is to add ~/mail/mfolder to
-the mailboxes my .muttrc, and add macro index \e\/
-"<shell-escape>mairix " "Run a mairix search" at the same time. Now, in
+the mailboxes my .muttrc, and add
+
+    macro index \e\/"<shell-escape>mairix " "Run a mairix search"
+
+at the same time. Now, in
 mutt to do a search I do Escape-/ and type a regex. All of the hits are
 in ~/mail/mfolder and I change to that like a regular mailbox.
 
 ...and to keep it all up to date I just run my mailsync script every
 now and again.
 
-[1]: http://www.uncarved.com/articles/svn_mail
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.onlamp.com/pub/a/onlamp/2005/01/06/svn_homedir.html
 [6]: http://subversion.tigris.org/
 [7]: http://www.linuxjournal.com/article/7712
 [8]: http://www.rc0.org.uk/mairix/
 [9]: http://www.mutt.org/
 [10]: http://larve.net/people/hugo/2003/scratchpad/VirtualFoldersInMutt.html
-[11]: http://www.uncarved.com/tags/computers
-[12]: mailto:sean@uncarved.com
-[13]: http://creativecommons.org/licenses/by-sa/4.0/

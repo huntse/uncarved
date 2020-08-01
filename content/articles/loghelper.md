@@ -45,13 +45,6 @@ logger.debug("leaving someMethod")
 Easy peasy logging. This class is one of several that I have released
 on [github.][7] Enjoy!
 
-[1]: http://www.uncarved.com/articles/LogHelper
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.scala-lang.org/
 [6]: http://logging.apache.org/log4j/
-[7]: http://www.uncarved.com/blog/helpers_github.mrk
-[8]: http://www.uncarved.com/tags/computers
-[9]: mailto:sean@uncarved.com
-[10]: http://creativecommons.org/licenses/by-sa/4.0/
+[7]: http://github.com/huntse

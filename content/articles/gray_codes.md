@@ -73,5 +73,3 @@ all be presented here in due course.
 [6]: http://www.cs.auckland.ac.nz/CDMTCS//researchreports/304bob.pdf
 [7]: http://www.haskell.org/
 [8]: http://www.uncarved.com/tags/computers
-[9]: mailto:sean@uncarved.com
-[10]: http://creativecommons.org/licenses/by-sa/4.0/

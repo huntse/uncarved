@@ -46,5 +46,3 @@ much like the above for you.
 [5]: https://addons.mozilla.org/en-US/firefox/addon/9527
 [6]: http://www.uncarved.com/
 [7]: http://www.uncarved.com/tags/computers
-[8]: mailto:sean@uncarved.com
-[9]: http://creativecommons.org/licenses/by-sa/4.0/

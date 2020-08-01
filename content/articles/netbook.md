@@ -40,5 +40,3 @@ slightly better battery life. In fact, battery life seems amazing.
 [7]: http://www.haskell.org/
 [8]: http://en.wikipedia.org/wiki/Intel_Atom
 [9]: http://www.uncarved.com/tags/computers
-[10]: mailto:sean@uncarved.com
-[11]: http://creativecommons.org/licenses/by-sa/4.0/
