@@ -1,5 +1,5 @@
 +++
 title = "Computers"
-subtitle = "Pieces to do with computers, software, unix and related topics"
+description = "Pieces to do with computers, software, unix and related topics"
 +++
 
