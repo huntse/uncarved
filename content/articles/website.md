@@ -1,10 +1,9 @@
 +++
 title = "Website Changes"
+description = "An occasionally-updated summary of stuff I've changed"
 last_modified = "2009-08-07T09:48:28Z"
 +++
-# Website Changes
 
-## An occasionally-updated summary of stuff I've changed
 
 So when I had a day off work this week I decided to fix a few things on
 this site that have been bugging me for a while:

@@ -1,10 +1,9 @@
 +++
 title = "Mozilla Ubiquity"
+description = "Fun with this amazing mozilla addon"
 last_modified = "2010-05-05T04:46:34Z"
 +++
-# Mozilla Ubiquity
 
-## Fun with this amazing mozilla addon
 
 [Ubiquity][5] is an amazing mozilla addon which gives users a
 command-line interface within the browser which you can use to do

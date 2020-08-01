@@ -1,11 +1,10 @@
 +++
 title = "Making other people rich"
+description = "A basic understanding of economics can help you to be a happier and more successful person"
 aliases = [ "/articles/making_other_people_rich" ]
 last_modified = "2006-04-23T08:38:07Z"
 +++
-# Making other people rich
 
-## A basic understanding of economics can help you to be a happier and more successful person
 
 I was travelling on the tube one day when as is sometimes the case, a
 guy came into the carriage with a cup of change and started telling

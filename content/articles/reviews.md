@@ -1,10 +1,9 @@
 +++
 title = "Undercover Economist"
+description = "A review of 'The Undercover Economist' by Tim Harford"
 last_modified = "2006-05-11T07:48:25Z"
 +++
-# Undercover Economist
 
-## A review of "The Undercover Economist" by Tim Harford
 
 Inspired by my friend [Erich][5] Schlaikjer, I intend to write some
 reviews of books and music and put them up here, so I'll start with the

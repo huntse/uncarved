@@ -1,11 +1,10 @@
 +++
 title = "Public funding of political parties"
+description = "The UK political parties are voting for their own interests by asking for taxpayer funding. Taxpayers should say 'no'."
 aliases = [ "/articles/political_funding" ]
 last_modified = "2006-08-02T10:49:31Z"
 +++
-# Public funding of political parties
 
-## The UK political parties are voting for their own interests by asking for taxpayer funding. Taxpayers should say "no".
 
 In the light of recent scandals various proposals have been made that
 would result in political parties in the UK receiving taxpayers' money

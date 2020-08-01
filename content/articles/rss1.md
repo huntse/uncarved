@@ -1,10 +1,9 @@
 +++
 title = "RSS 1.1 Feed now available"
+description = "RDF + Syndication = RSS 1"
 last_modified = "2006-05-11T19:32:31Z"
 +++
-# RSS 1.1 Feed now available
 
-## RDF + Syndication = RSS 1
 
 Now that I am getting the hang of rdf, the next logical step was to
 link metadata with content and provide an [rss][5] 1.1 feed. Rss 1.1 is a

@@ -1,11 +1,10 @@
 +++
 title = "Building a better cd"
+description = "Unix shell is very flexible and easy to customise. Here is how I made 'cd' better for me than the builtin one."
 aliases = [ "/articles/better_cd" ]
 last_modified = "2006-04-21T15:44:45Z"
 +++
-# Building a better cd
 
-## Unix shell is very flexible and easy to customise. Here is how I made "cd" better for me than the builtin one.
 
 One of the key strengths of unix systems is the philosophy of small
 tools which can be combined in flexible ways. Writing your own scripts,

@@ -1,11 +1,10 @@
 +++
 title = "I Ching in ML"
+description = "In which I write yet another implementation of the book of changes (this time in ocaml)"
 last_modified = "2008-12-09T13:42:33Z"
 aliases = [ "/articles/ching_ml" ]
 +++
-# I Ching in ML
 
-## In which I write yet another implementation of the book of changes (this time in ocaml)
 
 I decided to rewrite my python I Ching in ocaml. This is interesting to
 do in some respects as it's not really a traditional functional

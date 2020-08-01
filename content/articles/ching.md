@@ -1,11 +1,10 @@
 +++
 title = "I Ching"
+description = "About the hexagrams on this site"
 last_modified = ""
 aliases = [ "/articles/ching" ]
 +++
-# I Ching
 
-## About the hexagrams on this site
 
 My interest in the I Ching began when I was a music student. Studing
 John Cage, I learned that he was heavily influenced by the I Ching and

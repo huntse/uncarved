@@ -1,11 +1,10 @@
 +++
 title = "Thank goodness for greasemonkey"
+description = "Google recently added an extremely annoying feature to google reader. Thankfully you can decide for yourself how their website works."
 aliases = [ "/articles/no_smileys" ]
 last_modified = "2009-07-20T19:58:05Z"
 +++
-# Thank goodness for greasemonkey
 
-## Google recently added an extremely annoying feature to google reader. Thankfully you can decide for yourself how their website works.
 
 Every morning I drink my coffee and read various news sites using
 google [reader,][5] so I was horrified recently to see a big yellow

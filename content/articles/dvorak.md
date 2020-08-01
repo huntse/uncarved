@@ -1,10 +1,9 @@
 +++
 title = "Making the switch"
+description = "Changing over to dvorak typing is tough, but worth it"
 last_modified = "2006-04-21T15:44:28Z"
 +++
-# Making the switch
 
-## Changing over to dvorak typing is tough, but worth it
 
 Some time ago I decided to give the [dvorak][5] simplified keyboard
 layout a go. The major incentive for me to switch was that a colleague

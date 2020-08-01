@@ -1,10 +1,9 @@
 +++
 title = "The quest to get a mac to do exactly what I want"
+description = "It all started because I use a weird keyboard. When I don't have this"
 last_modified = "2017-06-23T07:29:12Z"
 +++
-# The quest to get a mac to do exactly what I want
 
-## It all started because I use a weird keyboard. When I don't have this
 keyboard plugged in, I want my laptop keyboard map to use dvorak, but
 since my keyboard is dvorak in hardware, when it's plugged in, the
 laptop's keyboard map needs to be switched to qwerty otherwise I get a

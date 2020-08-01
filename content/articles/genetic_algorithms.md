@@ -1,11 +1,10 @@
 +++
 title = "An Introduction to Genetic Algorithms"
+description = "Review of Melanie Mitchell's excellent book"
 aliases = [ "/articles/genetic_algorithms" ]
 last_modified = "2009-03-25T08:17:29Z"
 +++
-# An Introduction to Genetic Algorithms
 
-## Review of Melanie Mitchell's excellent book
 
 So today is [Ada][5] Lovelace Day, and the challenge has been thrown down
 to write about women in technology. Now there are many obvious

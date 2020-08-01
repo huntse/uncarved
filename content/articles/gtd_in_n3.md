@@ -1,11 +1,10 @@
 +++
 title = "Getting Things Done in Text with notation3"
+description = "I want a simple means of tracking and grouping tasks that works in text form and is easily parseable. And I want to learn notation3 too..."
 aliases = [ "/articles/gtd_in_n3" ]
 last_modified = "2006-05-10T04:44:53Z"
 +++
-# Getting Things Done in Text with notation3
 
-## I want a simple means of tracking and grouping tasks that works in text form and is easily parseable. And I want to learn notation3 too...
 
 Inspired by [this][5] article on lifehacker I decided to make my own
 "getting things done" toolset. It would ideally need to be just as

@@ -1,11 +1,10 @@
 +++
 title = "n-Bit Gray codes in Haskell"
+description = "A first step in what will become a combinatorics library"
 aliases = [ "/articles/gray_codes" ]
 last_modified = "2009-08-22T06:29:35Z"
 +++
-# n-Bit Gray codes in Haskell
 
-## A first step in what will become a combinatorics library
 
 I have been playing around with Gray's reflected binary code (aka
 [Gray][5] codes) and similar things a bit. Before I reveal why I'm doing

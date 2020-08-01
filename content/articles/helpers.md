@@ -1,10 +1,9 @@
 +++
 title = "helper classes for scala"
+description = "My first opensource scala package"
 last_modified = "2011-06-01T10:46:47Z"
 +++
-# helper classes for scala
 
-## My first opensource scala package
 
 So I've released my helpers code via [github.][5] Scaladoc is available
 [here,][6] although I warn you that my patience with hacking the

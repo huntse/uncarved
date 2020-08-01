@@ -1,11 +1,10 @@
 +++
 title = "Patterns in Perl"
+description = "An article I wrote for the Perl Journal a long time ago"
 aliases = [ "/articles/perl_patterns" ]
 last_modified = "2006-04-21T14:51:31Z"
 +++
-# Patterns in Perl
 
-## An article I wrote for the Perl Journal a long time ago
 
 ...about how to use iterators and some other simple design patterns in
 perl. The idea of iterator chains is still interesting to me, although
