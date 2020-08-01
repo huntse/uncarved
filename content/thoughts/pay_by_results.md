@@ -1,0 +1,1 @@
+../articles/pay_by_results.md

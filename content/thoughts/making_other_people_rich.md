@@ -1,0 +1,1 @@
+../articles/making_other_people_rich.md
