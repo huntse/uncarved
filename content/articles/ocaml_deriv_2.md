@@ -13,6 +13,8 @@ So given our [first][6] Monte Carlo simulator, and the [7]payoff
 functions that we started with, it's easy to see how we extend the
 pricer to handle Joshi's first question at the end of chapter 1 (to
 price puts):
+
+```Ocaml
 (* mc1b.ml - A rudimentary option pricer to answer the exercises at the
 * end of chapter 1 in Joshi.
 *
@@ -29,49 +31,46 @@ open Printf;;
 Random.self_init;;
 
 (* get a random gaussian using a Box-Muller transform, described
-* here http://en.wikipedia.org/wiki/Box-Muller_transform *)
+ * here http://en.wikipedia.org/wiki/Box-Muller_transform *)
 let rec get_one_gaussian_by_box_muller () =
-(* Generate two uniform numbers from -1 to 1 *)
-let x = Random.float 2.0 -. 1.0 in
-let y = Random.float 2.0 -. 1.0 in
-let s = x*.x +. y*.y in
-if s > 1.0 then get_one_gaussian_by_box_muller ()
-else x *. sqrt (-2.0 *. (log s) /. s)
-;;
+    (* Generate two uniform numbers from -1 to 1 *)
+    let x = Random.float 2.0 -. 1.0 in
+    let y = Random.float 2.0 -. 1.0 in
+    let s = x*.x +. y*.y in
+    if s > 1.0 then get_one_gaussian_by_box_muller ()
+    else x *. sqrt (-2.0 *. (log s) /. s)
+    ;;
 
-(* a vanilla option pays off the difference between the spot price
-* and the strike, or expires worthless *)
+ (* a vanilla option pays off the difference between the spot price
+ * and the strike, or expires worthless *)
 let put_payoff strike spot =
-max ( strike -. spot ) 0.0;;
+    max ( strike -. spot ) 0.0;;
 
 let call_payoff strike spot =
-max (spot -. strike ) 0.0;;
+    max (spot -. strike ) 0.0;;
 
 (* Price an option with a flexible payoff using Monte Carlo. *)
 let simple_monte_carlo_1a payoff expiry strike spot vol r num_paths =
-let variance = vol *. vol *. expiry in
-let root_variance = sqrt variance in
-let ito_correction = -0.5 *. variance in
-let moved_spot = spot *. exp (r *. expiry +. ito_correction) in
-let rec do_path i running_sum =
-if i < num_paths then begin
-let this_gaussian = get_one_gaussian_by_box_muller () in
-let this_spot = moved_spot *. (exp (root_variance *. this_gaussian))
-in
-let this_payoff = payoff strike this_spot in
-do_path (i+1) (running_sum +. this_payoff)
-end
-else (running_sum /. (float_of_int num_paths)) *. (exp (-1.0 *. r *. exp
-iry))
-in
-do_path 0 0.0
-;;
+    let variance = vol *. vol *. expiry in
+    let root_variance = sqrt variance in
+    let ito_correction = -0.5 *. variance in
+    let moved_spot = spot *. exp (r *. expiry +. ito_correction) in
+    let rec do_path i running_sum =
+        if i < num_paths then begin
+            let this_gaussian = get_one_gaussian_by_box_muller () in
+            let this_spot = moved_spot *. (exp (root_variance *. this_gaussian)) in
+            let this_payoff = payoff strike this_spot in
+            do_path (i+1) (running_sum +. this_payoff)
+        end
+        else (running_sum /. (float_of_int num_paths)) *. (exp (-1.0 *. r *. expiry))
+    in
+    do_path 0 0.0
+    ;;
 
 (* price one put and one call option struck at the money *)
-printf "%f\n" (simple_monte_carlo_1a call_payoff 0.025 195.5 195.5 0.20 0.045 10
-0000);;
-printf "%f\n" (simple_monte_carlo_1a put_payoff 0.025 195.5 195.5 0.20 0.045 100
-000);;
+printf "%f\n" (simple_monte_carlo_1a call_payoff 0.025 195.5 195.5 0.20 0.045 100000);;
+printf "%f\n" (simple_monte_carlo_1a put_payoff 0.025 195.5 195.5 0.20 0.045 100000);;
+```
 
 So we pass a payoff function into the Monte Carlo simulator and call
 that function for each path. This isn't quite general enough to handle
@@ -84,6 +83,7 @@ takes 2 parameters, but give it only one, the return type is a function
 that takes one parameter. Amazingly partial function application is
 just there by default and there's no need for tedious binders like
 there are in the STL in C++ for example. This will explain:
+```
 % ocaml
 
 Objective Caml version 3.09.3
@@ -96,47 +96,48 @@ val add2 : int -> int = <fun>
 - : int = 7
 # add2 16;;
 - : int = 18
-
+```
 So myadd adds two numbers, and by calling it with just one (a 2) we
 create a function that takes one argument and adds two to it. This is
 exactly what we need for our flexible payoff function. You can think of
 the partially applied function args as being all the things that are
 constant on the termsheet of the trade. Our payoff functions remain the
 same, except we add one for double digitals:
+```Ocaml
 let double_digital_payoff low high spot =
-if (low <= spot && spot <= high) then 1.0
-else 0.0;;
+    if (low <= spot && spot <= high) then 1.0
+    else 0.0;;
+```
 
 ...and we change the mc pricer to just call the payoff func with the
 spot on the current mc path. We will partially-apply any other
 arguments the payoff functions need when we invoke the pricer:
+```Ocaml
 (* Price an option with a flexible payoff using Monte Carlo. *)
 let simple_monte_carlo_1b payoff expiry spot vol r num_paths =
-let variance = vol *. vol *. expiry in
-let root_variance = sqrt variance in
-let ito_correction = -0.5 *. variance in
-let moved_spot = spot *. exp (r *. expiry +. ito_correction) in
-let rec do_path i running_sum =
-if i < num_paths then begin
-let this_gaussian = get_one_gaussian_by_box_muller () in
-let this_spot = moved_spot *. (exp (root_variance *. this_gaussian))
-in
-let this_payoff = payoff this_spot in
-do_path (i+1) (running_sum +. this_payoff)
-end
-else (running_sum /. (float_of_int num_paths)) *. (exp (-1.0 *. r *. exp
-iry))
-in
-do_path 0 0.0
-;;
+    let variance = vol *. vol *. expiry in
+    let root_variance = sqrt variance in
+    let ito_correction = -0.5 *. variance in
+    let moved_spot = spot *. exp (r *. expiry +. ito_correction) in
+    let rec do_path i running_sum =
+        if i &lt; num_paths then begin
+            let this_gaussian = get_one_gaussian_by_box_muller () in
+            let this_spot = moved_spot *. (exp (root_variance *. this_gaussian)) in
+            let this_payoff = payoff this_spot in
+            do_path (i+1) (running_sum +. this_payoff)
+        end
+        else (running_sum /. (float_of_int num_paths)) *. (exp (-1.0 *. r *. expiry))
+    in
+    do_path 0 0.0
+    ;;
+```
 
 Now see how we call this pricer. It's simplicity itself:
-printf "%f\n" (simple_monte_carlo_1b (call_payoff 160.0) 0.2 161.3 0.35 0.045 25
-0000);;
-printf "%f\n" (simple_monte_carlo_1b (put_payoff 170.0) 0.2 161.3 0.31 0.045 250
-000);;
-printf "%f\n" (simple_monte_carlo_1b (double_digital_payoff 160.0 170.0) 0.2 161
-.3 0.29 0.045 250000);;
+```Ocaml
+printf "%f\n" (simple_monte_carlo_1b (call_payoff 160.0) 0.2 161.3 0.35 0.045 250000);;
+printf "%f\n" (simple_monte_carlo_1b (put_payoff 170.0) 0.2 161.3 0.31 0.045 250000);;
+printf "%f\n" (simple_monte_carlo_1b (double_digital_payoff 160.0 170.0) 0.2 161.3 0.29 0.045 250000);;
+```
 
 I find this immensely pleasing. I have hardly started learning the
 language, and yet generalising this code was simplicity itself due to
@@ -152,14 +153,6 @@ do. I would also like to make the code into a few modules, but I am not
 sure how you do that in ocaml yet.
 
 [1]: http://www.uncarved.com/articles/ocaml_deriv_2
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.uncarved.com/blog/ocaml_finance.mrk
 [6]: http://www.uncarved.com/blog/ocaml_deriv_1.mrk
 [7]: http://www.uncarved.com/blog/ocaml_finance.mrk
-[8]: http://www.uncarved.com/tags/computers
-let myadd x y=x+y;;
-let add2=myadd 2;;
-add2 5;;
-add2 16;;"
