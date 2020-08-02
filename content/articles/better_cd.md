@@ -22,40 +22,42 @@ features or do things your way.
 
 For example, the cd builtin in ksh has this tremendous feature for
 dealing with long paths. Say I'm in
-/foo/bar/nerf/2003-04-26/conf/frazzle and I realise I need to be in
-/foo/baz/nerf/2003-04-26/conf/frazzle, all I do is type cd bar baz .
+`/foo/bar/nerf/2003-04-26/conf/frazzle` and I realise I need to be in
+`/foo/baz/nerf/2003-04-26/conf/frazzle`, all I do is type `cd bar baz` .
 That's pretty useful.
 
-I also often find myself typing vi /the/path/to/a/file, then wishing I
+I also often find myself typing `vi /the/path/to/a/file`, then wishing I
 could do cd !$ to get to the directory to check the file in or
 whatever. So I built a cd function that changes to the parent directory
 if the target is a file. When a colleague of mine explained the ksh cd
 behaviour, I added his ksh-like cd function to mine to get this:
 
-    cd()
-    {
-        if [ -z "$1" ] ; then
-            builtin cd
+```sh
+cd()
+{
+    if [ -z "$1" ] ; then
+        builtin cd
+    else
+        if [ -n "$2" ]; then
+            TRY="${PWD/$1/$2}"
         else
-            if [ -n "$2" ]; then
-                TRY="${PWD/$1/$2}"
-            else
-                TRY="$1"
-            fi
-
-            if [ -f "${TRY}" ]; then
-                builtin cd "${TRY:h}"
-            else
-                builtin cd "${TRY}"
-            fi
+            TRY="$1"
         fi
-    }
+
+        if [ -f "${TRY}" ]; then
+            builtin cd "${TRY:h}"
+        else
+            builtin cd "${TRY}"
+        fi
+    fi
+}
+```
 
 Notice that this includes a few zsh-isms which you'll need to change if
-you want to use this in bash. ${TRY:h} is the same as $( dirname
-"${TRY}" ) but I get to skip the backticks and save a fork. I think you
+you want to use this in bash. `${TRY:h}` is the same as `$( dirname
+"${TRY}" )` but I get to skip the backticks and save a fork. I think you
 can do this in bash using a string substitution something like
-"${TRY##*/}" but I haven't bothered to try. If you are using a csh-like
+`"${TRY##*/}"` but I haven't bothered to try. If you are using a csh-like
 shell I pity you and this cd mechanism will not be enough to save you
 from your folly anyway.
 

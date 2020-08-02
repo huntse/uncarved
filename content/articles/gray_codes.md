@@ -17,26 +17,34 @@ this is a parallel effort.
 So for starters we need a datatype for representing these things. This
 is how you define an algebraic datatype in haskell. In what follows,
 lines beginning "--" are single-line comments
+
+```haskell
 -- | 'Bit' is the datatype for representing a bit in a gray code.
 data Bit = Zero | One deriving Show
+```
 
 Alright. So we have a type "Bit" with two constructors Zero and One and
 a "deriving Show" which means haskell figures out how to turn it into a
 string. This is useful when you're in ghci (the interactive haskell
 environment) debugging.
+```haskell
 -- prepend a given item onto each of a list of lists (probably something to do t
 his in the prelude)
 prepend :: a -> [[a]] -> [[a]]
 prepend t xs = map (t:) xs
+```
 
 A teeny helper function. Given a list of lists and a thing it sticks
 the thing on the front of each list in the outer list. This would
 append the thing on the end of each list:
+```haskell
 append :: a -> [[a]] -> [[a]]
 append t xs = map (++[t]) xs
+```
 
 Note I'm writing the type signatures explicitly but there's absolutely
 no problem if you leave them off. So let's generate our Gray codes:
+```haskell
 -- | 'gray' generates the gray code sequence of length 'n'
 gray :: Int -> [[Bit]]
 gray 1 = [ [Zero], [One] ]
@@ -46,6 +54,7 @@ gray n = prepend Zero (gray (n-1)) ++ prepend One (descGray (n-1))
 descGray :: Int -> [[Bit]]
 descGray 1 = [ [One], [Zero] ]
 descGray n = prepend One (gray (n-1)) ++ prepend Zero (descGray (n-1))
+```
 
 So we get an ascending and a descending one for free. Since the
 descending one is just the ascending one in reverse why (you might say)

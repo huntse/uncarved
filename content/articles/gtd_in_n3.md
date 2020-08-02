@@ -20,6 +20,7 @@ not least because n3 is entirely new to me and I am bound to change
 things as I go along.
 
 So far, the document looks something like this:
+```
 @prefix : <#> .
 :tidy_garden :contexts "@home" ; :next_action "Mow lawn" ; :all_actions "Mow law
 n" , "Weed borders" , "Turn compost" , "Prune" , "Tidy front garden" ; :priority
@@ -27,6 +28,7 @@ n" , "Weed borders" , "Turn compost" , "Prune" , "Tidy front garden" ; :priority
 :sort_finances :contexts "@home" , "@work" ; :next_action "Consolidate pensions"
 ; :all_actions "Consolidate pensions" , "ebay junk", "make budget" ; :priority
 1 .
+```
 
 As you can see, for each item, I can list the contexts in which it can
 take place, the next action and all the actions I have thought of for

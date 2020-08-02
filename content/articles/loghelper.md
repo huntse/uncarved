@@ -2,7 +2,7 @@
 title = "Log4j for Scala"
 description = "Scala is nice. Logging is nice. Scala + logging.....?"
 last_modified = "2011-06-01T10:40:43Z"
-aliases = [ "LogHelper" ]
+aliases = [ "/articles/LogHelper" ]
 +++
 
 
@@ -11,6 +11,8 @@ language in which you can write real programs very easily. As an
 example, in Java you often want to be able to make use of [log4j][6] to
 log various tracing info. Well, here's a little helper trait you can
 mix in to scala classes make logging completely trivial:
+
+```Scala
 package com.uncarved.helpers
 
 import org.apache.log4j.Logger;
@@ -20,27 +22,31 @@ import org.apache.log4j.Logger;
 * for your scala classes.
 **/
 trait LogHelper {
-val loggerName = this.getClass.getName
-lazy val logger = Logger.getLogger(loggerName)
+    val loggerName = this.getClass.getName
+    lazy val logger = Logger.getLogger(loggerName)
 }
+```
 
 You use it like this:
+
+```scala
 class MyClass extends LogHelper {
-logger.debug("We got ourselves a class")
-def someMethod(temp: Int) = {
-logger.debug("entering someMethod")
+    logger.debug("We got ourselves a class")
+    def someMethod(temp: Int) = {
+        logger.debug("entering someMethod")
 
-if(temp>25) {
-logger.info("It's mighty hot in here")
+        if(temp>25) {
+            logger.info("It's mighty hot in here")
 
-//...do something
+            //...do something
 
+        }
+        //..... etc
+
+        logger.debug("leaving someMethod")
+    }
 }
-//..... etc
-
-logger.debug("leaving someMethod")
-}
-}
+```
 
 Easy peasy logging. This class is one of several that I have released
 on [github.][7] Enjoy!

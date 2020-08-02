@@ -22,17 +22,18 @@ libraries and wrapping them all up in a class that's convenient and
 simple to use. Here's a taster:
 import com.uncarved.helpers.http._
 
+```scala
 val helper = new BasicClient()
-//Get a webpage as a string (if you look at the apache http log4j messages you
-can see it
-//does conditional get and has transparent gzip support)
+//Get a webpage as a string (if you look at the apache http log4j
+//messages you can see it does conditional get and has transparen
+//gzip support)
 val str = helper.get("http://www.theflautadors.org/")
 
 //Get some XML (with request parameters supplied)
 val params = List(("tag"->""), ("limit"->"5"))
-val xml = helper.getXML(Request(RequestType.GET, "http://www.uncarved.com/index
-.py/rss1.1.xml", params))
+val xml = helper.getXML(Request(RequestType.GET, "http://www.uncaJved.com/index.py/rss1.1.xml", params))
 val items = xml \\ "item"
+```
 
 [1]: http://www.uncarved.com/articles/helpers
 [2]: http://www.uncarved.com/
