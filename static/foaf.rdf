@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Processed by Id: cwm.py,v 1.164 2004/10/28 17:41:59 timbl Exp -->
+<!--     using base file:/home/sean/doc/n3/foaf.n3-->
+<rdf:RDF xmlns="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:wot="http://xmlns.com/wot/0.1/">
+  <Person rdf:about="#me">
+    <family_name>Hunter</family_name>
+    <gender>male</gender>
+    <givenname>Sean</givenname>
+    <homepage rdf:resource="http://www.uncarved.com/"/>
+    <mbox_sha1sum>f5a2eaad7e46af80de0bc48e6db72efebe382da0</mbox_sha1sum>
+    <name>Sean Hunter</name>
+    <plan>
++++  ---
++++  ---
++++  ---             Darkening of the Light. In adversity
++++-----             It furthers one to be persevering.
++++  ---
++++-----</plan>
+    <title>Mr</title>
+  </Person>
+  <PersonalProfileDocument rdf:about="#this">
+    <dc:identifier>http://www.uncarved.com/static/foaf.rdf</dc:identifier>
+    <dc:title>Sean Hunter's FOAF file</dc:title>
+    <maker rdf:resource="#me"/>
+    <primaryTopic rdf:resource="#me"/>
+    <wot:assurance>http://www.uncarved.com/static/foaf.rdf.asc</wot:assurance>
+  </PersonalProfileDocument>
+</rdf:RDF>
