@@ -20,30 +20,31 @@ otherwise I want it to be dvorak. Happily, this is where [hammerspoon][3]
 comes in. Hammerspoon is a framework that allows you to program all
 kinds of little customizations for mac. Here's how you do the keyboard
 tweak I wanted:
--- Watch for planck keyboard add/remove and set the keyboard layout appropriatel
-y
-function usbDeviceCallback(data)
--- Skip internal memory card as it spams an event on suspend/resume
-if (data["productName"] ~= "Internal Memory Card Reader") then
-hs.alert(data["productName"] .. " " .. data["eventType"])
-end
 
-if (data["productName"] == "Planck") then
-if (data["eventType"] == "added") then
---when we add the planck, change the hardware layout to dvorak and t
-urn the OS key
---layout to qwerty
-hs.keycodes.setLayout("U.S.")
-elseif (data["eventType"] == "removed") then
---when we remove the planck, change the hardware layout to qwerty.
-It's up to the
---OS to give me dvorak
-hs.keycodes.setLayout("Dvorak")
-end
-end
+```lua
+-- Watch for planck keyboard add/remove and set the keyboard layout
+--appropriately
+function usbDeviceCallback(data)
+    -- Skip internal memory card as it spams an event on suspend/resume
+    if (data["productName"] ~= "Internal Memory Card Reader") then
+        hs.alert(data["productName"] .. " " .. data["eventType"])
+    end
+
+    if (data["productName"] == "Planck") then
+        if (data["eventType"] == "added") then
+            --when we add the planck, change the hardware layout to
+            --dvorak and turn the OS key layout to qwerty
+            hs.keycodes.setLayout("U.S.")
+        elseif (data["eventType"] == "removed") then
+            --when we remove the planck, change the hardware layout to
+            --qwerty. It's up to the OS to give me dvorak
+            hs.keycodes.setLayout("Dvorak")
+        end
+    end
 end
 usbWatcher = hs.usb.watcher.new(usbDeviceCallback)
 usbWatcher:start()
+```
 
 ...but of course this turned out to be a gateway drug for all kinds of
 further customizations. How about a thing that starts the annoying

@@ -37,4 +37,3 @@ watchamacallit.
 [10]: http://www.uncarved.com/static/misc/unaligned.c.html
 [11]: http://www.uncarved.com/blog/ching.mrk
 [12]: http://www.uncarved.com/blog/helpers.mrk
-[13]: http://www.uncarved.com/tags/computers

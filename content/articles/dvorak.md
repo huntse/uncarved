@@ -60,4 +60,3 @@ really stick for me.
 [4]: http://www.uncarved.com/login/
 [5]: http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard
 [6]: http://www.typematrix.com/
-[7]: http://www.uncarved.com/tags/computers

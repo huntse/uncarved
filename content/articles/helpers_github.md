@@ -16,13 +16,16 @@ the actual software that interfaces with bullionvault.
 
 Once you've got git and maven2 set up, it should be simple enough. On
 my linux boxes I just do:
+```sh
 git clone git://github.com/huntse/helpers.git
 cd helpers
 mvn test
+```
 
 ...and with any luck, git will get the software, maven2 will download
 the internet and some time later build and run the tests, and you'll
 see something like this:
+```
 +++----------------------------------------------------
 T E S T S
 +++----------------------------------------------------
@@ -66,6 +69,7 @@ THAT'S ALL FOLKS!
 [INFO] Final Memory: 6M/11M
 [INFO] +++---------------------------------------------------------------------
 mvn test  22.79s user 0.74s system 94% cpu 24.793 total
+```
 
 I don't use eclipse or anything like that, but it should be possible
 too get this working with eclipse too, just don't ask me how.

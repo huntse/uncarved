@@ -64,8 +64,3 @@ thought, discipline and some skill. The right language fits the problem
 domain and suits the group and organization. Good programmers can learn
 to write good software in any language.
 
-[1]: http://www.uncarved.com/articles/language
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/tags/computers
