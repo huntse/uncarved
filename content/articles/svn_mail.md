@@ -28,32 +28,38 @@ client. One possible solution to virtual folders is [here.][10] I decided
 to do things a little differently, and here's the shell script that
 does it all for me:
 
-    #!/bin/sh
+```sh
+#!/bin/sh
 
-    set -e
+set -e
 
-    TODAY=$( date -Iseconds )
-    cd "${HOME}/mail"
-    echo "Updating mail index..."
-    mairix -p       #add '-v' for more verbosity
-    echo "Emptying search folder"
-    rm -rf "${HOME}/mail/mfolder/"{cur,new,tmp}/*
-    echo "svn syncup"
-    svn status | awk '/^\?/{print $2}' | xargs -r svn add
-    svn status | awk '/^!/{print $2}' | xargs -r svn rm
-    svn ci -m "Mail sync for ${TODAY}"
+TODAY=$( date -Iseconds )
+cd "${HOME}/mail"
+echo "Updating mail index..."
+mairix -p       #add '-v' for more verbosity
+echo "Emptying search folder"
+rm -rf "${HOME}/mail/mfolder/"{cur,new,tmp}/*
+echo "svn syncup"
+svn status | awk '/^\?/{print $2}' | xargs -r svn add
+svn status | awk '/^!/{print $2}' | xargs -r svn rm
+svn ci -m "Mail sync for ${TODAY}"
+```
 
 Here's my .mairixrc:
 
-    base=/home/sean/mail
-    maildir=incoming...:sentmail...
-    mfolder=mfolder
-    database=/home/sean/mail/mairix_database
+```
+base=/home/sean/mail
+maildir=incoming...:sentmail...
+mfolder=mfolder
+database=/home/sean/mail/mairix_database
+```
 
 All that's needed to get it working in Mutt is to add ~/mail/mfolder to
 the mailboxes my .muttrc, and add
 
-    macro index \e\/"<shell-escape>mairix " "Run a mairix search"
+```vim
+macro index \e\/"<shell-escape>mairix " "Run a mairix search"
+```
 
 at the same time. Now, in
 mutt to do a search I do Escape-/ and type a regex. All of the hits are

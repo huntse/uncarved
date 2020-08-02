@@ -26,118 +26,106 @@ rss 1 is no more complex than rss 2 to support and implement and is a
 great deal richer and more extensible.
 
 For what it's worth, my cheetah template looks like this:
-#filter Filter
+```xml
+<pre><code><?xml version="1.0" encoding="utf-8"?>
+<Channel xmlns="http://purl.org/net/rss1.1#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:p="http://purl.org/net/rss1.1/payload#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cc="http://web.resource.org/cc/"
+    rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limit=1">
+    <rdf:Description rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limit=1">
+        <dc:creator>Sean Hunter</dc:creator>
+        <dc:title>The Uncarved Block</dc:title>
+        <dc:description>A collection of articles and software</dc:description>
+        <dc:date>2006-05-11T13:32:57Z</dc:date>
+        <dc:type>Text</dc:type>
+        <dc:format>text/html</dc:format>
+        <dc:identifier>http://www.uncarved.com/index.py/rss1.1.xml?limit=1</dc:identifier>
+        <dc:language>en-GB</dc:language>
+    </rdf:Description>
+    <cc:Work rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limit=1">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/2.5/" />
+    </cc:Work>
+    <cc:License rdf:about="http://creativecommons.org/licenses/by/2.5/">
+        <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+    </cc:License>
+    <title>The Uncarved Block</title>
+    <description xml:lang="en-GB">Software, unix tips and sundry other things</description>
+    <link>http://www.uncarved.com/index.py/</link>
+    <items rdf:parseType="daml:collection">
+        <item rdf:about="http://www.uncarved.com/blog/rss1.mrk">
+            <title>RSS 1.1 Feed now available</title>
+            <link>http://www.uncarved.com/blog/rss1.mrk</link>
+            <description xml:lang="en-GB">RDF + Syndication = RSS 1</description>
+            <dc:date>2006-05-11T13:08:47Z</dc:date>
+            <p:payload rdf:parseType="Literal">
+<pre><code>#filter Filter
 <?xml version="1.0" encoding="utf-8"?>
 <Channel xmlns="http://purl.org/net/rss1.1#"
-xmlns:dc="http://purl.org/dc/elements/1.1/"
-xmlns:p="http://purl.org/net/rss1.1/payload#"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:cc="http://web.resource.org/cc/"
-rdf:about="$self_link">
-<rdf:Description rdf:about="$self_link">
-<dc:creator>Sean Hunter</dc:creator>
-#if $current_tagname
-<dc:title>The Uncarved Block/$current_tagname</dc:title>
-<dc:subject>$current_tagname</dc:subject>
-#else
-<dc:title>The Uncarved Block</dc:title>
-#end if
-<dc:description>A collection of articles and software</dc:description>
-<dc:date>$most_recent_w3c</dc:date>
-<dc:type>Text</dc:type>
-<dc:format>text/html</dc:format>
-<dc:identifier>$self_link</dc:identifier>
-<dc:language>en-GB</dc:language>
-</rdf:Description>
-<cc:Work rdf:about="$self_link">
->
-</cc:Work>
-<cc:License rdf:about="http://creativecommons.org/licenses/by/2.5/">
-<cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
-<cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
-<cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
-<cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
-<cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
-</cc:License>
-#if $current_tagname
-<title>The Uncarved Block/$current_tagname</title>
-#else
-<title>The Uncarved Block</title>
-#end if
-<description xml:lang="en-GB">Software, unix tips and sundry other things</d
-escription>
-<link>$home_link</link>
-<items rdf:parseType="daml:collection">
-#for $article in $articles
-<item rdf:about="http://www.uncarved.com/$article.name">
-<title>$article.title</title>
-<link>http://www.uncarved.com/$article.name</link>
-#if $article.precis
-<description xml:lang="en-GB">$article.precis</description>
-#end if
-<dc:date>$article.updated</dc:date>
-<p:payload rdf:parseType="Literal">
-$article.body
-</p:payload>
-</item>
-#end for
-</items>
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:p="http://purl.org/net/rss1.1/payload#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:cc="http://web.resource.org/cc/"
+    rdf:about="$self_link">
+    <rdf:Description rdf:about="$self_link">
+        <dc:creator>Sean Hunter</dc:creator>
+        #if $current_tagname
+        <dc:title>The Uncarved Block/$current_tagname</dc:title>
+        <dc:subject>$current_tagname</dc:subject>
+        #else
+        <dc:title>The Uncarved Block</dc:title>
+        #end if
+        <dc:description>A collection of articles and software</dc:description>
+        <dc:date>$most_recent_w3c</dc:date>
+        <dc:type>Text</dc:type>
+        <dc:format>text/html</dc:format>
+        <dc:identifier>$self_link</dc:identifier>
+        <dc:language>en-GB</dc:language>
+    </rdf:Description>
+    <cc:Work rdf:about="$self_link">
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/2.5/" />
+    </cc:Work>
+    <cc:License rdf:about="http://creativecommons.org/licenses/by/2.5/">
+        <cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
+        <cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+        <cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+    </cc:License>
+    #if $current_tagname
+    <title>The Uncarved Block/$current_tagname</title>
+    #else
+    <title>The Uncarved Block</title>
+    #end if
+    <description xml:lang="en-GB">Software, unix tips and sundry other things</description>
+    <link>$home_link</link>
+    <items rdf:parseType="daml:collection">
+        #for $article in $articles
+        <item rdf:about="http://www.uncarved.com/$article.name">
+            <title>$article.title</title>
+            <link>http://www.uncarved.com/$article.name</link>
+            #if $article.precis
+            <description xml:lang="en-GB">$article.precis</description>
+            #end if
+            <dc:date>$article.updated</dc:date>
+            <p:payload rdf:parseType="Literal">
+                $article.body
+            </p:payload>
+        </item>
+        #end for
+    </items>
 </Channel>
+```
 
 The feed is available [here][7] and the output for a tag with just this
 article in it (I've truncated the content slightly) looks like:
-<?xml version="1.0" encoding="utf-8"?>
-<Channel xmlns="http://purl.org/net/rss1.1#"
-xmlns:dc="http://purl.org/dc/elements/1.1/"
-xmlns:p="http://purl.org/net/rss1.1/payload#"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:cc="http://web.resource.org/cc/"
-rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limit=1">
-<rdf:Description rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limi
-t=1">
-<dc:creator>Sean Hunter</dc:creator>
-<dc:title>The Uncarved Block</dc:title>
-<dc:description>A collection of articles and software</dc:description>
-<dc:date>2006-05-11T13:32:57Z</dc:date>
-<dc:type>Text</dc:type>
-<dc:format>text/html</dc:format>
-<dc:identifier>http://www.uncarved.com/index.py/rss1.1.xml?limit=1</dc:i
-dentifier>
-<dc:language>en-GB</dc:language>
-</rdf:Description>
-<cc:Work rdf:about="http://www.uncarved.com/index.py/rss1.1.xml?limit=1">
-<cc:license rdf:resource="http://creativecommons.org/licenses/by/2.5/" /
->
-</cc:Work>
-<cc:License rdf:about="http://creativecommons.org/licenses/by/2.5/">
-<cc:permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
-<cc:permits rdf:resource="http://web.resource.org/cc/Distribution"/>
-<cc:requires rdf:resource="http://web.resource.org/cc/Notice"/>
-<cc:requires rdf:resource="http://web.resource.org/cc/Attribution"/>
-<cc:permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
-</cc:License>
-<title>The Uncarved Block</title>
-<description xml:lang="en-GB">Software, unix tips and sundry other things</d
-escription>
-<link>http://www.uncarved.com/index.py/</link>
-<items rdf:parseType="daml:collection">
-<item rdf:about="http://www.uncarved.com/blog/rss1.mrk">
-<title>RSS 1.1 Feed now available</title>
-<link>http://www.uncarved.com/blog/rss1.mrk</link>
-<description xml:lang="en-GB">RDF + Syndication = RSS 1</description
->
-<dc:date>2006-05-11T13:08:47Z</dc:date>
-<p:payload rdf:parseType="Literal">
-
-<p>Now that I am getting the hang of rdf, the next logical step was to link meta
-data with content ... You can find out more on the <a href="http://en.wikipedia.
-org/wiki/RSS_%28file_format%29">wikipedia</a>.  <br />
-</p>
-</p:payload>
-</item>
-</items>
-</Channel>
-
+```
+```
 I hope you enjoy creating your own rss 1.1 feeds. You can find out more
 about all the site syndication variants on the [wikipedia.][8]
 

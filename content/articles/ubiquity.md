@@ -11,16 +11,18 @@ various things. Users can easily write their own commands in javascript
 and share them via the web. In that spirit, I've written my first
 ubiquity command, which searches hoogle, the haskell type-aware search
 engine.
+```
 CmdUtils.makeSearchCommand({
-homepage: "http://www.uncarved.com/",
-author: { name: "Sean Hunter"},
-license: "MPL",
-name: "hoogle-search",
-url: "http://www.haskell.org/hoogle/?hoogle={QUERY}",
-icon: "http://www.haskell.org/favicon.ico",
-description: "Searches haskell.org for functions matching by name or type sign
-ature.",
+    homepage: "http://www.uncarved.com/",
+    author: { name: "Sean Hunter"},
+    license: "MPL",
+    name: "hoogle-search",
+    url: "http://www.haskell.org/hoogle/?hoogle={QUERY}",
+    icon: "http://www.haskell.org/favicon.ico",
+    description: "Searches haskell.org for functions matching by name or type sign
+    ature.",
 });
+```
 
 As you can see, it's virtually all meta-data and that's because there
 are a bunch of functions around search that know how to do everything
@@ -29,7 +31,7 @@ manipulate the browser, the web page you're on, have little built-in
 previews etc. All very nifty.
 
 When you have the above, you can simply invoke ubiquity and say
-"hoogle-search Ord a => a -> a" or whatever and it will find you
+"`hoogle-search Ord a => a -> a`" or whatever and it will find you
 functions matching that type signature. I'll share this command (and
 any others I write) at [www.uncarved.com][6] using the subscription
 mechanism they recommend.

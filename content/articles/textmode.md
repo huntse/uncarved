@@ -12,9 +12,9 @@ netbook remix, but I like to use [xmonad,][9] so it helps to learn how to
 do all the laptoppy things in text mode.
 
 Here's a list of things it's useful to know:
-* nm-applet - finds a network and connects to it automagically
-* pm-suspend - sends your laptop into a light sleep
-* pm-hibernate - sends your laptop into a heavy sleep where it uses
+* `nm-applet` - finds a network and connects to it automagically
+* `pm-suspend` - sends your laptop into a light sleep
+* `pm-hibernate` - sends your laptop into a heavy sleep where it uses
 no battery
 
 [1]: http://www.uncarved.com/articles/textmode

@@ -10,109 +10,112 @@ I usually like to be able to write tests as I write code, and to have
 them run every time the code builds to make sure I haven't broken
 anything. To do this, you need a test harness so that adding tests is
 as painless as possible. So I wrote this one:
+```Ocaml
 (** test.ml - a simple test harness in ocaml
 
-This is demonstration code only.  You are free to use it under the
-terms of the Creative Commons Attribution 2.5 license.
+  This is demonstration code only.  You are free to use it under the
+  terms of the Creative Commons Attribution 2.5 license.
 
-@author Sean Hunter <sean\@uncarved.com>
+  @author Sean Hunter &lt;sean\@uncarved.com&gt;
 
-*)
+ *)
 
 (** Test harness class.  Tracks numbers of tests run and how many
-succeed. *)
+ succeed. *)
 class harness =
 object(self)
-(** The number of tests so far *)
-val mutable n = 0
+    (** The number of tests so far *)
+    val mutable n = 0
 
-(** The number of tests so far which have succeeded *)
-val mutable succeeded = 0
+    (** The number of tests so far which have succeeded *)
+    val mutable succeeded = 0
 
-(** A name for the group of tests currenly running *)
-val mutable group = ""
+    (** A name for the group of tests currenly running *)
+    val mutable group = ""
 
-(** Runs a predicate function and fails if it throws or
-returns false.  Otherwise it succeeds *)
-method pass_if desc pred =
-n <- n + 1;
-let dots = String.make (50-(min 50 (String.length desc))) '.' in
-Printf.printf "%5.5d: %s ....%s" n desc dots;
+    (** Runs a predicate function and fails if it throws or
+     returns false.  Otherwise it succeeds *)
+    method pass_if desc pred =
+      n &lt;- n + 1;
+      let dots = String.make (50-(min 50 (String.length desc))) '.' in
+      Printf.printf "%5.5d: %s ....%s" n desc dots;
 
-try
-if pred () then
-begin
-Printf.printf "ok\n" ;
-succeeded <- succeeded + 1;
-true
-end
-else
-begin
-Printf.printf "not ok\n";
-false
-end
-with
-_ ->Printf.printf "not ok (threw exception)\n"; false
+      try
+          if pred () then
+            begin
+                Printf.printf "ok\n" ;
+                succeeded &lt;- succeeded + 1;
+                true
+            end
+          else
+            begin
+              Printf.printf "not ok\n";
+              false
+            end
+      with
+      _ -&gt;Printf.printf "not ok (threw exception)\n"; false
 
-(** Runs a predicate function and fails if it throws or
-returns true.  Otherwise it succeeds *)
-method fail_if desc pred = self#pass_if desc (fun () -> not pred)
+    (** Runs a predicate function and fails if it throws or
+     returns true.  Otherwise it succeeds *)
+    method fail_if desc pred = self#pass_if desc (fun () -&gt; not pred)
 
-(** Takes a bool and marks the test as succeeded if it is true *)
-method ok desc x = self#pass_if desc (fun () -> x)
+    (** Takes a bool and marks the test as succeeded if it is true *)
+    method ok desc x = self#pass_if desc (fun () -&gt; x)
 
-(** Takes a bool and marks the test as failed if it is true *)
-method not_ok desc x = self#ok desc (not x)
+    (** Takes a bool and marks the test as failed if it is true *)
+    method not_ok desc x = self#ok desc (not x)
 
-(** Evaluate a predicate, ignoring its result. Succeed if it throws
-an exception, fail if not *)
-method pass_if_throws desc (pred : unit -> bool) =
-try
-(ignore (pred ()));
-self#not_ok desc true
-with
-exn -> self#ok desc true
+    (** Evaluate a predicate, ignoring its result. Succeed if it throws
+     an exception, fail if not *)
+    method pass_if_throws desc (pred : unit -&gt; bool) =
+        try
+            (ignore (pred ()));
+            self#not_ok desc true
+        with
+            exn -&gt; self#ok desc true
 
-(** Evaluate a predicate, ignoring its result. Fail if it throws
-an exception, succeed if not *)
-method fail_if_throws desc (pred : unit -> bool) =
-try
-(ignore (pred ()));
-self#ok desc true
-with
-exn -> self#not_ok desc true
+    (** Evaluate a predicate, ignoring its result. Fail if it throws
+     an exception, succeed if not *)
+    method fail_if_throws desc (pred : unit -&gt; bool) =
+        try
+            (ignore (pred ()));
+            self#ok desc true
+        with
+            exn -&gt; self#not_ok desc true
 
-(** Check that two floats are within a certain tolerance *)
-method pass_if_close ?(eps=1e-9) desc x y =
-let diff = abs_float (x-.y) in
-self#ok desc (diff <= eps)
+    (** Check that two floats are within a certain tolerance *)
+    method pass_if_close ?(eps=1e-9) desc x y =
+        let diff = abs_float (x-.y) in
+        self#ok desc (diff &lt;= eps)
 
-(** mark the beginning of a group of tests *)
-method start_group name =
-n <- 0 ;
-succeeded <- 0;
-group <- name ;
-Printf.printf "Begin test group %s\n" group
+    (** mark the beginning of a group of tests *)
+    method start_group name =
+        n &lt;- 0 ;
+        succeeded &lt;- 0;
+        group &lt;- name ;
+        Printf.printf "Begin test group %s\n" group
 
-(** mark the end of a group of tests, printing out success count *)
-method end_group  =
-Printf.printf "End test group %s: %d of %d tests passed\n"
-group succeeded n
+    (** mark the end of a group of tests, printing out success count *)
+    method end_group  =
+        Printf.printf "End test group %s: %d of %d tests passed\n"
+            group succeeded n
 end;;
 
 (* vim: set syn=ocaml sw=4 ts=4 expandtab: *)
+```
 
 Now it's very easy for me to write tests. For example, tests for all my
 [payoff][5] functions might look like this:
+```Ocaml
 (** payoff_tests.ml - tests for payoff classes
 
-Written by Sean Hunter <sean@uncarved.com>
+  Written by Sean Hunter &lt;sean@uncarved.com&gt;
 
-This is demonstration code only.  You are free to use it under the
-terms of the Creative Commons Attribution 2.5 license, but don't
-expect it to accurately price real options.
+  This is demonstration code only.  You are free to use it under the
+  terms of the Creative Commons Attribution 2.5 license, but don't
+  expect it to accurately price real options.
 
-*)
+ *)
 
 let tests = new Test.harness;;
 
@@ -144,8 +147,9 @@ tests#ok "Double Digital above the high barrier" ((dd 110.1) = 0.0);;
 tests#end_group;;
 
 (* vim: set syn=ocaml sw=4 ts=4 expandtab: *)
-
+```
 ...and when I run the tests the output looks like this:
+```
 Begin test group payoff.ml
 00001: Vanilla ITM call ......................................ok
 00002: Vanilla ATM call ......................................ok
@@ -166,6 +170,7 @@ Begin test group payoff.ml
 00017: Double Digital at the high barrier ....................ok
 00018: Double Digital above the high barrier .................ok
 End test group payoff.ml: 18 of 18 tests passed
+```
 
 [1]: http://www.uncarved.com/articles/testing_ocaml
 [2]: http://www.uncarved.com/
