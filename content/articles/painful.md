@@ -22,9 +22,6 @@ the code to the new api, then hack all my templates to the new syntax
 and it was even more excruciating to get that working so I took the
 plunge). Anyway, it seems to have worked.
 
-[1]: http://www.uncarved.com/articles/painful
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
+*Note:* This has all changed significantly in the last 11 years.
+
 [5]: http://www.webpy.org/
-[6]: http://www.uncarved.com/tags/computers

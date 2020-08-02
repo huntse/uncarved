@@ -29,32 +29,37 @@ payoffs for vanilla European [put][12] and [13]call options. In fact
 Joshi starts off straight away with a [Monte][14] Carlo pricer, but my
 copy is downstairs so I'm straying off-piste here. It's my intention to
 follow Joshi step by step, and write up each one here as I go.
+```Ocaml
 open Printf
 
 (* a vanilla option pays off the difference between the spot price
-* and the strike, or expires worthless *)
+ * and the strike, or expires worthless *)
 let put_payoff strike spot=
-max ( strike -. spot ) 0.0;;
+        max ( strike -. spot ) 0.0;;
 
 let call_payoff strike spot=
-max (spot -. strike ) 0.0;;
+        max (spot -. strike ) 0.0;;
 
 let print_payoff payoff strike spot=
-let outcome=payoff strike spot in
-printf "%f\n" outcome;;
+        let outcome=payoff strike spot in
+        printf "%f\n" outcome;;
 
 print_payoff call_payoff 195.0 190.0;;
 print_payoff call_payoff 195.0 200.0;;
 print_payoff put_payoff 195.0 190.0;;
 print_payoff put_payoff 190.0 195.0;;
+```
+
 
 Now I'm running and writing this on [fedora][15] [16]Linux, and my ocaml
 is 3.09.3. When I run this I see:
+```
 % ocaml tmp/payoff.ml
 5.000000
 0.000000
 0.000000
 5.000000
+```
 
 Which is what I would expect. Now this is very cheesy at present, but
 it's a start and we'll improve it in the next [article.][17] It's worth a
@@ -66,9 +71,6 @@ be floats. Secondly, we need to use -. to subtract them. The max
 function can operate on any type so it works with floats or ints.
 
 [1]: http://www.uncarved.com/articles/ocaml_finance
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.markjoshi.com/
 [6]: http://www.markjoshi.com/design/index.htm
 [7]: http://caml.inria.fr/ocaml/index.en.html
@@ -82,4 +84,3 @@ function can operate on any type so it works with floats or ints.
 [15]: http://fedoraproject.org/wiki/
 [16]: http://www.linux.org/
 [17]: http://www.uncarved.com/blog/ocaml_deriv_1.mrk
-[18]: http://www.uncarved.com/tags/computers
