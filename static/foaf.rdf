@@ -10,12 +10,12 @@
     <mbox_sha1sum>f5a2eaad7e46af80de0bc48e6db72efebe382da0</mbox_sha1sum>
     <name>Sean Hunter</name>
     <plan>
-+++  ---
-+++  ---
-+++  ---             Darkening of the Light. In adversity
-+++-----             It furthers one to be persevering.
-+++  ---
-+++-----</plan>
+---  ---
+---  ---
+---  ---             Darkening of the Light. In adversity
+--------             It furthers one to be persevering.
+---  ---
+--------</plan>
     <title>Mr</title>
   </Person>
   <PersonalProfileDocument rdf:about="#this">
