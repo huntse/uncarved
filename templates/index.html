@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-        <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';" />
-        <title>The Uncarved Block</title>
-        <meta name="HandheldFriendly" content="True">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="referrer" content="no-referrer-when-downgrade">
+        {% include "standard_headers.html" %}
         <meta name="description" content="Sean Hunter's personal blog, containing software, haskell, scala, ocaml, unix tips and sundry other things."/>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) }}"/>
+        <title>The Uncarved Block</title>
     </head>
     <body>
         <div class="header">
@@ -22,6 +16,8 @@
                 {% set current = get_section(path=sec) %}
                 <li><a href="{{ get_url(path=current.path) }}">{{ current.path }}</a></li>
                 {% endfor %}
+                <li><a href="{{ get_url(path="/articles/credits") }}">credits</a></li>
+                <li><a href="{{ get_url(path="/articles/biog") }}">biog</a></li>
             </ul>
         </div>
         <div class="body">
