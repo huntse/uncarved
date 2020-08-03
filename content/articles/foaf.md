@@ -1,7 +1,7 @@
 +++
 title = "Foaf in n3"
 description = "Having got started with n3 I made myself a foaf file using it"
-last_modified = "2009-06-13T13:18:59Z"
+date = 2009-06-13T13:18:59Z
 +++
 
 
@@ -33,12 +33,12 @@ family_name "Hunter";
 homepage <http://www.uncarved.com/>;
 mbox_sha1sum "f5a2eaad7e46af80de0bc48e6db72efebe382da0";
 plan """
-+++  ---
-+++  ---
-+++  ---             Darkening of the Light. In adversity
-+++-----             It furthers one to be persevering.
-+++  ---
-+++-----""".
+---  ---
+---  ---
+---  ---             Darkening of the Light. In adversity
+--------             It furthers one to be persevering.
+---  ---
+--------""".
 ```
 
 ...which when I do `python /usr/bin/cwm.py foaf.n3 --rdf >| foaf.rdf`
@@ -57,12 +57,12 @@ generates a [foaf.rdf][8] file like this:
     <mbox_sha1sum>f5a2eaad7e46af80de0bc48e6db72efebe382da0</mbox_sha1sum>
     <name>Sean Hunter</name>
     <plan>
-+++  ---
-+++  ---
-+++  ---             Darkening of the Light. In adversity
-+++-----             It furthers one to be persevering.
-+++  ---
-+++-----</plan>
+---  ---
+---  ---
+---  ---             Darkening of the Light. In adversity
+--------             It furthers one to be persevering.
+---  ---
+--------</plan>
     <title>Mr</title>
   </Person>
   <PersonalProfileDocument rdf:about="#this">
