@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-        <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'none';" />
-        <meta name="HandheldFriendly" content="True">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="referrer" content="no-referrer-when-downgrade">
-        <meta name="description" content="Sean Hunter's personal blog, containing software, haskell, scala, ocaml, unix tips and sundry other things."/>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) }}"/>
+        {% include "standard_headers.html" %}
         <title>The Uncarved Block: {{ page.title | safe }}</title>
-        <meta name="description" content="Sean Hunter's personal blog, containing software, haskell, scala, ocaml, unix tips and sundry other things. {{ page.description }}"/>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="{{ get_url(path="style.css") }}"/>
+        <meta name="description" content="Sean Hunter's personal blog, containing software, haskell, scala, ocaml, unix tips and sundry other things."/>
     </head>
     <body>
-        <div id="left_menu">
-            <ul>
-                <li><a href="{{ get_url(path="") }}">top</a></li>
-            </ul>
-        </div>
         <div class="header">
             <h1>The Uncarved Block</h1>
         </div>
+        <div id="left_menu">
+            <ul>
+                <li><a href="{{ get_url(path="") }}">top</a></li>
+                <li><a href="{{ get_url(path="/articles/credits") }}">credits</a></li>
+                <li><a href="{{ get_url(path="/articles/biog") }}">biog</a></li>
+
+            </ul>
+        </div>
         <div class="body">
-                    <h2>{{ page.title }}</h2>
+                    <h2><a href="{{get_url(path=page.path)}}">{{ page.title }}</a></h2>
                     <div class="precis">{{ page.description }}</div>
                     <div>
                         {{ page.content | safe }}
