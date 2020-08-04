@@ -42,7 +42,7 @@ having a tool for humans, I would have a machine-readable format for
 this stuff that would fit into the [semantic][8] web. I may do that.
 
 To get going with notation3, you need a computer with [python][9] and you
-need to install [rdflib][10] and [11]cwm. It's well worth the effort to
+need to install [rdflib][10] and [cwm][11]. It's well worth the effort to
 do this.
 
 [1]: http://www.uncarved.com/articles/gtd_in_n3
