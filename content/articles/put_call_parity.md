@@ -2,7 +2,7 @@
 title = "Testing for put/call parity"
 description = "Now let's check the prices from the ocaml Monte-Carlo pricer against the most obvious arbitrage relationship"
 aliases = [ "/articles/put_call_parity" ]
-last_modified = "2007-06-13T15:59:36Z"
+date = 2007-06-13T15:59:36Z
 +++
 
 

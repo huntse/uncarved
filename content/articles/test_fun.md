@@ -2,7 +2,7 @@
 title = "A Functional Test Harness"
 description = "Using monads to thread state, we make a purely functional version of the test harness"
 aliases = [ "/articles/test_fun" ]
-last_modified = "2008-06-16T07:29:20Z"
+date = 2008-06-16T07:29:20Z
 +++
 
 

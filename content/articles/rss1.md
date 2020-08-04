@@ -1,7 +1,7 @@
 +++
 title = "RSS 1.1 Feed now available"
 description = "RDF + Syndication = RSS 1"
-last_modified = "2006-05-11T19:32:31Z"
+date = 2006-05-11T19:32:31Z
 +++
 
 

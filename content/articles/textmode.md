@@ -1,7 +1,7 @@
 +++
 title = "Using a Linux laptop in text mode"
 description = "Linux has everything you need to use your laptop even if you choose not to use the pointy-clicky interfaces"
-last_modified = "2009-10-17T13:05:22Z"
+date = 2009-10-17T13:05:22Z
 +++
 
 

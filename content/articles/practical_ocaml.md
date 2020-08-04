@@ -2,7 +2,7 @@
 title = "Using Ocaml in Practice"
 description = "Starting to learn how to make ocaml programs that are not just toys, and extending the derivatives pricer further"
 aliases = [ "/articles/practical_ocaml" ]
-last_modified = "2007-06-13T06:41:39Z"
+date = 2007-06-13T06:41:39Z
 +++
 
 

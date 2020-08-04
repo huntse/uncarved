@@ -2,7 +2,7 @@
 title = "My life (and mail) in subversion"
 description = "Moving my mail into subversion gives me easy backups and all of my homedir in one place. Here's how I did it."
 aliases = [ "/articles/svn_mail" ]
-last_modified = "2006-05-18T16:26:32Z"
+date = 2006-05-18T16:26:32Z
 +++
 
 

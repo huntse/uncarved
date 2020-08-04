@@ -2,7 +2,8 @@
 title = "Building a better cd"
 description = "Unix shell is very flexible and easy to customise. Here is how I made 'cd' better for me than the builtin one."
 aliases = [ "/articles/better_cd" ]
-last_modified = "2006-04-21T15:44:45Z"
+date = 2006-04-21T15:44:45Z
+updated = 2006-04-21
 +++
 
 

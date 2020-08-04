@@ -1,7 +1,7 @@
 +++
 title = "That was painful"
 description = "Migrating everything to a new server"
-last_modified = "2009-02-06T14:39:14Z"
+date = 2009-02-06T14:39:14Z
 +++
 
 

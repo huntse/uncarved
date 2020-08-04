@@ -1,7 +1,7 @@
 +++
 title = "Changing to a kinesis keyboard"
 description = "I thought I would never find a keyboard that I liked better than Typematrix, but I may have to eat my words..."
-last_modified = "2008-07-29T11:11:55Z"
+date = 2008-07-29T11:11:55Z
 +++
 
 

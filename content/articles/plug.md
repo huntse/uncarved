@@ -1,7 +1,7 @@
 +++
 title = "A blatant plug"
 description = "A concert worth attending (not that I have any personal interest. Oh no...)"
-last_modified = "2007-06-13T16:02:47Z"
+date = 2007-06-13T16:02:47Z
 +++
 
 

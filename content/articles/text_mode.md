@@ -2,7 +2,7 @@
 title = "Being Productive in Text Mode"
 description = "If you use a Unix system well, the command line can be the ultimate IDE."
 aliases = [ "/articles/text_mode" ]
-last_modified = "2006-04-21T15:04:39Z"
+date = 2006-04-21T15:04:39Z
 +++
 
 

@@ -1,7 +1,7 @@
 +++
 title = "I've got a new netbook"
 description = "So finally I give in to temptation..."
-last_modified = "2009-10-17T10:32:22Z"
+date = 2009-10-17T10:32:22Z
 +++
 
 
