@@ -2,7 +2,7 @@
 title = "Free Software"
 description = "A Small Collection of Free Software I have written"
 aliases = [ "/articles/free_software" ]
-last_modified = "2009-06-12T16:25:08Z"
+date = 2009-06-12T16:25:08Z
 +++
 
 
@@ -35,5 +35,5 @@ watchamacallit.
 [8]: ftp://ftp.uncarved.com/misc/sw-0.0.01.tar.gz
 [9]: http://www.uncarved.com/static/misc/dnslogmunge.html
 [10]: http://www.uncarved.com/static/misc/unaligned.c.html
-[11]: http://www.uncarved.com/blog/ching.mrk
-[12]: http://www.uncarved.com/blog/helpers.mrk
+[11]: http://www.uncarved.com/articles/ching
+[12]: http://www.uncarved.com/ching/helpers
