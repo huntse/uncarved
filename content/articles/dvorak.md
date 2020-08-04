@@ -1,7 +1,7 @@
 +++
 title = "Making the switch"
 description = "Changing over to dvorak typing is tough, but worth it"
-last_modified = "2006-04-21T15:44:28Z"
+date = 2006-04-21T15:44:28Z
 +++
 
 

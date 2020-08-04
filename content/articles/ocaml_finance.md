@@ -2,7 +2,7 @@
 title = "Learning Functional Programming"
 description = "I decided to teach myself ocaml by writing a derivatives pricer"
 aliases = [ "/articles/ocaml_finance" ]
-last_modified = "2007-06-05T21:08:53Z"
+date = 2007-06-05T21:08:53Z
 +++
 
 

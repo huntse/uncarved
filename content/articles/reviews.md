@@ -1,7 +1,7 @@
 +++
 title = "Undercover Economist"
 description = "A review of 'The Undercover Economist' by Tim Harford"
-last_modified = "2006-05-11T07:48:25Z"
+date = 2006-05-11T07:48:25Z
 +++
 
 

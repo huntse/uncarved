@@ -1,7 +1,7 @@
 +++
 title = "I Ching in ML"
 description = "In which I write yet another implementation of the book of changes (this time in ocaml)"
-last_modified = "2008-12-09T13:42:33Z"
+date = 2008-12-09T13:42:33Z
 aliases = [ "/articles/ching_ml" ]
 +++
 

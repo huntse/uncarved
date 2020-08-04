@@ -1,7 +1,7 @@
 +++
 title = "Eat Toast!"
 description = "Strength. Vitality. Nutrition."
-last_modified = "2009-05-22T08:18:37Z"
+date = 2009-05-22T08:18:37Z
 +++
 
 

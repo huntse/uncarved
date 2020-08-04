@@ -2,7 +2,7 @@
 title = "Should payment be by effort or by results?"
 description = "Some companies and systems seek to pay people by effort, rather than by the results they achieve."
 aliases = [ "/articles/pay_by_results" ]
-last_modified = "2006-05-06T07:18:01Z"
+date = 2006-05-06T07:18:01Z
 +++
 
 

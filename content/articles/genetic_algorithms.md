@@ -2,7 +2,7 @@
 title = "An Introduction to Genetic Algorithms"
 description = "Review of Melanie Mitchell's excellent book"
 aliases = [ "/articles/genetic_algorithms" ]
-last_modified = "2009-03-25T08:17:29Z"
+date = 2009-03-25T08:17:29Z
 +++
 
 

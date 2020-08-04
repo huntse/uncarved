@@ -2,7 +2,7 @@
 title = "Making other people rich"
 description = "A basic understanding of economics can help you to be a happier and more successful person"
 aliases = [ "/articles/making_other_people_rich" ]
-last_modified = "2006-04-23T08:38:07Z"
+date = 2006-04-23T08:38:07Z
 +++
 
 

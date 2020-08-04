@@ -1,7 +1,7 @@
 +++
 title = "Mozilla Ubiquity"
 description = "Fun with this amazing mozilla addon"
-last_modified = "2010-05-05T04:46:34Z"
+date = 2010-05-05T04:46:34Z
 +++
 
 

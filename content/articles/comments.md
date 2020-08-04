@@ -1,7 +1,7 @@
 +++
 title = "Adding comments"
 description = "So I've thought about doing this for some time but never had the spare time. Finally I add comments."
-last_modified = "2009-08-07T09:44:52Z"
+date = 2009-08-07T09:44:52Z
 aliases = ["Comments"]
 +++
 
