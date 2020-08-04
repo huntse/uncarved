@@ -5,7 +5,7 @@ date = 2009-06-13T13:18:59Z
 +++
 
 
-So now I've [started][5] with [6]notation3 I am itching for places to use
+So now I've [started][5] with [notation3][6] I am itching for places to use
 it. For this reason I decided to make myself a [foaf][7] file. Happily,
 this is really straightforward using n3. My foaf.n3 looks like this:
 
