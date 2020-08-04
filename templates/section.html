@@ -1,3 +1,4 @@
+{% import "macros.html" as macros %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,6 +17,8 @@
                     {% set current = get_section(path=sec) %}
                     <li><a href="{{ get_url(path=current.path) }}">{{ current.path }}</a></li>
                 {% endfor %}
+            </ul>
+            <ul>
                 <li><a href="{{ get_url(path="/articles/credits") }}">credits</a></li>
                 <li><a href="{{ get_url(path="/articles/biog") }}">biog</a></li>
             </ul>
@@ -27,6 +30,11 @@
                     <div>
                         {{ page.content | safe }}
                     </div>
+                    {% if page.date %}
+                    <p class="tagline">
+                    <a href="{{ get_url(path=page.path) }}">permalink</a> Updated: {{ macros::format_date(date=page.date) }}
+                    </p>
+                    {% endif %}
                     {% endfor %}
         </div>
         <div class="footer">
