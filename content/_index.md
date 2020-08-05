@@ -2,7 +2,7 @@
 +++
 
 Please bear with me while I restore my content. At the height of the covid
-crisis I missed some emails from my cloud provider which said they were trying
+crisis I missed some emails from my hosting provider which said they were trying
 to bill me on an expired credit card.  As a consequence they deleted my server
 and my backups.
 
@@ -15,15 +15,14 @@ fully back up and running.
 
 Since the source code to my blog (yes I wrote it myself) seems to have been
 irretrievably lost, I am taking the opportunity to move to using a static site
-generator ([zola](https://www.getzola.org)) and host on a different provider.
-Most of my actual content has now been recovered although the presentation will
-be even more minimalist than usual while I figure out how to get zola to do
-everything I want.
+generator ([zola](https://www.getzola.org)) and host on a different provider
+(AWS). Most of my actual content has now been recovered although the
+presentation will be even more minimalist than usual while I figure out how to
+get zola to do everything I want.
 
 At the moment I'm aware of:
-- multiple formatting problems (including but not
-limited to the fact that all code indentation is hopelessly broken)
-- static content including archives of my open source software are gone
+- A few formatting problems and broken links remain
+- static content including most archives of my open source software are gone
   probably permanently
 - Feeds won't work (yet)
 - Images are missing.  Tbh I may not be able to get them back.
