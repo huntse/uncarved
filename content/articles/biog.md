@@ -36,9 +36,14 @@ Book"](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119362197)
 published by Wiley Press along with a number of other
 articles. I'm on the editorial board of the Journal of Digital Banking.
 
+I've spoken at a number of large tech and fintech events both in person and
+on-line, including AWS Re:Invent, Money 2020, the MAS Fintech festival, the
+Inovate Finance Global Summit, Wired:Smarter, CogX and many others.
+
 You can see [my][6] linkedin profile, and invite me to your network if we
 know each other. There are quite a few Sean Hunters though so I might
-not be the one you're thinking of.
+not be the one you're thinking of. You can [email me][5] if you like and I will
+try to respond although I can't promise to be too prompt.
 
 [5]: mailto:sean@uncarved.com
 [6]: http://www.linkedin.com/pub/sean-hunter/b/358/548
