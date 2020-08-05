@@ -160,6 +160,6 @@ classes and suddenly it starts to become useful.
 [2]: http://www.uncarved.com/
 [3]: http://www.uncarved.com/articles/contact
 [4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/blog/ocaml_finance.mrk
-[6]: http://www.uncarved.com/blog/ocaml_classes_2.mrk
+[5]: /articles/ocaml_finance
+[6]: /articles/ocaml_classes_2
 [7]: http://www.uncarved.com/tags/computers

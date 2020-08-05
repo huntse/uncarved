@@ -86,7 +86,7 @@ Technorati tags: [foaf][11] [12]rdf [13]semantic web
 [2]: http://www.uncarved.com/
 [3]: http://www.uncarved.com/articles/contact
 [4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/blog/gtd_in_n3.mrk
+[5]: /articles/gtd_in_n3
 [6]: http://www.w3.org/2000/10/swap/Primer.html
 [7]: http://www.foaf-project.org/
 [8]: http://www.uncarved.com/static/foaf.rdf

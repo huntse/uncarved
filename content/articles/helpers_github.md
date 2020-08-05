@@ -78,7 +78,7 @@ too get this working with eclipse too, just don't ask me how.
 [2]: http://www.uncarved.com/
 [3]: http://www.uncarved.com/articles/contact
 [4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/blog/mm_1.mrk
+[5]: /articles/mm_1
 [6]: http://github.com/
 [7]: http://help.github.com/set-up-git-redirect
 [8]: http://maven.apache.org/

@@ -21,7 +21,7 @@ no battery
 [2]: http://www.uncarved.com/
 [3]: http://www.uncarved.com/articles/contact
 [4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/blog/netbook.mrk
+[5]: /articles/netbook
 [6]: http://www.xfce.org/
 [7]: http://www.gnome.org/
 [8]: http://www.ubuntu.com/GetUbuntu/download-netbook

@@ -58,9 +58,9 @@ For what it's worth, my cheetah template looks like this:
     <description xml:lang="en-GB">Software, unix tips and sundry other things</description>
     <link>http://www.uncarved.com/index.py/</link>
     <items rdf:parseType="daml:collection">
-        <item rdf:about="http://www.uncarved.com/blog/rss1.mrk">
+        <item rdf:about="/articles/rss1">
             <title>RSS 1.1 Feed now available</title>
-            <link>http://www.uncarved.com/blog/rss1.mrk</link>
+            <link>/articles/rss1</link>
             <description xml:lang="en-GB">RDF + Syndication = RSS 1</description>
             <dc:date>2006-05-11T13:08:47Z</dc:date>
             <p:payload rdf:parseType="Literal">
