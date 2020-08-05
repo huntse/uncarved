@@ -80,8 +80,6 @@ the w3c rdf [validator][9] and it works just fine. Now I just need to add
 some friends. If you know me and want to be added to my foaf file, mail
 me at [sean@uncarved.com.][10]
 
-Technorati tags: [foaf][11] [12]rdf [13]semantic web
-
 [1]: http://www.uncarved.com/articles/foaf
 [2]: http://www.uncarved.com/
 [3]: http://www.uncarved.com/articles/contact
@@ -91,6 +89,3 @@ Technorati tags: [foaf][11] [12]rdf [13]semantic web
 [7]: http://www.foaf-project.org/
 [8]: http://www.uncarved.com/static/foaf.rdf
 [9]: http://www.w3.org/RDF/Validator/
-[11]: http://www.technorati.com/tags/foaf
-[12]: http://www.technorati.com/tags/rdf
-[13]: http://www.technorati.com/tag/semantic web
