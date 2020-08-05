@@ -8,8 +8,8 @@ date = 2011-06-02T18:18:09Z
 
 To share the marketmaking software that I talked about in the [first][5]
 marketmaking article, we need to have a repository set up, so I decided
-to get going with [github.][6] You'll need to [7]set up git, and you'll
-need [maven][8] 2 to build everything. I thought I'd put out a small
+to get going with [github.][6] You'll need to [set up git][7], and you'll
+need [maven 2][8] to build everything. I thought I'd put out a small
 article to get people started with building a small package we're going
 to depend on for the bigger system. Assuming this goes ok, I'll push
 the actual software that interfaces with bullionvault.
