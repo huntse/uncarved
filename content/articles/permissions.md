@@ -79,4 +79,4 @@ Numeric | Symbolic |  Name                                  |  Meaning
 1000    | t        | sticky bit or "restricted delete flag" | On some systems it means prevent users from removing or renaming files in this directory unless they own the file or directory
 ```
 
-[5]: http://www.uncarved.com/blog/umasks.mrk
+[5]: /articles/umasks

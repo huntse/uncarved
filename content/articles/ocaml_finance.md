@@ -83,4 +83,4 @@ function can operate on any type so it works with floats or ints.
 [14]: http://en.wikipedia.org/wiki/Monte_Carlo_method
 [15]: http://fedoraproject.org/wiki/
 [16]: http://www.linux.org/
-[17]: http://www.uncarved.com/blog/ocaml_deriv_1.mrk
+[17]: /articles/ocaml_deriv_1

@@ -138,6 +138,6 @@ be continuous. Given this vol function, we can price as before.
 [2]: http://www.uncarved.com/
 [3]: http://www.uncarved.com/articles/contact
 [4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/blog/ocaml_classes.mrk
+[5]: /articles/ocaml_classes
 [6]: http://mathforum.org/library/drmath/sets/select/dm_piecewise.html
 [7]: http://www.uncarved.com/tags/computers
