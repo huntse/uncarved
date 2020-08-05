@@ -1,7 +1,7 @@
 +++
 title = "My Biog"
 description = "Some stuff about me"
-date = 2011-06-02T16:08:34Z
+date = 2020-08-05
 aliases = [ "/articles/biog" ]
 +++
 
