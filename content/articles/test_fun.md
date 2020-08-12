@@ -124,4 +124,4 @@ remains is:
 ```Ocaml
 let ( >>= ) = State.bind
 ```
-[5]: http://enfranchisedmind.com/blog/2007/08/06/a-monad-tutorial-for-ocaml/
+[5]: https://blog.leahhanson.us/post/monad-tutorial.html

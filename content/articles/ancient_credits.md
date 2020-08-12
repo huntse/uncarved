@@ -15,7 +15,7 @@ Dynamic content is produced by a [python][9] script I wrote using
 I'll make it available.
 
 The server also runs some free software of my own, such as
-[slidentd][11]. I have been told that if Britney Spears wanted an ident
+slidentd. I have been told that if Britney Spears wanted an ident
 daemon, this is one of a long list she would ignore before just
 switching on the pidentd that came with her Linux distro. My pages are
 written using the [vim][12] editor, and I use a [typematrix][13] dvorak
@@ -29,6 +29,5 @@ keyboard.
 [8]: http://www.lighttpd.net/
 [9]: http://www.python.org/
 [10]: http://webpy.org/
-[11]: http://www.uncarved.com/static/slidentd/
 [12]: http://www.vim.org/
 [13]: http://www.typematrix.com/

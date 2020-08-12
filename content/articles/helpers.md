@@ -7,11 +7,10 @@ tags = ["computers"]
 +++
 
 
-So I've released my helpers code via [github.][5] Scaladoc is available
-[here,][6] although I warn you that my patience with hacking the
-stylesheet only goes so far and I don't yet know how to make scaladoc
-that is not foul to look at. To build it, and run the tests, do...
-mvn test
+So I've released my helpers code via [github.][5] To get Scaladoc you'll need
+to build it yourself. To build it, and run the tests, do...
+
+```mvn test```
 
 ...after unpacking the tarball somewhere
 
@@ -37,7 +36,6 @@ val xml = helper.getXML(Request(RequestType.GET, "http://www.uncaJved.com/index.
 val items = xml \\ "item"
 ```
 
-[5]: http://uncarved.com/blog/helpers_github.mrk
-[6]: http://www.uncarved.com/static/scala/helpers/doc/index.html
-[7]: http://hc.apache.org/httpcomponents-client/index.html
-[8]: http://hc.apache.org/httpcomponents-core/index.html
+[5]: http://github.com/huntse/helpers
+[7]: http://hc.apache.org/httpcomponents-client-4.5.x/index.html
+[8]: http://hc.apache.org/httpcomponents-core-4.4.x/index.html

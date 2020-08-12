@@ -71,7 +71,7 @@ provides an incentive for activity, rather than achievement. This is a
 big problem with so-called "alternative economic systems" such as
 [parecon.][3] They simply reward the wrong things.
 
-[1]: https://www.uncarved.com/articles/pay_by_results
+[1]: /articles/pay_by_results
 [2]: https://www.uncarved.com/
 [3]: http://en.wikipedia.org/wiki/Parecon
 [4]: https://www.uncarved.com/tags/thoughts

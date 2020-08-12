@@ -71,7 +71,7 @@ in ~/mail/mfolder and I change to that like a regular mailbox.
 now and again.
 
 [5]: http://www.onlamp.com/pub/a/onlamp/2005/01/06/svn_homedir.html
-[6]: http://subversion.tigris.org/
+[6]: http://subversion.apache.org/
 [7]: http://www.linuxjournal.com/article/7712
 [8]: http://www.rc0.org.uk/mairix/
 [9]: http://www.mutt.org/

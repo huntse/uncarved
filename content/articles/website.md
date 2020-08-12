@@ -25,6 +25,6 @@ make them more useful on search engines.
 
 Hope this all helps.
 
-[5]: http://www.sitemaps.org/
-[6]: http://www.google.com/support/webmasters/bin/answer.py?answer=35264&hl=en#1
+[5]: https://www.sitemaps.org/
+[6]: https://support.google.com/webmasters/answer/35624?hl=en&visit_id=637328185320201573-2619774670&rd=1
 [8]: http://www.uncarved.com/articles/

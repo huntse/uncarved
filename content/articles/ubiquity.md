@@ -7,7 +7,7 @@ tags = ["computers"]
 +++
 
 
-[Ubiquity][5] is an amazing mozilla addon which gives users a
+Ubiquity was an amazing mozilla addon which gives users a
 command-line interface within the browser which you can use to do
 various things. Users can easily write their own commands in javascript
 and share them via the web. In that spirit, I've written my first
@@ -43,5 +43,6 @@ that if you go on a page with a search box, select it and invoke
 ubiquity and type "create-new-search-command" it writes something very
 much like the above for you.
 
-[5]: https://addons.mozilla.org/en-US/firefox/addon/9527
+_Note:_ Ubiquity functionality has been superceded by the search bar itself.
+
 [6]: http://www.uncarved.com/

@@ -1,7 +1,7 @@
 +++
 title = "Credits"
 description = "People and stuff that have made this website fun to produce"
-date = 2009-06-12T04:00:46Z
+date = 2020-08-12T08:00:46Z
 [taxonomies]
 tags = ["everything else"]
 +++
@@ -24,4 +24,4 @@ My pages are written using the [neovim][12] editor, and I use a Planck
 time I made this page, so I've kept the [old one](/articles/ancient-credits) around for comparison.
 
 [12]: https://www.neovim.io/
-[13]: https://olkb.com]
+[13]: https://olkb.com

@@ -154,5 +154,5 @@ them all in the correct order where you have functions defined in one
 file, called in another, as we have here.
 
 [5]: http://www.cs.caltech.edu/courses/cs134/cs134b/book.pdf
-[6]: http://utopia.knoware.nl/~hlub/uck/rlwrap/
+[6]: https://github.com/hanslub42/rlwrap
 [7]: /articles/ocaml_deriv_1

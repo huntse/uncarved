@@ -10,14 +10,14 @@ tags = ["computers"]
 
 *Note*: I think all of this software is now lost
 
-* [slidentd][5] - the sly ident daemon
-* [honest_identd][6] - The slidentd package also includes this if you
+* slidentd - the sly ident daemon
+* honest_identd - The slidentd package also includes this if you
 want a simple identd that gives up usernames
-* [aed][7] - The additional entropy daemon
-* [sw][8] - A tiny ssl wrapper (similar to stunnel). I use it to
+* aed - The additional entropy daemon
+* sw - A tiny ssl wrapper (similar to stunnel). I use it to
 provide ssl-enabled services.
-* [dnslogmunge][9] - A small perl script for decoding djbjdns logfiles
-* [unaligned.c][10] - A small wrapper for debugging unaligned traps on
+* dnslogmunge - A small perl script for decoding djbjdns logfiles
+* unaligned.c - A small wrapper for debugging unaligned traps on
 risc machines. Used by folks at compaq (when they produced Alphas)
 and some linux folks at IBM. In fact I gave IBM a slightly better
 version of this but I can't find it at the minute.
@@ -27,15 +27,5 @@ hexagrams of the I Ching
 nice web client, a log4j thingymabobber and a memoization
 watchamacallit.
 
-[1]: http://www.uncarved.com/articles/free_software
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/static/slidentd/
-[6]: http://www.uncarved.com/static/slidentd/
-[7]: http://www.uncarved.com/static/aed/
-[8]: ftp://ftp.uncarved.com/misc/sw-0.0.01.tar.gz
-[9]: http://www.uncarved.com/static/misc/dnslogmunge.html
-[10]: http://www.uncarved.com/static/misc/unaligned.c.html
 [11]: http://www.uncarved.com/articles/ching
-[12]: http://www.uncarved.com/ching/helpers
+[12]: http://www.uncarved.com/articles/helpers
