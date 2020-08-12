@@ -22,7 +22,9 @@ get zola to do everything I want.
 
 At the moment I'm aware of:
 - A few formatting problems and broken links remain
-- static content including most archives of my open source software are gone
+* no I-Ching hexagrams (yet).  I know how to add them even though this is now a
+  static site
+- A bunch of static content including most archives of my open source software are gone
   probably permanently
 - Feeds won't work (yet)
 - Images are missing.  Tbh I may not be able to get them back.
