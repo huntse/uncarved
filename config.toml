@@ -18,7 +18,7 @@ generate_feed = true
 title = "The Uncarved Block"
 description = "Sean Hunter's personal blog, containing software, haskell, scala, ocaml, unix tips and sundry other things."
 taxonomies = [
-    {name = "categories", rss = true},
+    {name = "tags", rss = true},
 ]
 
 
