@@ -3,6 +3,8 @@ title = "Thank goodness for greasemonkey"
 description = "Google recently added an extremely annoying feature to google reader. Thankfully you can decide for yourself how their website works."
 aliases = [ "/articles/no_smileys" ]
 date = 2009-07-20T19:58:05Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

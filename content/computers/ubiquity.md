@@ -1,1 +1,0 @@
-../articles/ubiquity.md

@@ -3,6 +3,8 @@ title = "Free Software"
 description = "A Small Collection of Free Software I have written"
 aliases = [ "/articles/free_software" ]
 date = 2009-06-12T16:25:08Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

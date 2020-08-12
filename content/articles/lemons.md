@@ -1,6 +1,9 @@
 +++
 title = "When life gives you lemons (or not)"
 description = "Drinking on my own"
+date = 2020-08-07
+[taxonomies]
+tags = ["thoughts"]
 +++
 
 They checked 3 times that I wanted lemon (not cucumber) in my second

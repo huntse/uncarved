@@ -3,6 +3,8 @@ title = "Shell Command History and Searching"
 description = "Time spent learning how the unix shell works is never wasted"
 aliases = [ "/articles/shell_history" ]
 date = 2006-05-17T07:35:18Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

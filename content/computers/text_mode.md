@@ -1,1 +1,0 @@
-../articles/text_mode.md

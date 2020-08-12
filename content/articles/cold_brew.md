@@ -2,6 +2,9 @@
 title = "Cold Brew Recipe"
 description = "Even in hot weather it's important to remain adequately caffeinated.  Here's how."
 aliases = [ "/articles/cold_brew" ]
+date = 2020-08-07
+[taxonomies]
+tags = ["thoughts"]
 +++
 
 Here's how to make delicious smooth cold-brew coffee:

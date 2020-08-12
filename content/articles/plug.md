@@ -2,6 +2,8 @@
 title = "A blatant plug"
 description = "A concert worth attending (not that I have any personal interest. Oh no...)"
 date = 2007-06-13T16:02:47Z
+[taxonomies]
+tags = ["thoughts"]
 +++
 
 

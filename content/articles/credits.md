@@ -2,6 +2,8 @@
 title = "Credits"
 description = "People and stuff that have made this website fun to produce"
 date = 2009-06-12T04:00:46Z
+[taxonomies]
+tags = ["everything else"]
 +++
 
 This is a static website hosted on [AWS](https://aws.amazon.com) using S3 and

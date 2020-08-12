@@ -1,1 +1,0 @@
-../articles/gtd_in_n3.md

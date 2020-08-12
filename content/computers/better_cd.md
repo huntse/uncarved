@@ -1,1 +1,0 @@
-../articles/better_cd.md

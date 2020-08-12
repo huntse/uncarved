@@ -3,6 +3,8 @@ title = "Patterns in Perl"
 description = "An article I wrote for the Perl Journal a long time ago"
 aliases = [ "/articles/perl_patterns" ]
 date = 2006-04-21T14:51:31Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

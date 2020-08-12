@@ -2,6 +2,8 @@
 title = "Using a Linux laptop in text mode"
 description = "Linux has everything you need to use your laptop even if you choose not to use the pointy-clicky interfaces"
 date = 2009-10-17T13:05:22Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

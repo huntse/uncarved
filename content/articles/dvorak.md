@@ -2,6 +2,8 @@
 title = "Making the switch"
 description = "Changing over to dvorak typing is tough, but worth it"
 date = 2006-04-21T15:44:28Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

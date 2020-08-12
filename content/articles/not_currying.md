@@ -1,7 +1,9 @@
 +++
 title="Partial Function Application is not Currying"
 description="These two related concepts are often confused.  Until yesterday I thought they were the same thing myself."
-aliases=["/articles/not_currying", "/articles/not_currying.mrk"]
+date = 2020-08-07
+aliases=["/articles/not_currying", "/articles/not_currying.mrk",
+"/blog/not_currying.mrk" ]
 +++
 
 Often you will see in computer books and articles a pattern where a function is

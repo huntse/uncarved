@@ -2,6 +2,8 @@
 title = "helper classes for scala"
 description = "My first opensource scala package"
 date = 2011-06-01T10:46:47Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

@@ -3,6 +3,8 @@ title = "Derivatives pricing in ocaml Part 1"
 description = "Following on from the 'Learning Functional Programming' article, we write our first call pricer"
 aliases = [ "/articles/ocaml_deriv_1" ]
 date = 2007-06-06T08:54:54Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

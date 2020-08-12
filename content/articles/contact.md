@@ -3,6 +3,8 @@ title = "Contact Me"
 description = "Some people just really really want to know how they can get through to me. Sad but true."
 date = 2009-06-12T03:59:19Z
 aliases = [ "/articles/contact" ]
+[taxonomies]
+tags = ["everything else"]
 +++
 
 

@@ -2,6 +2,8 @@
 title = "Website Changes"
 description = "An occasionally-updated summary of stuff I've changed"
 date = 2009-08-07T09:48:28Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

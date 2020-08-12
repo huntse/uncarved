@@ -2,6 +2,8 @@
 title = "The quest to get a mac to do exactly what I want"
 description = "It all started because I use a weird keyboard. When I don't have this"
 date = 2017-06-23T07:29:12Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 keyboard plugged in, I want my laptop keyboard map to use dvorak, but

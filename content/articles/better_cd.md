@@ -4,6 +4,8 @@ description = "Unix shell is very flexible and easy to customise. Here is how I 
 aliases = [ "/articles/better_cd" ]
 date = 2006-04-21T15:44:45Z
 updated = 2006-04-21
+[taxonomies]
+tags = ["computers"]
 +++
 
 

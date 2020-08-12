@@ -3,6 +3,8 @@ title = "Ocaml objects part 1"
 description = "Writing some objects in ocaml, we begin to make the pricer more flexible"
 aliases = [ "/articles/ocaml_classes" ]
 date = 2007-06-19T19:36:27Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

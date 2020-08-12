@@ -3,6 +3,8 @@ title = "Getting started with github"
 description = "Before we can do our marketmaking system, you need to be able to get the software."
 aliases = [ "/articles/helpers_github" ]
 date = 2011-06-02T18:18:09Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 
