@@ -1,5 +1,5 @@
 +++
-title = "Articles"
-description = "All articles regardless of section"
+title = "articles"
+description = "Articles"
+date = 2020-08-07
 +++
-
