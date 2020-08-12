@@ -20,7 +20,7 @@
             </ul>
         </div>
         <div class="body">
-                    {% for page in term.pages %}
+                    {% for page in section.pages %}
                     <h2><a href="{{get_url(path=page.path)}}">{{ page.title }}</a></h2>
                     <div class="precis">{{ page.description }}</div>
                     <div>

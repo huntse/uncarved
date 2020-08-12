@@ -20,18 +20,11 @@
             </ul>
         </div>
         <div class="body">
-                    {% for page in term.pages %}
-                    <h2><a href="{{get_url(path=page.path)}}">{{ page.title }}</a></h2>
-                    <div class="precis">{{ page.description }}</div>
-                    <div>
-                        {{ page.content | safe }}
-                    </div>
-                    {% if page.date %}
-                    <p class="tagline">
-                    <a href="{{ get_url(path=page.path) }}">permalink</a> Updated: {{ macros::format_date(date=page.date) }}
-                    </p>
-                    {% endif %}
-                    {% endfor %}
+            <ul>
+                {% for tag in terms %}
+                <li><a href="{{ tag.permalink }}">{{ tag.name }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
         <div class="footer">
         </div>

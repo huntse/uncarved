@@ -14,6 +14,13 @@
             <ul>
                 <li><a href="{{ get_url(path="") }}">top</a></li>
             </ul>
+            {% if page.taxonomies %}
+            <ul>
+                {% for tag in page.taxonomies.tags %}
+                <li><a href="{{ get_taxonomy_url(kind="tags", name=tag) }}">{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+            {% endif %}
             <ul>
                 <li><a href="{{ get_url(path="/articles/credits") }}">credits</a></li>
                 <li><a href="{{ get_url(path="/articles/biog") }}">biog</a></li>
