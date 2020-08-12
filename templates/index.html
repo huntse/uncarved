@@ -14,47 +14,31 @@
             <ul>
                 <li><a href="{{ get_url(path="") }}">top</a></li>
                 {% for sec in section.subsections %}
-                {% set current = get_section(path=sec) %}
-                <li><a href="{{ get_url(path=current.path) }}">{{ current.path }}</a></li>
+                    {% set current = get_section(path=sec) %}
+                    <li><a href="{{ get_url(path=current.path) }}">{{ current.path }}</a></li>
                 {% endfor %}
             </ul>
-            {% for tax in config.taxonomies %}
-            <ul>
-                {% set categories = get_taxonomy(kind=tax.name) %}
-                {% set items = categories.items %}
-                {% set length = items | length %}
-                {% if length > 0 %}
-                    {% for item in items %}
-                        {% set url = get_taxonomy_url(kind=tax.name, name=item.name) %}
-                        <li><a href="{{ url }}">{{item.name}}</a></li>
-                    {% endfor %}
-                {% endif %}
-            </ul>
-            {% endfor %}
-            <ul>
-                <li><a href="{{ get_url(path="/articles/credits") }}">credits</a></li>
-                <li><a href="{{ get_url(path="/articles/biog") }}">biog</a></li>
-            </ul>
+            {% include "sidebar.html" %}
         </div>
         <div class="body">
             {{ section.content | safe }}
 
-                {% for sec in section.subsections %}
+            {% for sec in section.subsections %}
                 {% set current_section = get_section(path=sec) %}
                 {% set pages = current_section.pages | sort(attribute="date") | reverse | slice(end=10) %}
                 {% for page in pages %}
-                <h2><a href="{{get_url(path=page.path)}}">{{ page.title }}</a></h2>
-                <div class="precis">{{ page.description }}</div>
-                <div>
-                    {{ page.content | safe }}
-                </div>
-                {% if page.date %}
-                <p class="tagline">
-                <a href="{{ get_url(path=page.path) }}">permalink</a> Updated: {{ macros::format_date(date=page.date) }}
-                </p>
-                {% endif %}
+                    <h2><a href="{{get_url(path=page.path)}}">{{ page.title }}</a></h2>
+                    <div class="precis">{{ page.description }}</div>
+                    <div>
+                        {{ page.content | safe }}
+                    </div>
+                    {% if page.date %}
+                        <p class="tagline">
+                        <a href="{{ get_url(path=page.path) }}">permalink</a> Updated: {{ macros::format_date(date=page.date) }}
+                        </p>
+                    {% endif %}
                 {% endfor %}
-                {% endfor %}
+            {% endfor %}
 
         </div>
     </body>

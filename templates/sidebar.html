@@ -1,0 +1,17 @@
+            {% for tax in config.taxonomies %}
+            <ul>
+                {% set categories = get_taxonomy(kind=tax.name) %}
+                {% set items = categories.items %}
+                {% set length = items | length %}
+                {% if length > 0 %}
+                    {% for item in items %}
+                        {% set url = get_taxonomy_url(kind=tax.name, name=item.name) %}
+                        <li><a href="{{ url }}">{{item.name}}</a></li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+            {% endfor %}
+            <ul>
+                <li><a href="{{ get_url(path="/articles/credits") }}">credits</a></li>
+                <li><a href="{{ get_url(path="/articles/biog") }}">biog</a></li>
+            </ul>
