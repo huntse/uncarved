@@ -9,9 +9,9 @@ tags = ["computers"]
 
 
 I have been playing around with Gray's reflected binary code (aka
-[Gray][5] codes) and similar things a bit. Before I reveal why I'm doing
+[Gray codes][5]) and similar things a bit. Before I reveal why I'm doing
 this lets just dive in and write some code. Gray's algorithm is
-described well [here.][6] The code which follows is in [7]haskell,
+described well [here.][6] The code which follows is in [haskell][7],
 because it's a really fantastic language and I'm playing around with it
 at the moment. For scala fans, don't worry. I haven't abandoned scala,
 this is a parallel effort.
@@ -76,11 +76,6 @@ distribution-type things. There are similar but more recent orderings
 that are comparable to gray codes which I'm also looking into. They'll
 all be presented here in due course.
 
-[1]: http://www.uncarved.com/articles/gray_codes
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://en.wikipedia.org/wiki/Gray_code
 [6]: http://www.cs.auckland.ac.nz/CDMTCS//researchreports/304bob.pdf
 [7]: http://www.haskell.org/
-[8]: http://www.uncarved.com/tags/computers

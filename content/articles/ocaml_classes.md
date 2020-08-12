@@ -158,10 +158,5 @@ except probably a bit slower and certainly harder to read", then I am
 sympathetic to this point of view. [Next][6] we look at other parameters
 classes and suddenly it starts to become useful.
 
-[1]: http://www.uncarved.com/articles/ocaml_classes
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: /articles/ocaml_finance
 [6]: /articles/ocaml_classes_2
-[7]: http://www.uncarved.com/tags/computers

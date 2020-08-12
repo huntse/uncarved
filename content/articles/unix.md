@@ -139,9 +139,3 @@ colon, so:
   !vi:*` to check the changes into git.
 * `!3:$` is the last argument to command number three from my history.
 
-d
-[1]: http://www.uncarved.com/articles/unix
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
-[5]: http://www.uncarved.com/tags/computers

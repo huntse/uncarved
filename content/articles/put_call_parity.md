@@ -8,7 +8,7 @@ tags = ["computers"]
 +++
 
 
-[Put][5] call parity is an important relationship in options pricing.
+[Put call parity][5] is an important relationship in options pricing.
 Let's test our prices to see if they obey this relationship.
 
 To do so I add a simple helper function to payoff.ml to get the npv of

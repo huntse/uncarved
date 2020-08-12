@@ -52,12 +52,7 @@ find it on google. Screen is cool though.
 able to write little scripts. As well as the shell, I love
 scripting in Perl, sed (sometimes) and Python.
 
-[1]: http://www.uncarved.com/articles/text_mode
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.gnome.org/
 [6]: http://www.uncarved.com/static/images/kopk.jpg
 [7]: http://www.uncarved.com/static/images/saintignucius.jpg
 [8]: http://www.nongnu.org/ratpoison/
-[9]: http://www.uncarved.com/tags/computers

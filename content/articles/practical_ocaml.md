@@ -9,10 +9,10 @@ tags = ["computers"]
 
 
 My experience learning ocaml has been pretty enjoyable so far. A friend
-told me about Jason Hickey's pdf book [Introduction][5] to the Objective
-Caml Programming Language which is commendably brief and has really
+told me about Jason Hickey's pdf book [Introduction to the Objective
+Caml Programming Language][5] which is commendably brief and has really
 helped as I go on to try ocaml further. The second thing that has
-helped is that I have discovered [rlwrap,][6] so the toploop is no longer
+helped is that I have discovered [rlwrap][6], so the toploop is no longer
 such an unfriendly place to be.
 
 Furthermore, I have split the pricer that I [began][7] developing

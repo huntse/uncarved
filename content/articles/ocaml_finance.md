@@ -11,24 +11,25 @@ tags = ["computers"]
 I have been interested in functional programming for some time, but
 finally decided to bite the bullet and learn properly, and that (for me
 anyway) means writing some code to accomplish a practical task. My idea
-is to reimplement most of the C++ code in [Mark][5] Joshi's excellent
-[book][6] C++ Design Patterns and Derivatives Pricing, but in [7]ocaml.
+is to reimplement most of the C++ code in [Mark Joshi's][5] excellent
+book [C++ Design Patterns and Derivatives Pricing][6], but in [OCaml][7].
 Now I'm a newcomer to [functional][8] programming and to ocaml, so what I
 write won't be pretty or idiomatic, especially at first. To begin with
-I'm learning from the main [tutorial.][9] If I find and use another I'll
+I'm learning from the main [tutorial][9]. If I find and use another I'll
 post that too.
 
-I will try to explain some of the financial stuff that's going on as I
-do so, but for the full lowdown on why derivatives price the way they
-do, you need to learn some financial maths. You could do a lot worse
-that picking up Joshi's [other][10] book, The Concepts and Practice of
-Mathematical Finance. A lot of people get [Hull,][11] but I prefer Joshi
-for a really practical introduction with great explanations of
-concepts.
+I will try to explain some of the financial stuff that's going on as I do so,
+but for the full lowdown on why derivatives price the way they do, you need to
+learn some financial maths. You could do a lot worse that picking up Joshi's
+other book, [The Concepts and Practice of Mathematical Finance][10]. A lot of
+people get [Hull][11], but I prefer Joshi for a really practical introduction
+with great explanations of concepts. When I was at Goldman, a lot of people
+were very sarcastic about Hull as a source. I don't really have a credible
+opinion about that.
 
 So without further ado, here is my first ocaml program, which defines
-payoffs for vanilla European [put][12] and [13]call options. In fact
-Joshi starts off straight away with a [Monte][14] Carlo pricer, but my
+payoffs for vanilla European [put][12] and [call][13] options. In fact
+Joshi starts off straight away with a [Monte Carlo][14] pricer, but my
 copy is downstairs so I'm straying off-piste here. It's my intention to
 follow Joshi step by step, and write up each one here as I go.
 ```Ocaml
@@ -53,7 +54,7 @@ print_payoff put_payoff 190.0 195.0;;
 ```
 
 
-Now I'm running and writing this on [fedora][15] [16]Linux, and my ocaml
+Now I'm running and writing this on [fedora][15] [Linux][16], and my ocaml
 is 3.09.3. When I run this I see:
 ```
 % ocaml tmp/payoff.ml
@@ -72,7 +73,6 @@ so we need to explicitly qualify our constants with .0 to get them to
 be floats. Secondly, we need to use -. to subtract them. The max
 function can operate on any type so it works with floats or ints.
 
-[1]: http://www.uncarved.com/articles/ocaml_finance
 [5]: http://www.markjoshi.com/
 [6]: http://www.markjoshi.com/design/index.htm
 [7]: http://caml.inria.fr/ocaml/index.en.html

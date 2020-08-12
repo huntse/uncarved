@@ -29,7 +29,7 @@ introductory articles. This series will mostly be aimed at people with
 some computing background and interest in financial markets but not
 assume any knowledge of how markets work.
 
-Caveats before we begin
+### Caveats before we begin
 
 Nothing in these articles is going to constitute any sort of advice as
 to the merits of investing in a particular product, or making markets
@@ -52,7 +52,7 @@ different. Obviously you shouldn't put more at risk than you can afford
 to lose, but it's your money, and you need to decide whether this is
 right for you.
 
-Background - Marketmakers and liquidity
+### Background - Marketmakers and liquidity
 
 It would be very cumbersome if every time you wanted to buy something
 you had to find the person willing to sell exactly that quantity at
@@ -73,7 +73,7 @@ expect the spread between the bid and ask prices to be very low.
 Conversely, high volatility and low liquidity assets would normally
 have high spreads to compensate marketmakers for their higher risk.
 
-Providing liquidity
+### Providing liquidity
 
 In the old days, the position of marketmaker was held only by exchange
 locals who had to pay for the membership that allowed them to earn this
@@ -84,9 +84,9 @@ that, we first need to understand how a limit order book works, and by
 way of an example I'm going to jump right in and introduce the market
 we will use as the basis for this whole series.
 
-Bullionvault
+### Bullionvault
 
-The market we're going to use for our examples is [bullionvault.com,][9]
+The market we're going to use for our examples is [bullionvault.com][9],
 which is in essence a physical gold and silver market, with all the
 actual metal held in escrow in reserves in New York, London and Zurich,
 with seperate order books in $, £ and €. If you sign up using that link
@@ -97,7 +97,7 @@ peruse the [on-line][10] help so you understand how their system works,
 and like any other investment, you should think carefully about the
 risks involved.
 
-Understanding the order book
+### Understanding the order book
 
 If you go to the [front][11] page, you can see the current sell and buy
 prices for gold in the three locations in one currency (USD by
@@ -105,7 +105,7 @@ default).
 
 Bullionvault USD gold touch prices
 
-The touch
+### The touch
 
 These prices are just the top of the order book - the so-called touch
 prices. You would find more quantity available at different prices to
@@ -118,7 +118,7 @@ teaching something as amazing as a modern computer to think in Troy
 ounces (or any imperial units) is a great evil, like teaching children
 arithmetic only by using Roman numerals or something.
 
-Bid and Offer
+### Bid and Offer
 
 We're also going to use some real market-making terminology, so we're
 going to refer to bid and ask or bid and offer prices, rather than sell
@@ -135,7 +135,7 @@ normal trading begins. We wouldn't expect the orderbook to be crossed
 in a continuous trading market like this unless something was wrong and
 matching was suspended.
 
-Aggressive and Passive
+### Aggressive and Passive
 
 If an order to buy comes in, and it has no limit price, it is matched
 with the cheapest available sell orders until it is filled. If it has a
@@ -157,16 +157,12 @@ sell right now, we will need our limit price to be at, or more
 aggressive (lower) than, the current bid, whereas if we are prepared to
 wait, our price can be more passive (ie higher).
 
-Still to come - the software
+### Still to come - the software
 
 In the next article, I will introduce a the software we can use to
 connect to bullionvault. Please feel free to comment below if anything
 so far is unclear and I'll try to deal with it in the next article.
 
-[1]: http://www.uncarved.com/articles/mm_1
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.investopedia.com/terms/m/marketmaker.asp
 [6]: http://www.investopedia.com/terms/v/volatility.asp
 [7]: http://www.investopedia.com/terms/l/liquidity.asp
@@ -174,4 +170,3 @@ so far is unclear and I'll try to deal with it in the next article.
 [9]: http://www.bullionvault.com/#HUNTSE
 [10]: http://www.bullionvault.com/help/index.do
 [11]: http://www.bullionvault.com/#HUNTSE
-[12]: http://www.uncarved.com/tags/computers
