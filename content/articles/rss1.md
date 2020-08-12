@@ -8,7 +8,7 @@ tags = ["computers"]
 
 
 Now that I am getting the hang of rdf, the next logical step was to
-link metadata with content and provide an [rss][5] 1.1 feed. Rss 1.1 is a
+link metadata with content and provide an [rss 1.1][5] feed. Rss 1.1 is a
 fantastic specification in many ways because it allows machine-readable
 content (it is an application of rdf and xml), and has namespaces that
 allow content syndication, so you can embed metadata in with articles
@@ -124,20 +124,13 @@ For what it's worth, my cheetah template looks like this:
 </Channel>
 ```
 
-The feed is available [here][7] and the output for a tag with just this
-article in it (I've truncated the content slightly) looks like:
-```
-```
+The feed no longer available and since the sematic web seems to have died a
+death I don't really see the point in reviving it.  No-one subscribed to
+rss 1.1.
+
 I hope you enjoy creating your own rss 1.1 feeds. You can find out more
 about all the site syndication variants on the [wikipedia.][8]
 
-[1]: http://www.uncarved.com/articles/rss1
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://inamidst.com/rss1.1/
 [6]: http://diveintomark.org/archives/2002/09/06/history_of_the_rss_fork
-[7]: http://www.uncarved.com/rss1.1.xml
 [8]: http://en.wikipedia.org/wiki/RSS_(file_format)
-[9]: http://www.uncarved.com/tags/computers
-[11]: http://creativecommons.org/licenses/by-sa/4.0/

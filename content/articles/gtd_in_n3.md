@@ -8,7 +8,7 @@ tags = ["computers"]
 +++
 
 
-Inspired by [this][5] article on lifehacker I decided to make my own
+Inspired by [this article][5] on lifehacker I decided to make my own
 "getting things done" toolset. It would ideally need to be just as
 flexible from the commandline as the lifehack "todo.txt" file but have
 machine readablility too. I have decided to use [notation3][6] as the
@@ -41,16 +41,12 @@ others. In n3 you can make rules and draw inferences so I could have it
 figure out for me what I should be doing next. Since the output is
 [rdf][7] I could make a full ontology for tasks etc and then as well as
 having a tool for humans, I would have a machine-readable format for
-this stuff that would fit into the [semantic][8] web. I may do that.
+this stuff that would fit into the [semantic web][8]. I may do that.
 
 To get going with notation3, you need a computer with [python][9] and you
 need to install [rdflib][10] and [cwm][11]. It's well worth the effort to
 do this.
 
-[1]: http://www.uncarved.com/articles/gtd_in_n3
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.lifehacker.com/software/text/geek-to-live-list-your-life-in-txt-166299.php
 [6]: http://www.w3.org/2000/10/swap/Primer
 [7]: http://en.wikipedia.org/wiki/Resource_Description_Framework
@@ -58,4 +54,3 @@ do this.
 [9]: http://www.python.org/
 [10]: http://rdflib.net/
 [11]: http://www.w3.org/2000/10/swap/doc/cwm.html
-[12]: http://www.uncarved.com/tags/computers

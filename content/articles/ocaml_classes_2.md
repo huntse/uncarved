@@ -136,10 +136,5 @@ let print_mc ?(num_paths=100000) label payoff =
 Note that our piecewise const parameter doesn't require the function to
 be continuous. Given this vol function, we can price as before.
 
-[1]: http://www.uncarved.com/articles/ocaml_classes_2
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: /articles/ocaml_classes
 [6]: http://mathforum.org/library/drmath/sets/select/dm_piecewise.html
-[7]: http://www.uncarved.com/tags/computers

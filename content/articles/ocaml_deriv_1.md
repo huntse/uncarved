@@ -97,6 +97,5 @@ This, however, is crying out for more flexibility. The first thing to
 do is to see if we can get it to price other simple payoffs. That's the
 subject of the [next][6] article.
 
-[1]: http://www.uncarved.com/articles/ocaml_deriv_1
 [5]: /articles/ocaml_finance
 [6]: /articles/ocaml_deriv_2

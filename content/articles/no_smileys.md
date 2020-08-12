@@ -9,7 +9,7 @@ tags = ["computers"]
 
 
 Every morning I drink my coffee and read various news sites using
-google [reader,][5] so I was horrified recently to see a big yellow
+google [reader][5], so I was horrified recently to see a big yellow
 smiley popping up on a bunch of posts. This is some sort of
 social-networking-inspired feature which allows people to say which
 posts they "like", then anyone else reading that post gets a smiley to
@@ -28,11 +28,6 @@ google's site looks (and works) like in my browser, and in fact Jason
 Fager has already [posted][7] a greasemonkey script that removes the
 offending smileys.
 
-[1]: http://www.uncarved.com/articles/no_smileys
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://reader.google.com/
 [6]: http://www.greasespot.net/
 [7]: http://jasonfager.com/?p=569
-[8]: http://www.uncarved.com/tags/computers

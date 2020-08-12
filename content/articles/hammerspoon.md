@@ -57,7 +57,8 @@ peasy). Set a default layout of windows whenever I plug my laptop into
 an external monitor? (Sure) I've now also got it so I can do almost all
 window movement and resizing via the keyboard.
 
-Any case, my full config is [here.][4] Feel free to take from it anything
+Any case, my full config is unavailable right now but I'll try to get it back
+when my personal mac is brought back to life. Feel free to take from it anything
 that's usable. The grid resizing thing has a minor bug that I've not
 been annoyed enough to fix yet, where on certain sizes of monitor it
 doesn't realise your window is on at the bottom, so you need to move it
@@ -65,8 +66,5 @@ up to resize. Other than that it's tickety-boo. I highly recommend
 checking hammerspoon out if you can code a little and want to tweak a
 Mac to behave exactly the way you want.
 
-[1]: https://www.uncarved.com/articles/hammerspoon
-[2]: https://www.uncarved.com/
 [3]: http://www.hammerspoon.org/
 [4]: https://www.uncarved.com/static/init.lua.txt
-[5]: https://www.uncarved.com/tags/computers

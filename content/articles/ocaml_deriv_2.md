@@ -154,7 +154,6 @@ I can observe in the market so I am sure there is some debugging yet to
 do. I would also like to make the code into a few modules, but I am not
 sure how you do that in ocaml yet.
 
-[1]: http://www.uncarved.com/articles/ocaml_deriv_2
 [5]: /articles/ocaml_finance
 [6]: /articles/ocaml_deriv_1
 [7]: /articles/ocaml_finance

@@ -19,7 +19,7 @@ The motivation behind this package is that I wanted to do some http
 stuff and wanted to make my client code be as simple as possible while
 still being polite to servers. So that meant supporting conditional get
 using Etags, Last-Modified and also supporting gzip encoding. I do all
-this by using the apache commons [httpclient-4.x][7] and [8]httpcore-4.x
+this by using the apache commons [httpclient-4.x][7] and [httpcore-4.x][8]
 libraries and wrapping them all up in a class that's convenient and
 simple to use. Here's a taster:
 import com.uncarved.helpers.http._
@@ -37,12 +37,7 @@ val xml = helper.getXML(Request(RequestType.GET, "http://www.uncaJved.com/index.
 val items = xml \\ "item"
 ```
 
-[1]: http://www.uncarved.com/articles/helpers
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://uncarved.com/blog/helpers_github.mrk
 [6]: http://www.uncarved.com/static/scala/helpers/doc/index.html
 [7]: http://hc.apache.org/httpcomponents-client/index.html
 [8]: http://hc.apache.org/httpcomponents-core/index.html
-[9]: http://www.uncarved.com/tags/computers

@@ -174,9 +174,4 @@ Begin test group payoff.ml
 End test group payoff.ml: 18 of 18 tests passed
 ```
 
-[1]: http://www.uncarved.com/articles/testing_ocaml
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: /articles/practical_ocaml
-[6]: http://www.uncarved.com/tags/computers

@@ -12,7 +12,7 @@ I was travelling on the tube one day when as is sometimes the case, a
 guy came into the carriage with a cup of change and started telling
 everyone the story of his (hard) life and how he came to be homeless.
 He then passed the cup around for people to make donations. "Why",
-someone asked, "don't you sell the [big][5] issue instead of begging?"
+someone asked, "don't you sell the [_Big Issue_][5] instead of begging?"
 The response of the homeless guy was very interesting and vituperative.
 He ranted about how the founder of the big issue was now a millionaire
 and that he (homeless guy) "wasn't going to work to make anybody else
@@ -74,7 +74,5 @@ creating value for others is likely to end up with very little for
 themselves. Since he made me come to realise this, I now wish I had
 given that homeless guy on the tube more of my change.
 
-[1]: http://www.uncarved.com/articles/making_other_people_rich
 [5]: http://www.bigissue.com/bigissue.html
 [6]: http://en.wikipedia.org/wiki/Free_market
-[7]: http://www.uncarved.com/tags/thoughts

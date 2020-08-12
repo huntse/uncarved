@@ -8,13 +8,13 @@ tags = ["computers"]
 +++
 
 
-To share the marketmaking software that I talked about in the [first][5]
-marketmaking article, we need to have a repository set up, so I decided
-to get going with [github.][6] You'll need to [set up git][7], and you'll
-need [maven 2][8] to build everything. I thought I'd put out a small
-article to get people started with building a small package we're going
-to depend on for the bigger system. Assuming this goes ok, I'll push
-the actual software that interfaces with bullionvault.
+To share the marketmaking software that I talked about in the [first
+marketmaking article][5] , we need to have a repository set up, so I decided to
+get going with [github.][6] You'll need to [set up git][7], and you'll need
+[maven 2][8] to build everything. I thought I'd put out a small article to get
+people started with building a small package we're going to depend on for the
+bigger system. Assuming this goes ok, I'll push the actual software that
+interfaces with bullionvault.
 
 Once you've got git and maven2 set up, it should be simple enough. On
 my linux boxes I just do:
@@ -76,12 +76,7 @@ mvn test  22.79s user 0.74s system 94% cpu 24.793 total
 I don't use eclipse or anything like that, but it should be possible
 too get this working with eclipse too, just don't ask me how.
 
-[1]: http://www.uncarved.com/articles/helpers_github
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: /articles/mm_1
 [6]: http://github.com/
 [7]: http://help.github.com/set-up-git-redirect
 [8]: http://maven.apache.org/
-[9]: http://www.uncarved.com/tags/computers

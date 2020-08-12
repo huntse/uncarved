@@ -8,7 +8,7 @@ tags = ["computers"]
 +++
 
 
-I've recently been playing about a bit with [Scala.][5] It's a great
+I've recently been playing about a bit with [Scala][5]. It's a great
 language in which you can write real programs very easily. As an
 example, in Java you often want to be able to make use of [log4j][6] to
 log various tracing info. Well, here's a little helper trait you can
@@ -51,7 +51,7 @@ class MyClass extends LogHelper {
 ```
 
 Easy peasy logging. This class is one of several that I have released
-on [github.][7] Enjoy!
+on [github][7]. Enjoy!
 
 [5]: http://www.scala-lang.org/
 [6]: http://logging.apache.org/log4j/

@@ -43,10 +43,5 @@ that if you go on a page with a search box, select it and invoke
 ubiquity and type "create-new-search-command" it writes something very
 much like the above for you.
 
-[1]: http://www.uncarved.com/articles/ubiquity
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: https://addons.mozilla.org/en-US/firefox/addon/9527
 [6]: http://www.uncarved.com/
-[7]: http://www.uncarved.com/tags/computers

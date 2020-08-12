@@ -3,11 +3,11 @@ title = "Changing to a kinesis keyboard"
 description = "I thought I would never find a keyboard that I liked better than Typematrix, but I may have to eat my words..."
 date = 2008-07-29T11:11:55Z
 [taxonomies]
-tags = ["reviews"]
+tags = ["reviews", "computers"]
 +++
 
 
-Until yesterday, I used to use a [typematrix][5] [6]dvorak keyboard.
+Until yesterday, I used to use a [typematrix][5] [dvorak][6] keyboard.
 Typematrix is a fabulous keyboard with lots of terrific design features
 but its primary strength is that it has a small desktop footprint, and
 that it uses straight forward and back movements of the fingers without
@@ -39,12 +39,6 @@ functionality is good. It has a very cool hardware remapping thing that
 means you can move the keys you don't like around to your heart's
 content. It's a really nice keyboard.
 
-[1]: http://www.uncarved.com/articles/kinesis
-[2]: http://www.uncarved.com/
-[3]: http://www.uncarved.com/articles/contact
-[4]: http://www.uncarved.com/login/
 [5]: http://www.typematrix.com/
 [6]: http://www.mwbrooks.com/dvorak/
 [7]: http://www.kinesis-ergo.com/advantage.htm
-[8]: http://www.uncarved.com/tags/computers
-[9]: http://www.uncarved.com/tags/reviews
