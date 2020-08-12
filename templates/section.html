@@ -14,10 +14,7 @@
             <ul>
                 <li><a href="{{ get_url(path="") }}">top</a></li>
             </ul>
-            <ul>
-                <li><a href="{{ get_url(path="/articles/credits") }}">credits</a></li>
-                <li><a href="{{ get_url(path="/articles/biog") }}">biog</a></li>
-            </ul>
+            {% include "sidebar.html" %}
         </div>
         <div class="body">
                     {% for page in section.pages %}
