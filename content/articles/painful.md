@@ -15,7 +15,7 @@ that I was moving to Centos from Debian. One thing, however, was
 extremely painful. Moving this website.
 
 So uncarved.com uses a python script that I wrote ages ago using an
-early version of [web.py.][5] However, at the time it had pretty whacky
+early version of web.py. However, at the time it had pretty whacky
 database support, didn't have it's own template engine (so it used
 Cheetah) and had a few wierd bugs which I had hacked around in my local
 copy. As such, upgrading has been a real pain because I had to change
@@ -26,4 +26,3 @@ plunge). Anyway, it seems to have worked.
 
 *Note:* This has all changed significantly in the last 11 years.
 
-[5]: http://www.webpy.org/

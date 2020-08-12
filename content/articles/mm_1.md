@@ -167,6 +167,6 @@ so far is unclear and I'll try to deal with it in the next article.
 [6]: http://www.investopedia.com/terms/v/volatility.asp
 [7]: http://www.investopedia.com/terms/l/liquidity.asp
 [8]: http://www.investopedia.com/terms/l/limitorderbook.asp
-[9]: http://www.bullionvault.com/#HUNTSE
+[9]: http://www.bullionvault.com/
 [10]: http://www.bullionvault.com/help/index.do
-[11]: http://www.bullionvault.com/#HUNTSE
+[11]: http://www.bullionvault.com/

@@ -22,5 +22,5 @@ no battery
 [5]: /articles/netbook
 [6]: http://www.xfce.org/
 [7]: http://www.gnome.org/
-[8]: http://www.ubuntu.com/GetUbuntu/download-netbook
+[8]: https://ubuntu.com/download/flavours
 [9]: http://xmonad.org/
