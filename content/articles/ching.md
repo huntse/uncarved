@@ -3,6 +3,8 @@ title = "I Ching"
 description = "About the hexagrams on this site"
 aliases = [ "/articles/ching" ]
 date = 2020-08-04
+[taxonomies]
+tags = ["everything else"]
 +++
 
 

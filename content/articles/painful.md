@@ -2,6 +2,8 @@
 title = "That was painful"
 description = "Migrating everything to a new server"
 date = 2009-02-06T14:39:14Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

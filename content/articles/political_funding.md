@@ -3,6 +3,8 @@ title = "Public funding of political parties"
 description = "The UK political parties are voting for their own interests by asking for taxpayer funding. Taxpayers should say 'no'."
 aliases = [ "/articles/political_funding" ]
 date = 2006-08-02T10:49:31Z
+[taxonomies]
+tags = ["thoughts"]
 +++
 
 

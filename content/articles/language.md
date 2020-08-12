@@ -2,6 +2,8 @@
 title = "Which language would you use?"
 description = "It depends"
 date = 2009-08-20T21:35:41Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

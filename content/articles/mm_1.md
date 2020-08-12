@@ -3,6 +3,8 @@ title = "Writing an Automated Marketmaking System"
 description = "The first in a series of articles in which we will construct a simple high frequency trading system."
 aliases = [ "/articles/mm_1" ]
 date = 2011-05-11T09:59:07Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

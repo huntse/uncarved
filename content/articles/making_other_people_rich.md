@@ -3,6 +3,8 @@ title = "Making other people rich"
 description = "A basic understanding of economics can help you to be a happier and more successful person"
 aliases = [ "/articles/making_other_people_rich" ]
 date = 2006-04-23T08:38:07Z
+[taxonomies]
+tags = ["thoughts"]
 +++
 
 

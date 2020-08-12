@@ -2,6 +2,8 @@
 title = "Productivity in unix"
 description = "Loving the Unix user experience comes from realising how you make it work the way you want"
 date = 2007-06-13T15:57:29Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

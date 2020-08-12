@@ -1,1 +1,0 @@
-../articles/ocaml_deriv_2.md

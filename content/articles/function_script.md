@@ -3,6 +3,8 @@ title = "Shell Functions that are also executables"
 description = "Sometimes its handy to have shell functions that can be sourced, but can also be executables in their own right. Here's how."
 aliases = [ "/articles/function_script" ]
 date = 2006-04-30T14:03:35Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

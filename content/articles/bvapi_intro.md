@@ -2,6 +2,7 @@
 title = "Bullionvault interface"
 description = "Wrapping the public interface of a gold market in scala goodness"
 aliases = [ "/articles/bvapi_intro" ]
+date = 2020-08-07
 +++
 
 

@@ -3,6 +3,8 @@ title = "A Simple Ocaml test harness"
 description = "It's nice to be able to write tests for code as you go along, so you need a test harness..."
 aliases = [ "/articles/testing_ocaml" ]
 date = 2007-06-21T06:34:44Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

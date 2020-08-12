@@ -3,6 +3,8 @@ title = "Ocaml objects part 2"
 description = "Parameter objects make more sense when we pass piecewise functions to the pricer"
 aliases = [ "/articles/ocaml_classes_2" ]
 date = 2007-06-21T06:30:35Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

@@ -3,6 +3,8 @@ title = "Why Uncarved?"
 description = "The name of this website has a specific meaning that derives from Taoism"
 aliases = [ "/articles/why_uncarved" ]
 date = 2006-04-21T15:02:59Z
+[taxonomies]
+tags = ["everything else"]
 +++
 
 

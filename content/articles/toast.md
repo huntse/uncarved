@@ -2,6 +2,8 @@
 title = "Eat Toast!"
 description = "Strength. Vitality. Nutrition."
 date = 2009-05-22T08:18:37Z
+[taxonomies]
+tags = ["thoughts"]
 +++
 
 

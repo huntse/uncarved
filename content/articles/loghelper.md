@@ -3,6 +3,8 @@ title = "Log4j for Scala"
 description = "Scala is nice. Logging is nice. Scala + logging.....?"
 date = 2011-06-01T10:40:43Z
 aliases = [ "/articles/LogHelper" ]
+[taxonomies]
+tags = ["computers"]
 +++
 
 

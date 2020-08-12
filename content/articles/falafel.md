@@ -1,6 +1,9 @@
 +++
 title = "I shouldn't have to explain this to you, but..."
 description = "One person's struggle to buy food at Newark Liberty International airport"
+date = 2020-08-07
+[taxonomies]
+tags = ["thoughts"]
 +++
 
 I shouldn't have to explain this to you but...

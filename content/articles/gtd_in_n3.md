@@ -3,6 +3,8 @@ title = "Getting Things Done in Text with notation3"
 description = "I want a simple means of tracking and grouping tasks that works in text form and is easily parseable. And I want to learn notation3 too..."
 aliases = [ "/articles/gtd_in_n3" ]
 date = 2006-05-10T04:44:53Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

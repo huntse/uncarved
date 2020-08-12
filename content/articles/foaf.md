@@ -2,6 +2,8 @@
 title = "Foaf in n3"
 description = "Having got started with n3 I made myself a foaf file using it"
 date = 2009-06-13T13:18:59Z
+[taxonomies]
+tags = ["computers"]
 +++
 
 

@@ -3,6 +3,8 @@ title = "My Biog"
 description = "Some stuff about me"
 date = 2020-08-05
 aliases = [ "/articles/biog" ]
+[taxonomies]
+tags = ["everything else"]
 +++
 
 I trained to postgraduate level as a Jazz bass player, but worked as a
