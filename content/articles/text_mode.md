@@ -18,8 +18,15 @@ as such programs which are slow to start, slow to run or consume a lot
 of memory are completely out. For this reason, over the years I have
 ditched the emacs family of editors, fancy window managers and silly
 meta-environments like Gnome. People who use vim tend to look
-productive and slightly wired like [this,][6] whereas emacs users have
-been known to look like [this.][7] I think that proves my point nicely.
+productive and slightly wired like this:
+
+![Bram Moolenaar, the author of Vim looking like he's  just had a double espresso][6]
+
+Whereas emacs users have been known to look like this:
+
+![Richard Stallman, dressed as "Saint Ignucius"][7]
+
+I think that proves my point nicely.
 
 I also use a text-mode web browser where I can because it is quick to
 start up and makes it quick to find information. Time-wasting web
@@ -39,20 +46,27 @@ Apps I use
 * Linux - Let's not kid ourselves. I'm much more productive in Linux
 than I am elsewhere.
 * The vim editor - As a programmer your editor is your most important
-tool and vim is by far and away the best there is (for me anyway).
-* The zsh shell - The zsh shell is a pretty productive environment
+tool and vim is by far and away the best there is (for me anyway). Nowdays I
+tend to use [neovim][neovim] rather than old-school vim but
+they're very similar
+* The [zsh][zsh] shell - The zsh shell is a pretty productive environment
 for me, but the jury is still out on this for me. I don't mind bash
 either as long as I can use vi keybindings.
-* The [ratpoison][8] window manager- The X window manager which allows
+* The [i3][8] window manager- The X window manager which allows
 you to do away with your mouse and means you are forever liberated
 from dragging and resizing and using the annoying mouse.
-* Gnu screen - I'm not going to put a link to the FSF website here so
+* [tmux][9] - some time ago I ditched gnu screen for this and it's great.  The one
+  feature of screen that I miss is the ability to have shared sessions that
+  are not always viewing the same pane.  nbd though
 find it on google. Screen is cool though.
 * Scripting languages - noone is productive on unix without being
 able to write little scripts. As well as the shell, I love
 scripting in Perl, sed (sometimes) and Python.
 
-[5]: http://www.gnome.org/
-[6]: http://www.uncarved.com/static/images/kopk.jpg
-[7]: http://www.uncarved.com/static/images/saintignucius.jpg
-[8]: http://www.nongnu.org/ratpoison/
+[5]: https://www.gnome.org/
+[6]: /static/images/kopk.jpg
+[7]: /static/images/saintignucius.jpg
+[8]: https://i3wm.org
+[9]: https://github.com/tmux/tmux/wiki
+[neovim]: https://neovim.io
+[zsh]: https://www.zsh.org
